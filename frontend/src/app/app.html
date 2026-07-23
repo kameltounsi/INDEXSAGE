@@ -1,0 +1,77 @@
+@if (!dashboard()) {
+  <main class="login-page">
+    <section class="login-aside">
+      <div class="brand"><span class="brand-mark">S</span><span><b>SAGE</b><small>INDEX</small></span></div>
+      <div class="pitch">
+        <span class="pill">PORTAIL UNIFIÉ</span>
+        <h1>Une seule connexion.<br><em>Toute votre activité.</em></h1>
+        <p>Retrouvez la traçabilité et les ressources humaines dans un dashboard personnalisé et sécurisé.</p>
+      </div>
+      <div class="aside-footer">Traçabilité <i></i> Ressources Humaines <i></i> Pilotage</div>
+    </section>
+    <section class="login-panel">
+      <form (ngSubmit)="login()">
+        <p class="eyebrow">BIENVENUE</p>
+        <h2>Connectez-vous</h2>
+        <p class="sub">Accédez à votre espace SAGE INDEX</p>
+        <label>Matricule ou identifiant
+          <input name="username" [(ngModel)]="username" autocomplete="username" placeholder="Votre identifiant" required>
+        </label>
+        <label>Mot de passe
+          <input name="password" [(ngModel)]="password" type="password" autocomplete="current-password" placeholder="••••••••••••" required>
+        </label>
+        @if (error()) { <p class="error">{{ error() }}</p> }
+        <button class="primary" [disabled]="loading()">{{ loading() ? 'Connexion…' : 'Se connecter' }} <span>→</span></button>
+        <p class="help">Première connexion ? Contactez l’administrateur pour activer votre compte.</p>
+      </form>
+    </section>
+  </main>
+} @else {
+  <header class="topbar">
+    <div class="brand"><span class="brand-mark">S</span><span><b>SAGE</b><small>INDEX</small></span></div>
+    <div class="profile"><span class="avatar">{{ dashboard()!.user.name.slice(0, 2) }}</span><span><b>{{ dashboard()!.user.name }}</b><small>{{ dashboard()!.user.jobTitle }}</small></span><button (click)="logout()">Déconnexion</button></div>
+  </header>
+  <div class="workspace">
+    <aside>
+      <nav>
+        <a class="active">⌂ <span>Vue d’ensemble</span></a>
+        <p>ESPACE DE TRAVAIL</p>
+        <a>◫ <span>Activité</span></a><a>♙ <span>Mon équipe</span></a><a>▱ <span>Documents</span></a>
+        @if (isAdmin()) { <p>ADMINISTRATION</p><a class="active">⚙ <span>Comptes utilisateurs</span></a> }
+      </nav>
+    </aside>
+    <main class="dashboard">
+      <section class="welcome">
+        <div><p class="eyebrow">ESPACE PERSONNEL</p><h1>Bonjour {{ dashboard()!.user.name.split(' ')[0] }} 👋</h1><p>{{ dashboard()!.user.department }} · {{ dashboard()!.user.jobTitle }}</p></div>
+        <span class="sync">● Données synchronisées</span>
+      </section>
+      <section class="app-grid">
+        @for (application of dashboard()!.applications; track application.code) {
+          @if (application.hasAccount) {
+            <article class="app-card" [class.hr]="application.code === 'HR'">
+              <span class="status">● COMPTE ACTIF</span>
+              <small>APPLICATION</small><h2>{{ application.label }}</h2>
+              <p>{{ application.code === 'HR' ? 'Équipes, absences et documents collaborateurs.' : 'Lots, contrôles qualité et expéditions en temps réel.' }}</p>
+              <a [href]="application.url">Accéder à l’application <b>→</b></a>
+            </article>
+          }
+        }
+      </section>
+      <section class="metrics">
+        <article><span>◫</span><small>LOTS TRAITÉS</small><b>{{ dashboard()!.metrics.lotsProcessed | number }}</b></article>
+        <article><span>♙</span><small>TAUX DE PRÉSENCE</small><b>{{ dashboard()!.metrics.attendanceRate }}%</b></article>
+        <article><span>!</span><small>POINTS D’ATTENTION</small><b>{{ dashboard()!.metrics.attentionPoints }}</b></article>
+        <article><span>✓</span><small>ACTIONS TERMINÉES</small><b>{{ dashboard()!.metrics.completedActions }}</b></article>
+      </section>
+      @if (isAdmin()) {
+        <section class="admin-panel">
+          <div class="admin-head"><div><p class="eyebrow">ADMINISTRATION</p><h2>Comptes utilisateurs</h2><p>Les employés de type DIRECT/DIRECTS sont exclus automatiquement.</p></div><input #searchBox (input)="setSearch(searchBox.value)" placeholder="Rechercher un employé…"></div>
+          <div class="account-stats"><span><b>{{ stats().total }}</b> comptes créés</span><span><b>{{ stats().activationRequired }}</b> à activer</span><span><b>{{ stats().active }}</b> actifs</span></div>
+          <div class="table-wrap"><table><thead><tr><th>Employé</th><th>Matricule</th><th>Département</th><th>Type</th><th>Statut du compte</th></tr></thead>
+            <tbody>@for (account of filteredAccounts(); track account.id) {<tr><td><b>{{ account.fullName }}</b><small>{{ account.jobTitle }}</small></td><td>{{ account.matricule }}</td><td>{{ account.department }}</td><td><span class="type">{{ account.workType }}</span></td><td><span class="account-status">{{ account.accountStatus === 'ACTIVE' ? 'Actif' : 'À activer' }}</span></td></tr>}</tbody>
+          </table></div>
+        </section>
+      }
+    </main>
+  </div>
+}

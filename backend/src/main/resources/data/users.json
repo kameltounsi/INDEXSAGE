@@ -1,0 +1,6914 @@
+[
+  {
+    "employeeId": 81,
+    "matricule": "1",
+    "fullName": "BEN TILI ANIS",
+    "department": "DG",
+    "jobTitle": "DIRECTEUR GÉNÉRAL",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1@sage-index.local",
+    "username": "1",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 734,
+    "matricule": "12",
+    "fullName": "LASSOUED HEDI",
+    "department": "OPERATION",
+    "jobTitle": "OPERATION MANAGER",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "12@sage-index.local",
+    "username": "12",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 735,
+    "matricule": "13",
+    "fullName": "KEFI ZAHRA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "13@sage-index.local",
+    "username": "13",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 736,
+    "matricule": "19",
+    "fullName": "KHLIFA RAJA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "HOMRANI FOUED",
+    "email": "19@sage-index.local",
+    "username": "19",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 739,
+    "matricule": "21",
+    "fullName": "LAARIDHI SABRINE",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "FORMATRICE DE PRODUCTION",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "21@sage-index.local",
+    "username": "21",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 740,
+    "matricule": "24",
+    "fullName": "KHALOUI YOUSSEF",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE SYSTEM & FOURNISSUER",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "24@sage-index.local",
+    "username": "24",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 752,
+    "matricule": "48",
+    "fullName": "AMRI HAMDI",
+    "department": "FINANCE",
+    "jobTitle": "RESP COMPTA & FINANCE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "48@sage-index.local",
+    "username": "48",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 759,
+    "matricule": "55",
+    "fullName": "BOUGHANMI NABILA",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "FORMATRICE DE PRODUCTION",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "55@sage-index.local",
+    "username": "55",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 772,
+    "matricule": "76",
+    "fullName": "ZITOUNI SANA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "76@sage-index.local",
+    "username": "76",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 773,
+    "matricule": "77",
+    "fullName": "ZOUAOUI AMENI",
+    "department": "COUPE",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "SLAMA HAITHEM",
+    "email": "77@sage-index.local",
+    "username": "77",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 779,
+    "matricule": "80",
+    "fullName": "HEDHLI DONIA",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "HARRAN MOHAMED MALEK",
+    "email": "80@sage-index.local",
+    "username": "80",
+    "employeeStatus": "Ancien employé",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 797,
+    "matricule": "90",
+    "fullName": "MEJRI MARIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "90@sage-index.local",
+    "username": "90",
+    "employeeStatus": "Ancien employé",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 801,
+    "matricule": "97",
+    "fullName": "OUESLATI RIHAB",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "SENDESNI FAOUZI",
+    "email": "97@sage-index.local",
+    "username": "97",
+    "employeeStatus": "Ancien employé",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1629,
+    "matricule": "126",
+    "fullName": "BEL AOUADHI SABRINE",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUKESRA MOHAMED AMINE",
+    "email": "126@sage-index.local",
+    "username": "126",
+    "employeeStatus": "Ancien employé",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1633,
+    "matricule": "143",
+    "fullName": "TABOUBI NAJLA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "143@sage-index.local",
+    "username": "143",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1635,
+    "matricule": "146",
+    "fullName": "ZOUAGHI IKRAM",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "146@sage-index.local",
+    "username": "146",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1636,
+    "matricule": "148",
+    "fullName": "SGHAIER HOUCEM",
+    "department": "LOGISTIQUE",
+    "jobTitle": "APPROVISIONNEUR",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "148@sage-index.local",
+    "username": "148",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1645,
+    "matricule": "156",
+    "fullName": "TOUHAMI MERIAM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "SENDESNI FAOUZI",
+    "email": "156@sage-index.local",
+    "username": "156",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1669,
+    "matricule": "184",
+    "fullName": "ELAIR KARIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "184@sage-index.local",
+    "username": "184",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 284,
+    "matricule": "222",
+    "fullName": "BENMOUSSA MABROUK",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "222@sage-index.local",
+    "username": "222",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 313,
+    "matricule": "285",
+    "fullName": "SABBAHI MERIAM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "285@sage-index.local",
+    "username": "285",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 322,
+    "matricule": "291",
+    "fullName": "BOUTHOURI AHLEM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "291@sage-index.local",
+    "username": "291",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 698,
+    "matricule": "309",
+    "fullName": "KHLIFI MOHAMED",
+    "department": "MAINTENANCE",
+    "jobTitle": "SUPERVISEUR MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "309@sage-index.local",
+    "username": "309",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 714,
+    "matricule": "316",
+    "fullName": "BEN JEBRIL SIWAR",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "316@sage-index.local",
+    "username": "316",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 744,
+    "matricule": "375",
+    "fullName": "ENNABLI RANIA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "375@sage-index.local",
+    "username": "375",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 749,
+    "matricule": "385",
+    "fullName": "RAHALI OUMAYMA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "385@sage-index.local",
+    "username": "385",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 750,
+    "matricule": "386",
+    "fullName": "MEKNI HAYKEL",
+    "department": "MAINTENANCE",
+    "jobTitle": "SUPERVISEUR MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "386@sage-index.local",
+    "username": "386",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 751,
+    "matricule": "388",
+    "fullName": "BEN JERBANIA SEIFEDDINE",
+    "department": "COUPE",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "SLAMA HAITHEM",
+    "email": "388@sage-index.local",
+    "username": "388",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1169,
+    "matricule": "411",
+    "fullName": "OUNI ISSAM",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "411@sage-index.local",
+    "username": "411",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1173,
+    "matricule": "414",
+    "fullName": "TOUJANI INES",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "414@sage-index.local",
+    "username": "414",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1200,
+    "matricule": "430",
+    "fullName": "MAHMLI SAMIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "430@sage-index.local",
+    "username": "430",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1210,
+    "matricule": "441",
+    "fullName": "NOURI WASSIM",
+    "department": "INGENIERIE",
+    "jobTitle": "TECHNICIEN CAO & MÉTHODES",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "441@sage-index.local",
+    "username": "441",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1211,
+    "matricule": "442",
+    "fullName": "BEN TILI GHASSEN",
+    "department": "INGENIERIE",
+    "jobTitle": "ACHAT GÉNÉRAUX",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "442@sage-index.local",
+    "username": "442",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1235,
+    "matricule": "476",
+    "fullName": "ARFAOUI IBTISSEM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "476@sage-index.local",
+    "username": "476",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1550,
+    "matricule": "525",
+    "fullName": "HKIRI TAJA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "525@sage-index.local",
+    "username": "525",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1551,
+    "matricule": "526",
+    "fullName": "NAMOUCHI SAFA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "526@sage-index.local",
+    "username": "526",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1620,
+    "matricule": "582",
+    "fullName": "NASRAOUI HASNA",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "582@sage-index.local",
+    "username": "582",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1622,
+    "matricule": "583",
+    "fullName": "FERCHICHI ACHRAF",
+    "department": "QUALITE",
+    "jobTitle": "AUDITEUR QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "583@sage-index.local",
+    "username": "583",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1624,
+    "matricule": "588",
+    "fullName": "AZZOUNI ABDELKARIM",
+    "department": "INGENIERIE",
+    "jobTitle": "INGENIEUR PROCESS",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "588@sage-index.local",
+    "username": "588",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 171,
+    "matricule": "604",
+    "fullName": "CHEBBI AMEL",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "604@sage-index.local",
+    "username": "604",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 190,
+    "matricule": "612",
+    "fullName": "RIAHI SAADIA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "612@sage-index.local",
+    "username": "612",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 213,
+    "matricule": "625",
+    "fullName": "HARRAN MOHAMED MALEK",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "625@sage-index.local",
+    "username": "625",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 214,
+    "matricule": "627",
+    "fullName": "OUESLATI MAHA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUKESRA MOHAMED AMINE",
+    "email": "627@sage-index.local",
+    "username": "627",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 243,
+    "matricule": "650",
+    "fullName": "OUERTATANI SAMIHA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "650@sage-index.local",
+    "username": "650",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 244,
+    "matricule": "651",
+    "fullName": "ZOUAOUI ASMA",
+    "department": "LOGISTIQUE",
+    "jobTitle": "APPROVISIONNEUR",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "651@sage-index.local",
+    "username": "651",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 251,
+    "matricule": "664",
+    "fullName": "TARHOUNI FATEN",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "ZARAI ABDELHALIM",
+    "email": "664@sage-index.local",
+    "username": "664",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 263,
+    "matricule": "670",
+    "fullName": "MAHMOUDI SOUMAYA",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "670@sage-index.local",
+    "username": "670",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 266,
+    "matricule": "678",
+    "fullName": "KHSIB NAOUEL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ZARAI ABDELHALIM",
+    "email": "678@sage-index.local",
+    "username": "678",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 274,
+    "matricule": "681",
+    "fullName": "ZARAI ABDELHALIM",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "681@sage-index.local",
+    "username": "681",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 629,
+    "matricule": "733",
+    "fullName": "BEN ZARROUK MOUNA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "733@sage-index.local",
+    "username": "733",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 640,
+    "matricule": "742",
+    "fullName": "JELASSI OUSSAMA",
+    "department": "LOGISTIQUE",
+    "jobTitle": "SUPERVISEUR LOGISTIQUE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "742@sage-index.local",
+    "username": "742",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 645,
+    "matricule": "744",
+    "fullName": "RIHANI HABIB",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "744@sage-index.local",
+    "username": "744",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 650,
+    "matricule": "750",
+    "fullName": "BEN ZARROUK KAOUTHAR",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "750@sage-index.local",
+    "username": "750",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 652,
+    "matricule": "752",
+    "fullName": "SELLAMI HAJER",
+    "department": "LOGISTIQUE",
+    "jobTitle": "COORDINATRICE LOGISTIQUE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "752@sage-index.local",
+    "username": "752",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 670,
+    "matricule": "768",
+    "fullName": "MASSOUD ABIR",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "768@sage-index.local",
+    "username": "768",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 678,
+    "matricule": "771",
+    "fullName": "CHEKER CHOKRI",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "771@sage-index.local",
+    "username": "771",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 703,
+    "matricule": "790",
+    "fullName": "DAAGI OUMAYMA",
+    "department": "COUPE",
+    "jobTitle": "SPECIALIST FLUX COUPE",
+    "workType": "INDIRECTS",
+    "supervisor": "SLAMA HAITHEM",
+    "email": "790@sage-index.local",
+    "username": "790",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 704,
+    "matricule": "791",
+    "fullName": "RMILA ISMAIL",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "791@sage-index.local",
+    "username": "791",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 707,
+    "matricule": "794",
+    "fullName": "HBIBI MAHER",
+    "department": "LOGISTIQUE",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "794@sage-index.local",
+    "username": "794",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 998,
+    "matricule": "807",
+    "fullName": "BEN BOUTERAA RYM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "ZARAI ABDELHALIM",
+    "email": "807@sage-index.local",
+    "username": "807",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1055,
+    "matricule": "834",
+    "fullName": "JABRI CHOKRI",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "834@sage-index.local",
+    "username": "834",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1080,
+    "matricule": "849",
+    "fullName": "HAMMAMI SAMEH",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "RMILA ISMAIL",
+    "email": "849@sage-index.local",
+    "username": "849",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1094,
+    "matricule": "854",
+    "fullName": "AMDOUNI KHALED",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "854@sage-index.local",
+    "username": "854",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1096,
+    "matricule": "855",
+    "fullName": "MHAMDI ANIS",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "855@sage-index.local",
+    "username": "855",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1097,
+    "matricule": "856",
+    "fullName": "BOUDHIAFI FAKHREDDINE",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "856@sage-index.local",
+    "username": "856",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1135,
+    "matricule": "878",
+    "fullName": "FAIDI AMEL",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "878@sage-index.local",
+    "username": "878",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1154,
+    "matricule": "887",
+    "fullName": "ARFAOUI SOUMAYA",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "887@sage-index.local",
+    "username": "887",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1353,
+    "matricule": "906",
+    "fullName": "TLILI IMEN",
+    "department": "LOGISTIQUE",
+    "jobTitle": "RESPONSABLE APPROVISIONNEMENT",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "906@sage-index.local",
+    "username": "906",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1398,
+    "matricule": "924",
+    "fullName": "MEHREZ OUMAYMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "924@sage-index.local",
+    "username": "924",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1432,
+    "matricule": "941",
+    "fullName": "NAHDI WASSIM",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MACHINE A COUDRE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "941@sage-index.local",
+    "username": "941",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 127,
+    "matricule": "1006",
+    "fullName": "HAFSAOUI MARWA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "RMILA ISMAIL",
+    "email": "1006@sage-index.local",
+    "username": "1006",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 126,
+    "matricule": "1007",
+    "fullName": "HANACHI AROUA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "1007@sage-index.local",
+    "username": "1007",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 146,
+    "matricule": "1018",
+    "fullName": "MELKI EYA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "1018@sage-index.local",
+    "username": "1018",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 202,
+    "matricule": "1053",
+    "fullName": "ALOUANE ADEL",
+    "department": "LOGISTIQUE",
+    "jobTitle": "RESPONSABLE MAGASIN",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1053@sage-index.local",
+    "username": "1053",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 219,
+    "matricule": "1062",
+    "fullName": "SAHBANI MERIAM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "1062@sage-index.local",
+    "username": "1062",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 242,
+    "matricule": "1081",
+    "fullName": "SALLAMI AMAL",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "1081@sage-index.local",
+    "username": "1081",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 236,
+    "matricule": "1086",
+    "fullName": "SLAMA HAITHEM",
+    "department": "PRODUCTION",
+    "jobTitle": "RESPONSABLE COUPE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1086@sage-index.local",
+    "username": "1086",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 513,
+    "matricule": "1107",
+    "fullName": "AMDOUNI AWATEF",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "1107@sage-index.local",
+    "username": "1107",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 541,
+    "matricule": "1112",
+    "fullName": "AOUIMRI FAYCAL",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MACHINE A COUDRE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "1112@sage-index.local",
+    "username": "1112",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 539,
+    "matricule": "1114",
+    "fullName": "HEDHLI INES",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "HARRAN MOHAMED MALEK",
+    "email": "1114@sage-index.local",
+    "username": "1114",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 537,
+    "matricule": "1115",
+    "fullName": "SENDESNI FAOUZI",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1115@sage-index.local",
+    "username": "1115",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 565,
+    "matricule": "1124",
+    "fullName": "MOUALHI MOHAMED AMINE",
+    "department": "COUPE",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "SLAMA HAITHEM",
+    "email": "1124@sage-index.local",
+    "username": "1124",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 586,
+    "matricule": "1135",
+    "fullName": "SAKR LARA",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "FORMATRICE DE PRODUCTION",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1135@sage-index.local",
+    "username": "1135",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 644,
+    "matricule": "1167",
+    "fullName": "AKERMI MOUNA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "1167@sage-index.local",
+    "username": "1167",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 633,
+    "matricule": "1176",
+    "fullName": "NAHDI RIHAB",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "1176@sage-index.local",
+    "username": "1176",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 655,
+    "matricule": "1177",
+    "fullName": "AMMOURI ESSIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "SENDESNI FAOUZI",
+    "email": "1177@sage-index.local",
+    "username": "1177",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 649,
+    "matricule": "1180",
+    "fullName": "EL MCHIRGUI MONCEF",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "HR MANAGER",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1180@sage-index.local",
+    "username": "1180",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 972,
+    "matricule": "1213",
+    "fullName": "MEJRI GHOFRAN",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "SENDESNI FAOUZI",
+    "email": "1213@sage-index.local",
+    "username": "1213",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 970,
+    "matricule": "1215",
+    "fullName": "ARAFA MOHAMED AMINE",
+    "department": "QUALITE",
+    "jobTitle": "MANAGER QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1215@sage-index.local",
+    "username": "1215",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 968,
+    "matricule": "1216",
+    "fullName": "TRABELSI NABIL",
+    "department": "COUPE",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "SLAMA HAITHEM",
+    "email": "1216@sage-index.local",
+    "username": "1216",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 986,
+    "matricule": "1227",
+    "fullName": "FKIRI AMAL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "1227@sage-index.local",
+    "username": "1227",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 981,
+    "matricule": "1230",
+    "fullName": "MSAADIYA AMAL",
+    "department": "COUPE",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "SLAMA HAITHEM",
+    "email": "1230@sage-index.local",
+    "username": "1230",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1007,
+    "matricule": "1235",
+    "fullName": "TRABELSI GHASSEN",
+    "department": "IT",
+    "jobTitle": "INGENIEUR IT",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1235@sage-index.local",
+    "username": "1235",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1019,
+    "matricule": "1253",
+    "fullName": "SALLAMI CHAIMA",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE PROJET/ CLIENT",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1253@sage-index.local",
+    "username": "1253",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1082,
+    "matricule": "1285",
+    "fullName": "BARHOUMI YOSRA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "1285@sage-index.local",
+    "username": "1285",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1113,
+    "matricule": "1287",
+    "fullName": "MEHMLI AZZA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "RMILA ISMAIL",
+    "email": "1287@sage-index.local",
+    "username": "1287",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1320,
+    "matricule": "1300",
+    "fullName": "TAHRI FAYCEL",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1300@sage-index.local",
+    "username": "1300",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1314,
+    "matricule": "1303",
+    "fullName": "FATNASSI RIADH",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "1303@sage-index.local",
+    "username": "1303",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1395,
+    "matricule": "1342",
+    "fullName": "FAIDI AFEF",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "SENDESNI FAOUZI",
+    "email": "1342@sage-index.local",
+    "username": "1342",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1385,
+    "matricule": "1348",
+    "fullName": "SGHAIER FATEN",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "1348@sage-index.local",
+    "username": "1348",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1411,
+    "matricule": "1355",
+    "fullName": "JELASSI HANEN",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "1355@sage-index.local",
+    "username": "1355",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1409,
+    "matricule": "1356",
+    "fullName": "CHAABENI EMNA",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "1356@sage-index.local",
+    "username": "1356",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1448,
+    "matricule": "1377",
+    "fullName": "JABRI SENDA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "1377@sage-index.local",
+    "username": "1377",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 3,
+    "matricule": "1382",
+    "fullName": "OTHMANI BOULBABA",
+    "department": "LOGISTIQUE",
+    "jobTitle": "PLANIFICATEUR",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1382@sage-index.local",
+    "username": "1382",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1440,
+    "matricule": "1383",
+    "fullName": "JELASSI HAMIDA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "1383@sage-index.local",
+    "username": "1383",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1718,
+    "matricule": "1408",
+    "fullName": "NASRAOUI SOFIEN",
+    "department": "PRODUCTION",
+    "jobTitle": "COORDINATEUR PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1408@sage-index.local",
+    "username": "1408",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1761,
+    "matricule": "1451",
+    "fullName": "CHAABENI SABRINE",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "TRAINING SPECIALIST",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1451@sage-index.local",
+    "username": "1451",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 124,
+    "matricule": "1490",
+    "fullName": "MEDDEB AYMEN",
+    "department": "MAINTENANCE",
+    "jobTitle": "RESPONSABLE MAINTENANCE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1490@sage-index.local",
+    "username": "1490",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 390,
+    "matricule": "1525",
+    "fullName": "ARBI YASSINE",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MACHINE A COUDRE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "1525@sage-index.local",
+    "username": "1525",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 403,
+    "matricule": "1529",
+    "fullName": "NASRI YOSSRA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "1529@sage-index.local",
+    "username": "1529",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 450,
+    "matricule": "1556",
+    "fullName": "BRAHMI MASSOUD",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1556@sage-index.local",
+    "username": "1556",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 444,
+    "matricule": "1560",
+    "fullName": "CHELBI FATHI",
+    "department": "INGENIERIE",
+    "jobTitle": "RESPONSABLE  INGENIERIE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1560@sage-index.local",
+    "username": "1560",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 443,
+    "matricule": "1561",
+    "fullName": "OUERHANI JIHENE",
+    "department": "INGENIERIE",
+    "jobTitle": "CHEF DE PROJET",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1561@sage-index.local",
+    "username": "1561",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 495,
+    "matricule": "1573",
+    "fullName": "HAMMAMI GHOFRANE",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "1573@sage-index.local",
+    "username": "1573",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 786,
+    "matricule": "1605",
+    "fullName": "IBRAHMIA GHADA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "1605@sage-index.local",
+    "username": "1605",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 805,
+    "matricule": "1614",
+    "fullName": "JEBALI AREM",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "1614@sage-index.local",
+    "username": "1614",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 802,
+    "matricule": "1615",
+    "fullName": "MKAIDI YOSRA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "1615@sage-index.local",
+    "username": "1615",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 835,
+    "matricule": "1631",
+    "fullName": "BEN JERBANIA SAHAR",
+    "department": "LOGISTIQUE",
+    "jobTitle": "JIT OPERATOR",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "1631@sage-index.local",
+    "username": "1631",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 846,
+    "matricule": "1636",
+    "fullName": "MAAOUI MARWEN",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUKESRA MOHAMED AMINE",
+    "email": "1636@sage-index.local",
+    "username": "1636",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 890,
+    "matricule": "1651",
+    "fullName": "MAALAOUI MOHAMED",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1651@sage-index.local",
+    "username": "1651",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 883,
+    "matricule": "1654",
+    "fullName": "EL KADRI MARIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1654@sage-index.local",
+    "username": "1654",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 904,
+    "matricule": "1668",
+    "fullName": "MARZOUKI MARWA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "1668@sage-index.local",
+    "username": "1668",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 934,
+    "matricule": "1674",
+    "fullName": "EL MOZZI MOLKA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "1674@sage-index.local",
+    "username": "1674",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1255,
+    "matricule": "1702",
+    "fullName": "OUESLATI MOHAMED MALEK",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1702@sage-index.local",
+    "username": "1702",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1253,
+    "matricule": "1705",
+    "fullName": "JABRI SANA",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "1705@sage-index.local",
+    "username": "1705",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1261,
+    "matricule": "1711",
+    "fullName": "HAMMAMI RIHAB",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "SENDESNI FAOUZI",
+    "email": "1711@sage-index.local",
+    "username": "1711",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1264,
+    "matricule": "1715",
+    "fullName": "NEFZI SEIF EDDINE",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "1715@sage-index.local",
+    "username": "1715",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1266,
+    "matricule": "1729",
+    "fullName": "SOUIDI AMENI",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "1729@sage-index.local",
+    "username": "1729",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1269,
+    "matricule": "1733",
+    "fullName": "GANOUATI HANEN",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MAALAOUI MOHAMED",
+    "email": "1733@sage-index.local",
+    "username": "1733",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1274,
+    "matricule": "1742",
+    "fullName": "ADJMI ABDENNACEUR",
+    "department": "LOGISTIQUE",
+    "jobTitle": "RESPONSABLE LOGISTIQUE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1742@sage-index.local",
+    "username": "1742",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1280,
+    "matricule": "1754",
+    "fullName": "MAAFI AMAL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "1754@sage-index.local",
+    "username": "1754",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1639,
+    "matricule": "1805",
+    "fullName": "GARSI SALOUA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "1805@sage-index.local",
+    "username": "1805",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1638,
+    "matricule": "1806",
+    "fullName": "SEDIRI ABIR",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "1806@sage-index.local",
+    "username": "1806",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1657,
+    "matricule": "1828",
+    "fullName": "REBAII HAIFA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "1828@sage-index.local",
+    "username": "1828",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1682,
+    "matricule": "1866",
+    "fullName": "MOUMNI SEIFEDDINE",
+    "department": "LOGISTIQUE",
+    "jobTitle": "INVENTORISTE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "1866@sage-index.local",
+    "username": "1866",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1692,
+    "matricule": "1867",
+    "fullName": "BEN ROMDHANE BALSIM",
+    "department": "LOGISTIQUE",
+    "jobTitle": "APPROVISIONNEUR",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1867@sage-index.local",
+    "username": "1867",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1701,
+    "matricule": "1872",
+    "fullName": "KOUKI TAKWA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "1872@sage-index.local",
+    "username": "1872",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1699,
+    "matricule": "1874",
+    "fullName": "ALAYA MAKREM",
+    "department": "LOGISTIQUE",
+    "jobTitle": "PLANIFICATEUR",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1874@sage-index.local",
+    "username": "1874",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1711,
+    "matricule": "1887",
+    "fullName": "JLASSI IMENE",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "MEJRI SAFA",
+    "email": "1887@sage-index.local",
+    "username": "1887",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 291,
+    "matricule": "1901",
+    "fullName": "BOUSELMI MOEZ",
+    "department": "INGENIERIE",
+    "jobTitle": "TECHNICIEN CAO",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1901@sage-index.local",
+    "username": "1901",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 301,
+    "matricule": "1924",
+    "fullName": "SASSI MOHAMED",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MACHINE A COUDRE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "1924@sage-index.local",
+    "username": "1924",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 299,
+    "matricule": "1928",
+    "fullName": "ATHIMNI HANEN",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "1928@sage-index.local",
+    "username": "1928",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 304,
+    "matricule": "1930",
+    "fullName": "ANDOLSI LATIFA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "1930@sage-index.local",
+    "username": "1930",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 302,
+    "matricule": "1932",
+    "fullName": "JOUINI KHOULOUD",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HOMRANI FOUED",
+    "email": "1932@sage-index.local",
+    "username": "1932",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 309,
+    "matricule": "1934",
+    "fullName": "SMAALI SOUFIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "1934@sage-index.local",
+    "username": "1934",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 308,
+    "matricule": "1935",
+    "fullName": "RIAHI ARIJ",
+    "department": "QUALITE",
+    "jobTitle": "AUDITRICE",
+    "workType": "INDIRECTS",
+    "supervisor": "HARRAN MOHAMED MALEK",
+    "email": "1935@sage-index.local",
+    "username": "1935",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 307,
+    "matricule": "1937",
+    "fullName": "KLAI AHMED",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "1937@sage-index.local",
+    "username": "1937",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 306,
+    "matricule": "1938",
+    "fullName": "BARKAOUI ABIR",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "1938@sage-index.local",
+    "username": "1938",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 315,
+    "matricule": "1942",
+    "fullName": "SALLEMI RANIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "1942@sage-index.local",
+    "username": "1942",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 318,
+    "matricule": "1947",
+    "fullName": "HAMMAMI RIHAB",
+    "department": "LOGISTIQUE",
+    "jobTitle": "PLANIFICATEUR",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1947@sage-index.local",
+    "username": "1947",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 341,
+    "matricule": "1961",
+    "fullName": "HIDRI RAED",
+    "department": "QUALITE",
+    "jobTitle": "TECHNICIEN AMÉLIORATION CONTINUE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "1961@sage-index.local",
+    "username": "1961",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 338,
+    "matricule": "1963",
+    "fullName": "SALLEMI NESRINE",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "MAALAOUI MOHAMED",
+    "email": "1963@sage-index.local",
+    "username": "1963",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 361,
+    "matricule": "1977",
+    "fullName": "BEN AMMAR AMIRA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "1977@sage-index.local",
+    "username": "1977",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 359,
+    "matricule": "1978",
+    "fullName": "EL FALLAH SARRA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "1978@sage-index.local",
+    "username": "1978",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 642,
+    "matricule": "2015",
+    "fullName": "BEJAOUI NAJLA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2015@sage-index.local",
+    "username": "2015",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 679,
+    "matricule": "2049",
+    "fullName": "TRABELSI NOURA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2049@sage-index.local",
+    "username": "2049",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 674,
+    "matricule": "2053",
+    "fullName": "BAHROUNI YAMINA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2053@sage-index.local",
+    "username": "2053",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 673,
+    "matricule": "2054",
+    "fullName": "HAMDI HEDIA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2054@sage-index.local",
+    "username": "2054",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 696,
+    "matricule": "2058",
+    "fullName": "NSAIBI AMEL",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2058@sage-index.local",
+    "username": "2058",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 695,
+    "matricule": "2059",
+    "fullName": "ARFEOUI FAOUZIA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2059@sage-index.local",
+    "username": "2059",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1056,
+    "matricule": "2109",
+    "fullName": "TALBI YOSRA",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "2109@sage-index.local",
+    "username": "2109",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1076,
+    "matricule": "2112",
+    "fullName": "ESSGHAIER OMAR",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2112@sage-index.local",
+    "username": "2112",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1064,
+    "matricule": "2118",
+    "fullName": "BOUGHDIRI CHAIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "2118@sage-index.local",
+    "username": "2118",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1063,
+    "matricule": "2119",
+    "fullName": "YAAKOUB MOHAMED",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "2119@sage-index.local",
+    "username": "2119",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1059,
+    "matricule": "2121",
+    "fullName": "HAMMAMI RAHMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "2121@sage-index.local",
+    "username": "2121",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1152,
+    "matricule": "2157",
+    "fullName": "ALOUI RAHMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "2157@sage-index.local",
+    "username": "2157",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1143,
+    "matricule": "2161",
+    "fullName": "TRABELSI RIM",
+    "department": "LOGISTIQUE",
+    "jobTitle": "TECHNICIEN TRANSPORT",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2161@sage-index.local",
+    "username": "2161",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1141,
+    "matricule": "2162",
+    "fullName": "HOMRANI FOUED",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2162@sage-index.local",
+    "username": "2162",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1186,
+    "matricule": "2179",
+    "fullName": "GHOZI NEDIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUKESRA MOHAMED AMINE",
+    "email": "2179@sage-index.local",
+    "username": "2179",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1184,
+    "matricule": "2181",
+    "fullName": "BOUANI ARBIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "2181@sage-index.local",
+    "username": "2181",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1183,
+    "matricule": "2182",
+    "fullName": "OUNISSI WAFA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MAALAOUI MOHAMED",
+    "email": "2182@sage-index.local",
+    "username": "2182",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1181,
+    "matricule": "2185",
+    "fullName": "JALLALI WAHIBA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEJRI SAFA",
+    "email": "2185@sage-index.local",
+    "username": "2185",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1179,
+    "matricule": "2186",
+    "fullName": "HABECHI SALIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "2186@sage-index.local",
+    "username": "2186",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1177,
+    "matricule": "2187",
+    "fullName": "HAMMAMI BILEL",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2187@sage-index.local",
+    "username": "2187",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1199,
+    "matricule": "2192",
+    "fullName": "REFAOUI MARIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HOMRANI FOUED",
+    "email": "2192@sage-index.local",
+    "username": "2192",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1194,
+    "matricule": "2195",
+    "fullName": "NEJI TAHA",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MACHINE A COUDRE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "2195@sage-index.local",
+    "username": "2195",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1191,
+    "matricule": "2199",
+    "fullName": "MEJRI SAFA",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2199@sage-index.local",
+    "username": "2199",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1419,
+    "matricule": "2208",
+    "fullName": "BOUKESRA MOHAMED AMINE",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2208@sage-index.local",
+    "username": "2208",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1428,
+    "matricule": "2214",
+    "fullName": "ZAGHDOUDI MOUNA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BEN RHOUMA KIRAM",
+    "email": "2214@sage-index.local",
+    "username": "2214",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1445,
+    "matricule": "2226",
+    "fullName": "BELHAJ MOHAMED",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2226@sage-index.local",
+    "username": "2226",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1505,
+    "matricule": "2259",
+    "fullName": "MASSOUDI WAFA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "SENDESNI FAOUZI",
+    "email": "2259@sage-index.local",
+    "username": "2259",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1557,
+    "matricule": "2295",
+    "fullName": "JELASSI CHAIMA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2295@sage-index.local",
+    "username": "2295",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1555,
+    "matricule": "2298",
+    "fullName": "BAKOUCHI NABIHA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "HARRAN MOHAMED MALEK",
+    "email": "2298@sage-index.local",
+    "username": "2298",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 63,
+    "matricule": "2302",
+    "fullName": "JEMAII ICHRAK",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "2302@sage-index.local",
+    "username": "2302",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 60,
+    "matricule": "2303",
+    "fullName": "ARFA AMEL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "2303@sage-index.local",
+    "username": "2303",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 99,
+    "matricule": "2319",
+    "fullName": "BRAHMI ISLEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HOMRANI FOUED",
+    "email": "2319@sage-index.local",
+    "username": "2319",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 76,
+    "matricule": "2320",
+    "fullName": "GUESMI EYA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "2320@sage-index.local",
+    "username": "2320",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 105,
+    "matricule": "2327",
+    "fullName": "ANIS SBOURI",
+    "department": "INGENIERIE",
+    "jobTitle": "CHEF DE PROJET",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2327@sage-index.local",
+    "username": "2327",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 133,
+    "matricule": "2333",
+    "fullName": "BEN ABDALLAH SIRINE",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "AIDE SOIGNANTE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2333@sage-index.local",
+    "username": "2333",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 145,
+    "matricule": "2350",
+    "fullName": "HAMDOUNI HENDA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "2350@sage-index.local",
+    "username": "2350",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 177,
+    "matricule": "2373",
+    "fullName": "RIHANI MARIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "2373@sage-index.local",
+    "username": "2373",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 218,
+    "matricule": "2395",
+    "fullName": "HAMMAMI LABIB",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2395@sage-index.local",
+    "username": "2395",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 217,
+    "matricule": "2396",
+    "fullName": "ABIDLI MEHREZ",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2396@sage-index.local",
+    "username": "2396",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 455,
+    "matricule": "2400",
+    "fullName": "LAABIDI MAHA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "2400@sage-index.local",
+    "username": "2400",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 475,
+    "matricule": "2413",
+    "fullName": "MARZOUKI AYOUB",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2413@sage-index.local",
+    "username": "2413",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 490,
+    "matricule": "2427",
+    "fullName": "BOUKHADRA MARWEN",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MACHINE A COUDRE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "2427@sage-index.local",
+    "username": "2427",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 509,
+    "matricule": "2441",
+    "fullName": "AMIRI AHLEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "2441@sage-index.local",
+    "username": "2441",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 567,
+    "matricule": "2453",
+    "fullName": "HKIRI BALKIS",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "2453@sage-index.local",
+    "username": "2453",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 556,
+    "matricule": "2462",
+    "fullName": "BENI OMAR CHAIMA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2462@sage-index.local",
+    "username": "2462",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 624,
+    "matricule": "2491",
+    "fullName": "MEJRI DALEL",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2491@sage-index.local",
+    "username": "2491",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 641,
+    "matricule": "2499",
+    "fullName": "OUELHEZI WISSAL",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2499@sage-index.local",
+    "username": "2499",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 907,
+    "matricule": "2514",
+    "fullName": "AKARI MAROUA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BELHAJ MOHAMED",
+    "email": "2514@sage-index.local",
+    "username": "2514",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 905,
+    "matricule": "2515",
+    "fullName": "MEJRI ALTAF",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "2515@sage-index.local",
+    "username": "2515",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 919,
+    "matricule": "2518",
+    "fullName": "JEBALI NOUR",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "2518@sage-index.local",
+    "username": "2518",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 917,
+    "matricule": "2519",
+    "fullName": "SAIDANI RIHAB",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2519@sage-index.local",
+    "username": "2519",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 933,
+    "matricule": "2522",
+    "fullName": "NAFETI WALA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "2522@sage-index.local",
+    "username": "2522",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 931,
+    "matricule": "2524",
+    "fullName": "HAMDI AMAL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "AMRI OUSSEM EDDINE",
+    "email": "2524@sage-index.local",
+    "username": "2524",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 927,
+    "matricule": "2526",
+    "fullName": "ROMDHANI NADA",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2526@sage-index.local",
+    "username": "2526",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 955,
+    "matricule": "2531",
+    "fullName": "JRIDI MARIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUKESRA MOHAMED AMINE",
+    "email": "2531@sage-index.local",
+    "username": "2531",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 949,
+    "matricule": "2537",
+    "fullName": "JLASSI KHAOULA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "2537@sage-index.local",
+    "username": "2537",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 963,
+    "matricule": "2539",
+    "fullName": "FATNASSI HALIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEJRI SAFA",
+    "email": "2539@sage-index.local",
+    "username": "2539",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 982,
+    "matricule": "2561",
+    "fullName": "KHALOUI INTISSAR",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2561@sage-index.local",
+    "username": "2561",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1008,
+    "matricule": "2565",
+    "fullName": "ABBASSI MANEL",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "2565@sage-index.local",
+    "username": "2565",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1030,
+    "matricule": "2575",
+    "fullName": "JAFELI FAIZA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "OUESLATI MOHAMED MALEK",
+    "email": "2575@sage-index.local",
+    "username": "2575",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1021,
+    "matricule": "2582",
+    "fullName": "BOUTHOURI IKRAM",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2582@sage-index.local",
+    "username": "2582",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1288,
+    "matricule": "2606",
+    "fullName": "OUNI HANENE",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2606@sage-index.local",
+    "username": "2606",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1299,
+    "matricule": "2619",
+    "fullName": "MLIK MOHAMED ALI",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2619@sage-index.local",
+    "username": "2619",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1309,
+    "matricule": "2627",
+    "fullName": "JBELI ACHREF",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2627@sage-index.local",
+    "username": "2627",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1308,
+    "matricule": "2628",
+    "fullName": "DRIDI OUMAIMA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2628@sage-index.local",
+    "username": "2628",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1323,
+    "matricule": "2630",
+    "fullName": "CHEBI TAKWA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2630@sage-index.local",
+    "username": "2630",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1319,
+    "matricule": "2632",
+    "fullName": "BEN ARBIA SAMIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HOMRANI FOUED",
+    "email": "2632@sage-index.local",
+    "username": "2632",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1315,
+    "matricule": "2634",
+    "fullName": "MELLITI DORSAF",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "HARRAN MOHAMED MALEK",
+    "email": "2634@sage-index.local",
+    "username": "2634",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1313,
+    "matricule": "2635",
+    "fullName": "BEN FADHILA MARWA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "2635@sage-index.local",
+    "username": "2635",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1325,
+    "matricule": "2638",
+    "fullName": "GHARRASS CHAIMA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2638@sage-index.local",
+    "username": "2638",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1336,
+    "matricule": "2640",
+    "fullName": "BAHLOULI DALANDA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "2640@sage-index.local",
+    "username": "2640",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1374,
+    "matricule": "2662",
+    "fullName": "TRABELSSI MOHAMED",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2662@sage-index.local",
+    "username": "2662",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1365,
+    "matricule": "2667",
+    "fullName": "LAMOUCHI FERIEL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEJRI SAFA",
+    "email": "2667@sage-index.local",
+    "username": "2667",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1359,
+    "matricule": "2670",
+    "fullName": "NSIRI HAJER",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2670@sage-index.local",
+    "username": "2670",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1357,
+    "matricule": "2672",
+    "fullName": "JLASSI HASSNA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "2672@sage-index.local",
+    "username": "2672",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1434,
+    "matricule": "2695",
+    "fullName": "FERJANI SABRINE",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2695@sage-index.local",
+    "username": "2695",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1429,
+    "matricule": "2698",
+    "fullName": "AMDOUNI AIDA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2698@sage-index.local",
+    "username": "2698",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1426,
+    "matricule": "2699",
+    "fullName": "JLASSI NESRINE",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2699@sage-index.local",
+    "username": "2699",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1681,
+    "matricule": "2703",
+    "fullName": "HAMMAMI FATMA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "HARRAN MOHAMED MALEK",
+    "email": "2703@sage-index.local",
+    "username": "2703",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1679,
+    "matricule": "2706",
+    "fullName": "DRIDI ZEINEB",
+    "department": "INGENIERIE",
+    "jobTitle": "TECHNICIEN MÉTHODE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2706@sage-index.local",
+    "username": "2706",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1678,
+    "matricule": "2707",
+    "fullName": "FATNASSI MOHAMED ALI",
+    "department": "LOGISTIQUE",
+    "jobTitle": "AGENT POLYVALENT",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2707@sage-index.local",
+    "username": "2707",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1691,
+    "matricule": "2715",
+    "fullName": "ATHIMNI OMAR",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2715@sage-index.local",
+    "username": "2715",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1702,
+    "matricule": "2728",
+    "fullName": "ACHOURI IMEN",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "2728@sage-index.local",
+    "username": "2728",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1715,
+    "matricule": "2732",
+    "fullName": "MZOUGHI AMAL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "TAHRI FAYCEL",
+    "email": "2732@sage-index.local",
+    "username": "2732",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1721,
+    "matricule": "2736",
+    "fullName": "OUNI MAROUA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BRAHMI MASSOUD",
+    "email": "2736@sage-index.local",
+    "username": "2736",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1727,
+    "matricule": "2741",
+    "fullName": "KERCHAOUI LATIFA",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2741@sage-index.local",
+    "username": "2741",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1746,
+    "matricule": "2758",
+    "fullName": "MBAREK DORSAF",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "2758@sage-index.local",
+    "username": "2758",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1744,
+    "matricule": "2759",
+    "fullName": "BOUKADI MONIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "OUNI ISSAM",
+    "email": "2759@sage-index.local",
+    "username": "2759",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1755,
+    "matricule": "2764",
+    "fullName": "MEKNI SONIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "2764@sage-index.local",
+    "username": "2764",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1748,
+    "matricule": "2771",
+    "fullName": "EL MAY SAFIA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2771@sage-index.local",
+    "username": "2771",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1773,
+    "matricule": "2775",
+    "fullName": "TOUATI INES",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2775@sage-index.local",
+    "username": "2775",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1766,
+    "matricule": "2779",
+    "fullName": "ROMDHANI HOUSSEM EDDINE",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "2779@sage-index.local",
+    "username": "2779",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1764,
+    "matricule": "2781",
+    "fullName": "BARAKETI INES",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2781@sage-index.local",
+    "username": "2781",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1762,
+    "matricule": "2782",
+    "fullName": "EL ABIEDH IBTIHEL",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "2782@sage-index.local",
+    "username": "2782",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 67,
+    "matricule": "2783",
+    "fullName": "GHAZOUANI NADA",
+    "department": "LOGISTIQUE",
+    "jobTitle": "PLANIFICATEUR",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2783@sage-index.local",
+    "username": "2783",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 66,
+    "matricule": "2784",
+    "fullName": "CHEBBI KHOULOUD",
+    "department": "QUALITE",
+    "jobTitle": "INGENIEUR QUALITE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2784@sage-index.local",
+    "username": "2784",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 65,
+    "matricule": "2785",
+    "fullName": "BEN HMIDA BILEL",
+    "department": "FINANCE",
+    "jobTitle": "COMPTABLE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2785@sage-index.local",
+    "username": "2785",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 64,
+    "matricule": "2786",
+    "fullName": "LAABIDI HICHEM",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2786@sage-index.local",
+    "username": "2786",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 61,
+    "matricule": "2787",
+    "fullName": "MASTOURI MOHAMED TEJ EDDINE",
+    "department": "INGENIERIE",
+    "jobTitle": "TECHNICIEN CAO",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2787@sage-index.local",
+    "username": "2787",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 55,
+    "matricule": "2790",
+    "fullName": "CHEBBI CHIHEB",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "2790@sage-index.local",
+    "username": "2790",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 54,
+    "matricule": "2791",
+    "fullName": "SDIRI AWATEF",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIENNE MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "2791@sage-index.local",
+    "username": "2791",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 88,
+    "matricule": "2798",
+    "fullName": "SAHLI WALID",
+    "department": "INGENIERIE",
+    "jobTitle": "CHEF DE PROJET",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2798@sage-index.local",
+    "username": "2798",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 348,
+    "matricule": "2815",
+    "fullName": "MAGHRAOUI MAROUA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "2815@sage-index.local",
+    "username": "2815",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 343,
+    "matricule": "2819",
+    "fullName": "SELMI TAREK",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MACHINE A COUDRE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "2819@sage-index.local",
+    "username": "2819",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 379,
+    "matricule": "2842",
+    "fullName": "BEN KHEDHER MOUNA",
+    "department": "QUALITE",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2842@sage-index.local",
+    "username": "2842",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 387,
+    "matricule": "2847",
+    "fullName": "ALOUI MOHAMED AMINE",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2847@sage-index.local",
+    "username": "2847",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 391,
+    "matricule": "2856",
+    "fullName": "MILI FAIZA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2856@sage-index.local",
+    "username": "2856",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 413,
+    "matricule": "2863",
+    "fullName": "JELASSI MARIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ZARAI ABDELHALIM",
+    "email": "2863@sage-index.local",
+    "username": "2863",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 422,
+    "matricule": "2878",
+    "fullName": "MANSOUR MOHAMED AYMEN",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2878@sage-index.local",
+    "username": "2878",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 453,
+    "matricule": "2885",
+    "fullName": "KASMI RAOUAA",
+    "department": "PRODUCTION",
+    "jobTitle": "TEAM LEADER",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "2885@sage-index.local",
+    "username": "2885",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 478,
+    "matricule": "2893",
+    "fullName": "MAAROUFI AKED",
+    "department": "PRODUCTION",
+    "jobTitle": "COORDINATEUR PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2893@sage-index.local",
+    "username": "2893",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 476,
+    "matricule": "2897",
+    "fullName": "RAHALI SOUMAYA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "2897@sage-index.local",
+    "username": "2897",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 473,
+    "matricule": "2899",
+    "fullName": "BOUALI SIRINE",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "2899@sage-index.local",
+    "username": "2899",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 753,
+    "matricule": "2900",
+    "fullName": "BOUALI DHEKRA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2900@sage-index.local",
+    "username": "2900",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 758,
+    "matricule": "2901",
+    "fullName": "NEFZI RIHAB",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2901@sage-index.local",
+    "username": "2901",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 757,
+    "matricule": "2902",
+    "fullName": "CHEBBI SOUMAYA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2902@sage-index.local",
+    "username": "2902",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 756,
+    "matricule": "2903",
+    "fullName": "KRIR MAHA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUI MOHAMED AMINE",
+    "email": "2903@sage-index.local",
+    "username": "2903",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 754,
+    "matricule": "2906",
+    "fullName": "MECHRGUI AROUA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "2906@sage-index.local",
+    "username": "2906",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 762,
+    "matricule": "2911",
+    "fullName": "SOUAOUA EMNA",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "2911@sage-index.local",
+    "username": "2911",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 767,
+    "matricule": "2914",
+    "fullName": "DARAJI SIWAR",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "2914@sage-index.local",
+    "username": "2914",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 771,
+    "matricule": "2925",
+    "fullName": "LAKTI WAFA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "2925@sage-index.local",
+    "username": "2925",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 770,
+    "matricule": "2927",
+    "fullName": "BOUALEG MOUNA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "2927@sage-index.local",
+    "username": "2927",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 791,
+    "matricule": "2934",
+    "fullName": "MEKNI TOUJENI CHEDLI",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2934@sage-index.local",
+    "username": "2934",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 789,
+    "matricule": "2935",
+    "fullName": "GASSOUMI MOHAMED",
+    "department": "INGENIERIE",
+    "jobTitle": "CHEF DE PROJET",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2935@sage-index.local",
+    "username": "2935",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 795,
+    "matricule": "2941",
+    "fullName": "SGHAIRI AHLEM",
+    "department": "INGENIERIE",
+    "jobTitle": "TECHNICIEN MÉTHODE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "2941@sage-index.local",
+    "username": "2941",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 803,
+    "matricule": "2946",
+    "fullName": "AMDOUNI TAHENI",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "2946@sage-index.local",
+    "username": "2946",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 800,
+    "matricule": "2947",
+    "fullName": "KOCHBATI EYA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2947@sage-index.local",
+    "username": "2947",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 799,
+    "matricule": "2948",
+    "fullName": "SASSI RIHAB",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "2948@sage-index.local",
+    "username": "2948",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 817,
+    "matricule": "2951",
+    "fullName": "GHERIANI WAFA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2951@sage-index.local",
+    "username": "2951",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 814,
+    "matricule": "2952",
+    "fullName": "JBELI KHAOULA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "NASRAOUI HASNA",
+    "email": "2952@sage-index.local",
+    "username": "2952",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 822,
+    "matricule": "2959",
+    "fullName": "SGHAIRI SANA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2959@sage-index.local",
+    "username": "2959",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 839,
+    "matricule": "2960",
+    "fullName": "OMRANI FERIEL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "2960@sage-index.local",
+    "username": "2960",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 837,
+    "matricule": "2961",
+    "fullName": "ALOUI SOULAIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "2961@sage-index.local",
+    "username": "2961",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 833,
+    "matricule": "2963",
+    "fullName": "TROUII RANIM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "NASRAOUI HASNA",
+    "email": "2963@sage-index.local",
+    "username": "2963",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 844,
+    "matricule": "2968",
+    "fullName": "SOUIDI SANA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "2968@sage-index.local",
+    "username": "2968",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1185,
+    "matricule": "3028",
+    "fullName": "GANOUNI AMEN ALLAH",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "3028@sage-index.local",
+    "username": "3028",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1207,
+    "matricule": "3055",
+    "fullName": "CHERIF SEIEDDINE",
+    "department": "LOGISTIQUE",
+    "jobTitle": "SUPERVISEUR LOGISTIQUE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3055@sage-index.local",
+    "username": "3055",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1217,
+    "matricule": "3060",
+    "fullName": "CHOUK WASSIM",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3060@sage-index.local",
+    "username": "3060",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1231,
+    "matricule": "3087",
+    "fullName": "BJEOUI SALMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "3087@sage-index.local",
+    "username": "3087",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1243,
+    "matricule": "3095",
+    "fullName": "DENDENI JECEM",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "3095@sage-index.local",
+    "username": "3095",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1242,
+    "matricule": "3096",
+    "fullName": "DRIDI EYA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "3096@sage-index.local",
+    "username": "3096",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1241,
+    "matricule": "3097",
+    "fullName": "MOUELHI RIHAB",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "3097@sage-index.local",
+    "username": "3097",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1240,
+    "matricule": "3099",
+    "fullName": "DRIDI SABRA",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "3099@sage-index.local",
+    "username": "3099",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1477,
+    "matricule": "3100",
+    "fullName": "SAKOUHI DORSAF",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "3100@sage-index.local",
+    "username": "3100",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1513,
+    "matricule": "3102",
+    "fullName": "AMERI SALMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "3102@sage-index.local",
+    "username": "3102",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1509,
+    "matricule": "3105",
+    "fullName": "SASSI MARIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "3105@sage-index.local",
+    "username": "3105",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1506,
+    "matricule": "3106",
+    "fullName": "SAADIA DHAOUI",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "EL KADRI MARIEM",
+    "email": "3106@sage-index.local",
+    "username": "3106",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1496,
+    "matricule": "3111",
+    "fullName": "YAZIDI OMAR",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3111@sage-index.local",
+    "username": "3111",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1531,
+    "matricule": "3114",
+    "fullName": "DHAHBI AMENI",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "3114@sage-index.local",
+    "username": "3114",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1565,
+    "matricule": "3137",
+    "fullName": "HAKI NESRINE",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "NASRAOUI HASNA",
+    "email": "3137@sage-index.local",
+    "username": "3137",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1584,
+    "matricule": "3146",
+    "fullName": "CHOUIHI FARAH",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "INGÉNIEUR  HSE",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3146@sage-index.local",
+    "username": "3146",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1577,
+    "matricule": "3152",
+    "fullName": "OUESLATI JOUDA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "3152@sage-index.local",
+    "username": "3152",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1591,
+    "matricule": "3161",
+    "fullName": "CHAIBI HAZEM",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "3161@sage-index.local",
+    "username": "3161",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1590,
+    "matricule": "3162",
+    "fullName": "NOUIOUI IBTISSEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "NASRAOUI HASNA",
+    "email": "3162@sage-index.local",
+    "username": "3162",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1618,
+    "matricule": "3199",
+    "fullName": "JELASSI MAHER",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3199@sage-index.local",
+    "username": "3199",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 142,
+    "matricule": "3200",
+    "fullName": "FATNASSI SEIFEDDINE",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3200@sage-index.local",
+    "username": "3200",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 166,
+    "matricule": "3204",
+    "fullName": "AZAIEZ ABOU EL KACEM",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "LABOR RELATION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3204@sage-index.local",
+    "username": "3204",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 230,
+    "matricule": "3253",
+    "fullName": "BJEOUI OUMAIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "AMRI OUSSEM EDDINE",
+    "email": "3253@sage-index.local",
+    "username": "3253",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 247,
+    "matricule": "3256",
+    "fullName": "JOUINI RAOUDHA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "AMRI OUSSEM EDDINE",
+    "email": "3256@sage-index.local",
+    "username": "3256",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 238,
+    "matricule": "3263",
+    "fullName": "NAIMI SIHEM",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "FORMATRICE DE PRODUCTION",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3263@sage-index.local",
+    "username": "3263",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 235,
+    "matricule": "3265",
+    "fullName": "ABASSI BELHSSAN",
+    "department": "LOGISTIQUE",
+    "jobTitle": "JIT OPERATOR",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3265@sage-index.local",
+    "username": "3265",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 262,
+    "matricule": "3282",
+    "fullName": "CHAOUATI EYA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "NASRAOUI HASNA",
+    "email": "3282@sage-index.local",
+    "username": "3282",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 259,
+    "matricule": "3286",
+    "fullName": "AMRI OUSSEM EDDINE",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3286@sage-index.local",
+    "username": "3286",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 258,
+    "matricule": "3287",
+    "fullName": "AOUN NAOURESS",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "3287@sage-index.local",
+    "username": "3287",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 273,
+    "matricule": "3293",
+    "fullName": "FERCHICHI MARAM",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "3293@sage-index.local",
+    "username": "3293",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 272,
+    "matricule": "3294",
+    "fullName": "MAHJOUBI WIEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "3294@sage-index.local",
+    "username": "3294",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 270,
+    "matricule": "3296",
+    "fullName": "JEMII ARBIA",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "3296@sage-index.local",
+    "username": "3296",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 568,
+    "matricule": "3300",
+    "fullName": "JBELI AHLEM",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "3300@sage-index.local",
+    "username": "3300",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 566,
+    "matricule": "3301",
+    "fullName": "NASRI RANIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "3301@sage-index.local",
+    "username": "3301",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 564,
+    "matricule": "3303",
+    "fullName": "BEN MAKHLOUF HAIFA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "3303@sage-index.local",
+    "username": "3303",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 584,
+    "matricule": "3315",
+    "fullName": "MHAMEDI WIDED",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "3315@sage-index.local",
+    "username": "3315",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 576,
+    "matricule": "3321",
+    "fullName": "ABDELLI ZIED",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3321@sage-index.local",
+    "username": "3321",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 626,
+    "matricule": "3337",
+    "fullName": "NAIMI NOUR",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3337@sage-index.local",
+    "username": "3337",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 651,
+    "matricule": "3359",
+    "fullName": "HAMMAMI ILYES",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3359@sage-index.local",
+    "username": "3359",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 665,
+    "matricule": "3370",
+    "fullName": "BALOUMI SOFIENE",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3370@sage-index.local",
+    "username": "3370",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 663,
+    "matricule": "3371",
+    "fullName": "BEN MASSOUD IHEB",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3371@sage-index.local",
+    "username": "3371",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 677,
+    "matricule": "3382",
+    "fullName": "AKREMI THOURAYA",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "3382@sage-index.local",
+    "username": "3382",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 675,
+    "matricule": "3384",
+    "fullName": "AYARI MOHAMED",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3384@sage-index.local",
+    "username": "3384",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 687,
+    "matricule": "3396",
+    "fullName": "JELASSI NAJOUA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "3396@sage-index.local",
+    "username": "3396",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 685,
+    "matricule": "3398",
+    "fullName": "NAIMI RABIAA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "AMRI OUSSEM EDDINE",
+    "email": "3398@sage-index.local",
+    "username": "3398",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1010,
+    "matricule": "3411",
+    "fullName": "ATHIMNI RAYEN",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3411@sage-index.local",
+    "username": "3411",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1006,
+    "matricule": "3414",
+    "fullName": "ISSAOUI ABIR",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "3414@sage-index.local",
+    "username": "3414",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1026,
+    "matricule": "3425",
+    "fullName": "JANHAOUI AFEF",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "3425@sage-index.local",
+    "username": "3425",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1023,
+    "matricule": "3428",
+    "fullName": "AOUINI MOUNA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3428@sage-index.local",
+    "username": "3428",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1037,
+    "matricule": "3441",
+    "fullName": "BOUTAIA KAIS",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3441@sage-index.local",
+    "username": "3441",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1077,
+    "matricule": "3443",
+    "fullName": "YEFRNI HAIKEL",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3443@sage-index.local",
+    "username": "3443",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1071,
+    "matricule": "3445",
+    "fullName": "HAFIENE AMAL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "3445@sage-index.local",
+    "username": "3445",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1062,
+    "matricule": "3450",
+    "fullName": "NEFZI TIJANI",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3450@sage-index.local",
+    "username": "3450",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1061,
+    "matricule": "3451",
+    "fullName": "BJEOUI ABDELKADER",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3451@sage-index.local",
+    "username": "3451",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1060,
+    "matricule": "3452",
+    "fullName": "TAYACHI SINDA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "3452@sage-index.local",
+    "username": "3452",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1087,
+    "matricule": "3459",
+    "fullName": "DORII MEHREZIA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "3459@sage-index.local",
+    "username": "3459",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1122,
+    "matricule": "3481",
+    "fullName": "BACCOUCHE OMAR",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3481@sage-index.local",
+    "username": "3481",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1137,
+    "matricule": "3497",
+    "fullName": "WERGHMI ISLEM",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3497@sage-index.local",
+    "username": "3497",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1172,
+    "matricule": "3499",
+    "fullName": "CHEBBI HALIMA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "3499@sage-index.local",
+    "username": "3499",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1350,
+    "matricule": "3500",
+    "fullName": "BEN SLIMENE HAIFA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3500@sage-index.local",
+    "username": "3500",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1348,
+    "matricule": "3501",
+    "fullName": "BAYAA NOUR EL HOUDA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3501@sage-index.local",
+    "username": "3501",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1345,
+    "matricule": "3502",
+    "fullName": "JBELI HANEN",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3502@sage-index.local",
+    "username": "3502",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1344,
+    "matricule": "3503",
+    "fullName": "SEBEI HAJER",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3503@sage-index.local",
+    "username": "3503",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1342,
+    "matricule": "3504",
+    "fullName": "SAAD NOUR EL HOUDA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3504@sage-index.local",
+    "username": "3504",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1339,
+    "matricule": "3505",
+    "fullName": "BEN ABDALLAH SABRINE",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3505@sage-index.local",
+    "username": "3505",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1373,
+    "matricule": "3510",
+    "fullName": "CHAIBI BALKIS",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "AMRI OUSSEM EDDINE",
+    "email": "3510@sage-index.local",
+    "username": "3510",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1371,
+    "matricule": "3511",
+    "fullName": "BEN BOUJEMAA OUMEYMA",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "3511@sage-index.local",
+    "username": "3511",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1364,
+    "matricule": "3515",
+    "fullName": "YAAKOUBI AMIRA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BEN RHOUMA KIRAM",
+    "email": "3515@sage-index.local",
+    "username": "3515",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1386,
+    "matricule": "3526",
+    "fullName": "BALDI SABIHA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "3526@sage-index.local",
+    "username": "3526",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1400,
+    "matricule": "3529",
+    "fullName": "BOUZIDI MAROUA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "3529@sage-index.local",
+    "username": "3529",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1420,
+    "matricule": "3539",
+    "fullName": "ABIDI GHOFRANE",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3539@sage-index.local",
+    "username": "3539",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1425,
+    "matricule": "3547",
+    "fullName": "AIDI MAY",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "3547@sage-index.local",
+    "username": "3547",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1473,
+    "matricule": "3565",
+    "fullName": "OTHMENE LOBNA",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "3565@sage-index.local",
+    "username": "3565",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1464,
+    "matricule": "3571",
+    "fullName": "MADOURI RANIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "3571@sage-index.local",
+    "username": "3571",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1492,
+    "matricule": "3576",
+    "fullName": "AYEDI SABER",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "HR ADMINISTRATION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3576@sage-index.local",
+    "username": "3576",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1738,
+    "matricule": "3600",
+    "fullName": "SOMII HADIR",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "3600@sage-index.local",
+    "username": "3600",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1756,
+    "matricule": "3610",
+    "fullName": "JLASSI NOUR",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BEN RHOUMA KIRAM",
+    "email": "3610@sage-index.local",
+    "username": "3610",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 73,
+    "matricule": "3637",
+    "fullName": "BOUKRAIEM SAMEH",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BEN RHOUMA KIRAM",
+    "email": "3637@sage-index.local",
+    "username": "3637",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 135,
+    "matricule": "3663",
+    "fullName": "OUHICHI JALEL",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3663@sage-index.local",
+    "username": "3663",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 194,
+    "matricule": "3697",
+    "fullName": "JBELI KHALED",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "3697@sage-index.local",
+    "username": "3697",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 424,
+    "matricule": "3727",
+    "fullName": "BEN RHOUMA KIRAM",
+    "department": "PRODUCTION",
+    "jobTitle": "SUPERVISEUR DE PRODUCTION",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3727@sage-index.local",
+    "username": "3727",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 459,
+    "matricule": "3731",
+    "fullName": "OTHMENI AMENI",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MEKNI TOUJENI CHEDLI",
+    "email": "3731@sage-index.local",
+    "username": "3731",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 461,
+    "matricule": "3733",
+    "fullName": "CHAHLAOUI HABIBA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3733@sage-index.local",
+    "username": "3733",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 446,
+    "matricule": "3737",
+    "fullName": "HAMDI HAZEM",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MAINTENANCE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "3737@sage-index.local",
+    "username": "3737",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 479,
+    "matricule": "3740",
+    "fullName": "HEDHLI AMEL",
+    "department": "QUALITE",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "3740@sage-index.local",
+    "username": "3740",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 480,
+    "matricule": "3741",
+    "fullName": "BEN IFAA GHAITH",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3741@sage-index.local",
+    "username": "3741",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 481,
+    "matricule": "3743",
+    "fullName": "HILELI AMENI",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "LAABIDI HICHEM",
+    "email": "3743@sage-index.local",
+    "username": "3743",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 2,
+    "matricule": "3744",
+    "fullName": "SAIIDI BAHA EDDINE",
+    "department": "IT",
+    "jobTitle": "INGENIEUR IT",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3744@sage-index.local",
+    "username": "3744",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 483,
+    "matricule": "3745",
+    "fullName": "RIHANI KHOULOUD",
+    "department": "IT",
+    "jobTitle": "INGENIEUR IT",
+    "workType": "CADRE",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3745@sage-index.local",
+    "username": "3745",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 484,
+    "matricule": "3746",
+    "fullName": "FERCHICHI FATMA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "3746@sage-index.local",
+    "username": "3746",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 485,
+    "matricule": "3747",
+    "fullName": "TOUJANI SABRA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "3747@sage-index.local",
+    "username": "3747",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 468,
+    "matricule": "3750",
+    "fullName": "BOULABI MOHAMED",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3750@sage-index.local",
+    "username": "3750",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 499,
+    "matricule": "3754",
+    "fullName": "NAIMI EMNA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3754@sage-index.local",
+    "username": "3754",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 500,
+    "matricule": "3755",
+    "fullName": "BEJAOUI RIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "3755@sage-index.local",
+    "username": "3755",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 504,
+    "matricule": "3758",
+    "fullName": "JOUINI MOHAMED AMINE",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3758@sage-index.local",
+    "username": "3758",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 491,
+    "matricule": "3759",
+    "fullName": "MELKI YOSRA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "MANSOUR MOHAMED AYMEN",
+    "email": "3759@sage-index.local",
+    "username": "3759",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 486,
+    "matricule": "3760",
+    "fullName": "JANDOUBI MOHAMED",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3760@sage-index.local",
+    "username": "3760",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 521,
+    "matricule": "3763",
+    "fullName": "AYARI CHAIMA",
+    "department": "QUALITE",
+    "jobTitle": "FIRE W",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3763@sage-index.local",
+    "username": "3763",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 522,
+    "matricule": "3764",
+    "fullName": "TEBINI CHAIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BENMOUSSA MABROUK",
+    "email": "3764@sage-index.local",
+    "username": "3764",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 523,
+    "matricule": "3765",
+    "fullName": "OUNI IMEN",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "CHOUK WASSIM",
+    "email": "3765@sage-index.local",
+    "username": "3765",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 525,
+    "matricule": "3767",
+    "fullName": "AOUADI IMEN",
+    "department": "PRODUCTION",
+    "jobTitle": "CSL",
+    "workType": "INDIRECTS",
+    "supervisor": "FATNASSI MOHAMED ALI",
+    "email": "3767@sage-index.local",
+    "username": "3767",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 527,
+    "matricule": "3768",
+    "fullName": "MAATOUGUI KHAOULA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3768@sage-index.local",
+    "username": "3768",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 547,
+    "matricule": "3778",
+    "fullName": "AMIRI SAMIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3778@sage-index.local",
+    "username": "3778",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 548,
+    "matricule": "3779",
+    "fullName": "NOUR BEN ABID",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3779@sage-index.local",
+    "username": "3779",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 530,
+    "matricule": "3780",
+    "fullName": "SAADAOUI NESRINE",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3780@sage-index.local",
+    "username": "3780",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 532,
+    "matricule": "3782",
+    "fullName": "CHAIIBI HADHEMI",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3782@sage-index.local",
+    "username": "3782",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 569,
+    "matricule": "3784",
+    "fullName": "DHIFALLAH MAROUA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3784@sage-index.local",
+    "username": "3784",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 570,
+    "matricule": "3785",
+    "fullName": "GUESMI HAJER",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3785@sage-index.local",
+    "username": "3785",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 571,
+    "matricule": "3786",
+    "fullName": "RAISI ZOUHOUR",
+    "department": "QUALITE",
+    "jobTitle": "APPOLO",
+    "workType": "INDIRECTS",
+    "supervisor": "KHALOUI YOUSSEF",
+    "email": "3786@sage-index.local",
+    "username": "3786",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 809,
+    "matricule": "3804",
+    "fullName": "NEFZI HAJER",
+    "department": "RESSOURCES HUMAINES",
+    "jobTitle": "AIDE SOIGNANTE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "3804@sage-index.local",
+    "username": "3804",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 815,
+    "matricule": "3806",
+    "fullName": "AOUINI IMED",
+    "department": "MAINTENANCE",
+    "jobTitle": "TECHNICIEN MAINTENANCE GENERALE",
+    "workType": "INDIRECTS",
+    "supervisor": "MEDDEB AYMEN",
+    "email": "3806@sage-index.local",
+    "username": "3806",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 842,
+    "matricule": "3811",
+    "fullName": "LTAIFI WASSIM",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3811@sage-index.local",
+    "username": "3811",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 831,
+    "matricule": "3815",
+    "fullName": "MOHAMED RABIAA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3815@sage-index.local",
+    "username": "3815",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 832,
+    "matricule": "3816",
+    "fullName": "BAAZOUZI SIHEM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3816@sage-index.local",
+    "username": "3816",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 834,
+    "matricule": "3817",
+    "fullName": "CHERIF LAMIA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3817@sage-index.local",
+    "username": "3817",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 836,
+    "matricule": "3818",
+    "fullName": "CHIAIBNI FATMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3818@sage-index.local",
+    "username": "3818",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 838,
+    "matricule": "3819",
+    "fullName": "ZITOUNI MANEL",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3819@sage-index.local",
+    "username": "3819",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 862,
+    "matricule": "3820",
+    "fullName": "ZAKRAOUI HASSNA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3820@sage-index.local",
+    "username": "3820",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 863,
+    "matricule": "3821",
+    "fullName": "HANNECHI MARAM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3821@sage-index.local",
+    "username": "3821",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 865,
+    "matricule": "3822",
+    "fullName": "HAMMOUDA CHAIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3822@sage-index.local",
+    "username": "3822",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 867,
+    "matricule": "3823",
+    "fullName": "ATOUI HOUSSEM EDDINE",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "ROMDHANI NADA",
+    "email": "3823@sage-index.local",
+    "username": "3823",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 869,
+    "matricule": "3824",
+    "fullName": "TALBI KARIMA",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "KERCHAOUI LATIFA",
+    "email": "3824@sage-index.local",
+    "username": "3824",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 850,
+    "matricule": "3825",
+    "fullName": "ANABI RIHAB",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "3825@sage-index.local",
+    "username": "3825",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 853,
+    "matricule": "3826",
+    "fullName": "KARDOUS RANIM",
+    "department": "PRODUCTION",
+    "jobTitle": "CONTRÔLE QUALITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "BOUDHIAFI FAKHREDDINE",
+    "email": "3826@sage-index.local",
+    "username": "3826",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 886,
+    "matricule": "3839",
+    "fullName": "AOUIDET RIADH",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3839@sage-index.local",
+    "username": "3839",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 916,
+    "matricule": "3842",
+    "fullName": "CHERIF OUSSAMA",
+    "department": "LOGISTIQUE",
+    "jobTitle": "MANITENTIONNAIRE",
+    "workType": "INDIRECTS",
+    "supervisor": "ALOUANE ADEL",
+    "email": "3842@sage-index.local",
+    "username": "3842",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1246,
+    "matricule": "7003",
+    "fullName": "BEN MANDHOUR MONDHER",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7003@sage-index.local",
+    "username": "7003",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1247,
+    "matricule": "7005",
+    "fullName": "DHIFLI SABRI",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7005@sage-index.local",
+    "username": "7005",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1248,
+    "matricule": "7014",
+    "fullName": "MATMATI AYMEN",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7014@sage-index.local",
+    "username": "7014",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1250,
+    "matricule": "7016",
+    "fullName": "MHAMDI ATEF",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7016@sage-index.local",
+    "username": "7016",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1249,
+    "matricule": "7017",
+    "fullName": "BELAABI MOHAMED TAHER",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7017@sage-index.local",
+    "username": "7017",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1256,
+    "matricule": "7022",
+    "fullName": "KMICHA ISSAM",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7022@sage-index.local",
+    "username": "7022",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1258,
+    "matricule": "7023",
+    "fullName": "BARKAOUI MOHAMED HEDI",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7023@sage-index.local",
+    "username": "7023",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1257,
+    "matricule": "7024",
+    "fullName": "JEBALI MOUNIR",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7024@sage-index.local",
+    "username": "7024",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1260,
+    "matricule": "7025",
+    "fullName": "HABOUBI FETHI",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7025@sage-index.local",
+    "username": "7025",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 1259,
+    "matricule": "7026",
+    "fullName": "TRABELSSI FAYCEL",
+    "department": "SG",
+    "jobTitle": "AGENT SÉCURITÉ",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "7026@sage-index.local",
+    "username": "7026",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 324,
+    "matricule": "333333",
+    "fullName": "BEN OTHMEN AMAL",
+    "department": "SG",
+    "jobTitle": "SPECIALIST SG",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "333333@sage-index.local",
+    "username": "333333",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 323,
+    "matricule": "333334",
+    "fullName": "OMAR NAIMA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "333334@sage-index.local",
+    "username": "333334",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 326,
+    "matricule": "333341",
+    "fullName": "RIAHI MALIKA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "333341@sage-index.local",
+    "username": "333341",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 330,
+    "matricule": "333342",
+    "fullName": "HANNACHI ZINA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "333342@sage-index.local",
+    "username": "333342",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 328,
+    "matricule": "333343",
+    "fullName": "BEN SOULA WAHIDA",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "333343@sage-index.local",
+    "username": "333343",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 311,
+    "matricule": "333345",
+    "fullName": "KEMLA BEN JILENI HAMMEMI",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "333345@sage-index.local",
+    "username": "333345",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  },
+  {
+    "employeeId": 312,
+    "matricule": "333347",
+    "fullName": "NAIMA BEL HAJ NACER",
+    "department": "SG",
+    "jobTitle": "FEMME DE MENAGE",
+    "workType": "INDIRECTS",
+    "supervisor": "HAMRAOUI BASMA",
+    "email": "333347@sage-index.local",
+    "username": "333347",
+    "employeeStatus": "Employé actuel",
+    "accountStatus": "ACTIVATION_REQUIRED",
+    "roles": [
+      "USER"
+    ]
+  }
+]
