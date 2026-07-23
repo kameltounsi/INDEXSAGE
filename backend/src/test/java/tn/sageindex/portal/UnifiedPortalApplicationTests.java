@@ -7,7 +7,14 @@ import tn.sageindex.portal.account.UserAccountRepository;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-@SpringBootTest(properties = "portal.admin.password=test-password-not-for-production")
+@SpringBootTest(properties = {
+		"portal.admin.password=test-password-not-for-production",
+		"spring.datasource.url=jdbc:h2:mem:sage-index-test;DB_CLOSE_DELAY=-1",
+		"spring.datasource.driver-class-name=org.h2.Driver",
+		"spring.datasource.username=sa",
+		"spring.datasource.password=",
+		"spring.jpa.hibernate.ddl-auto=create-drop"
+})
 class UnifiedPortalApplicationTests {
 	@Autowired
 	private UserAccountRepository repository;

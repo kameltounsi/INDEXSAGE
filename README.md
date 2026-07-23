@@ -5,7 +5,9 @@ Portail Angular + Spring Boot combinant les applications Traçabilité et Ressou
 ## Architecture
 
 - `frontend/` : Angular 22, écran de connexion, dashboard personnalisé et administration des comptes.
-- `backend/` : Spring Boot 4.1, Spring Security, Spring Data JPA et base H2 locale.
+- `backend/` : Spring Boot 4.1, Spring Security et Spring Data JPA.
+- `postgres` : PostgreSQL 17 avec volume Docker persistant.
+- `docker-compose.yml` : déploiement complet frontend + backend + PostgreSQL.
 - `backend/src/main/resources/data/users.json` : 432 comptes importés depuis `employes (1).xlsx`.
 
 ## Règle d’import
@@ -23,26 +25,50 @@ Aucun mot de passe par défaut n’est stocké dans le dépôt. L’administrate
 compte via l’API `POST /api/accounts/{username}/activate` avec un mot de passe d’au
 moins 12 caractères. Spring Security stocke uniquement son hash BCrypt.
 
-## Démarrage
+## Déploiement Docker
 
-Pré-requis : Java 21 et Node.js compatible avec Angular 22.
+Le fichier `.env` doit contenir quatre variables :
 
-```powershell
-$env:PORTAL_ADMIN_PASSWORD = "un-mot-de-passe-administrateur-fort"
-cd backend
-.\mvnw.cmd spring-boot:run
+```dotenv
+POSTGRES_DB=sage_index
+POSTGRES_USER=sage_index
+POSTGRES_PASSWORD=un-mot-de-passe-postgres-fort
+PORTAL_ADMIN_PASSWORD=un-mot-de-passe-administrateur-fort
 ```
 
-Dans un autre terminal :
+Construire et démarrer la stack :
 
 ```powershell
-cd frontend
-npm install
-npm start
+docker compose up -d --build
 ```
 
-Ouvrir `http://localhost:4200`, puis se connecter avec `admin` et la valeur de
-`PORTAL_ADMIN_PASSWORD`.
+Ouvrir `http://localhost:8080`, puis se connecter avec :
+
+- Identifiant : `admin`
+- Mot de passe : valeur de `PORTAL_ADMIN_PASSWORD` dans `.env`
+
+Le backend reste également accessible sur `http://localhost:8081`. PostgreSQL
+n’est pas exposé sur la machine hôte ; seuls les conteneurs du réseau privé
+Docker peuvent y accéder.
+
+Commandes d’exploitation :
+
+```powershell
+docker compose ps
+docker compose logs -f
+docker compose restart
+docker compose down
+```
+
+`docker compose down` conserve les données. Pour supprimer aussi la base de
+données, utiliser volontairement `docker compose down -v`.
+
+## Démarrage sans Docker
+
+Prérequis : PostgreSQL, Java 21 et Node.js compatible avec Angular 22. Fournir
+`SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`,
+`SPRING_DATASOURCE_PASSWORD` et `PORTAL_ADMIN_PASSWORD`, puis lancer le backend
+avec `.\mvnw.cmd spring-boot:run`. Le frontend se lance avec `npm start`.
 
 ## Vérifications
 
