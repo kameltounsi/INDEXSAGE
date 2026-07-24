@@ -5,8 +5,8 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "SAGE INDEX — Portail unifié",
-  description: "Votre espace unifié pour la traçabilité et les ressources humaines.",
+  title: "SAGE INDEX — Dashboard de pilotage",
+  description: "Pilotage unifié de la traçabilité, de la qualité et des ressources humaines.",
   icons: { icon: "/favicon.svg" },
 };
 
