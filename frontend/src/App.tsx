@@ -23,6 +23,7 @@ type Account = {
 };
 
 type DataRow = Record<string, string | number>;
+type DashboardView = 'ALL' | 'TRACEABILITY' | 'HR' | 'PLANNING';
 type OperationalData = {
   generatedAt: string;
   traceability: { connected: boolean; totals: DataRow; dailyEvents: DataRow[]; eventTypes: DataRow[]; projects: DataRow[]; stockByStatus: DataRow[]; topParts: DataRow[]; recentActivity: DataRow[] };
@@ -77,6 +78,7 @@ export default function App() {
   const [confirmPassword, setConfirmPassword] = useState('');
   const [passwordMessage, setPasswordMessage] = useState('');
   const [ssoLaunching, setSsoLaunching] = useState(false);
+  const [dashboardView, setDashboardView] = useState<DashboardView>('ALL');
 
   const filteredAccounts = useMemo(() => {
     const term = search.trim().toLocaleLowerCase('fr');
@@ -227,6 +229,11 @@ export default function App() {
   const availableApps = dashboard.applications.filter((app) => app.hasAccount);
   const planningCompletion = Math.max(0, Math.min(100, n(dashboard.planning?.completionRate)));
   const attentionTotal = n(dashboard.metrics.attentionPoints) + n(dashboard.planning?.lateActions);
+  const isView = (code: Exclude<DashboardView, 'ALL'>) => dashboardView === 'ALL' || dashboardView === code;
+  const viewTitle = dashboardView === 'TRACEABILITY' ? 'Dashboard Traçabilité'
+    : dashboardView === 'HR' ? 'Dashboard Ressources Humaines'
+    : dashboardView === 'PLANNING' ? 'Dashboard Gestion des plannings'
+    : 'Centre de pilotage unifié';
   return (
     <>
       <header className="topbar">
@@ -239,14 +246,17 @@ export default function App() {
         </div>
       </header>
       <div className="workspace">
-        <aside><nav><a className="active">⌂ <span>Vue d’ensemble</span></a><p>ESPACE DE TRAVAIL</p><a>◫ <span>Activité</span></a><a>♙ <span>Mon équipe</span></a><a>▱ <span>Documents</span></a>{isAdmin && <><p>ADMINISTRATION</p><a>⚙ <span>Comptes utilisateurs</span></a></>}</nav></aside>
-        <main className="dashboard">
+        <aside><nav><button className={dashboardView === 'ALL' ? 'active' : ''} onClick={() => setDashboardView('ALL')}>⌂ <span>Vue globale</span></button><p>APPLICATIONS</p><button className={dashboardView === 'PLANNING' ? 'active' : ''} onClick={() => setDashboardView('PLANNING')}>▦ <span>Plannings</span></button><button className={dashboardView === 'TRACEABILITY' ? 'active' : ''} onClick={() => setDashboardView('TRACEABILITY')}>◇ <span>Traçabilité</span></button><button className={dashboardView === 'HR' ? 'active' : ''} onClick={() => setDashboardView('HR')}>♙ <span>Ressources humaines</span></button>{isAdmin && <><p>ADMINISTRATION</p><button>⚙ <span>Comptes utilisateurs</span></button></>}</nav></aside>
+        <main className={`dashboard view-${dashboardView.toLowerCase()}`}>
           <section className="welcome">
-            <div><p className="eyebrow">CENTRE DE PILOTAGE UNIFIÉ</p><h1>Bonjour {dashboard.user.name.split(' ')[0]} 👋</h1><p>{dashboard.user.department} · {dashboard.user.jobTitle}</p></div>
+            <div><p className="eyebrow">{viewTitle.toUpperCase()}</p><h1>{dashboardView === 'ALL' ? `Bonjour ${dashboard.user.name.split(' ')[0]} 👋` : viewTitle}</h1><p>{dashboardView === 'ALL' ? `${dashboard.user.department} · ${dashboard.user.jobTitle}` : `Indicateurs et activité dédiés · ${dashboard.user.name}`}</p></div>
             <div className="welcome-meta"><span className="sync">● 3 sources synchronisées</span><small>{new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: '2-digit', month: 'long' })}</small></div>
           </section>
-          {!isAdmin && availableApps.length > 1 && <button className="launch-all" onClick={() => launchSso()} disabled={ssoLaunching}><span>✦</span><b>{ssoLaunching ? 'Ouverture sécurisée…' : `Ouvrir mes ${availableApps.length} applications`}</b><small>Une seule connexion · aucun mot de passe redemandé</small><strong>→</strong></button>}
-          {!isAdmin && <section className="command-center">
+          <section className="dashboard-switcher" aria-label="Choisir le dashboard">
+            {([['ALL','Vue globale'],['PLANNING','Planning'],['TRACEABILITY','Traçabilité'],['HR','Ressources humaines']] as [DashboardView,string][]).map(([code,label]) => <button key={code} className={dashboardView === code ? 'active' : ''} onClick={() => setDashboardView(code)}>{label}</button>)}
+          </section>
+          {!isAdmin && dashboardView === 'ALL' && availableApps.length > 1 && <button className="launch-all" onClick={() => launchSso()} disabled={ssoLaunching}><span>✦</span><b>{ssoLaunching ? 'Ouverture sécurisée…' : `Ouvrir mes ${availableApps.length} applications`}</b><small>Une seule connexion · aucun mot de passe redemandé</small><strong>→</strong></button>}
+          {!isAdmin && dashboardView === 'ALL' && <section className="command-center">
             <div className="command-copy">
               <span className="command-kicker">VOTRE JOURNÉE EN UN COUP D’ŒIL</span>
               <h2>{attentionTotal > 0 ? `${attentionTotal} point${attentionTotal > 1 ? 's' : ''} mérite${attentionTotal > 1 ? 'nt' : ''} votre attention` : 'Tout est sous contrôle'}</h2>
@@ -264,7 +274,7 @@ export default function App() {
             </div>
           </section>}
           <section className="app-grid">
-            {availableApps.map((app) => (
+            {availableApps.filter((app) => dashboardView === 'ALL' || app.code === dashboardView).map((app) => (
               <article className={`app-card ${app.code.toLocaleLowerCase()}`} key={app.code}>
                 <span className="status">● COMPTE ACTIF</span><small>APPLICATION</small><h2>{app.label}</h2>
                 <p>{app.code === 'HR'
@@ -311,7 +321,7 @@ export default function App() {
             </div>
           </section>}
           {!isAdmin && <section className="summary-grid">
-            <article className="summary-card trace-summary">
+            {isView('TRACEABILITY') && <article className="summary-card trace-summary">
               <div className="panel-title"><div><p className="eyebrow">TRAÇABILITÉ</p><h2>Mon activité opérationnelle</h2></div><a href="http://localhost:5173/">Ouvrir →</a></div>
               <div className="summary-values">
                 <div><b>{personalValue(dashboard.traceability.lotsToday)}</b><span>Actions aujourd'hui</span></div>
@@ -320,8 +330,8 @@ export default function App() {
                 <div><b>{personalValue(dashboard.traceability.shipmentsReady)}</b><span>Expéditions prêtes</span></div>
               </div>
               <small className="updated">Dernière mise à jour : {dashboard.traceability.lastUpdate ? new Date(dashboard.traceability.lastUpdate).toLocaleString('fr-FR') : 'aucune activité'}</small>
-            </article>
-            <article className="summary-card hr-summary">
+            </article>}
+            {isView('HR') && <article className="summary-card hr-summary">
               <div className="panel-title"><div><p className="eyebrow">RESSOURCES HUMAINES</p><h2>{dashboard.user.manager ? 'Mon équipe & moi' : 'Ma situation RH'}</h2></div><a href="http://localhost:5170/">Ouvrir →</a></div>
               <div className="summary-values">
                 <div><b className="present">● {personalValue(dashboard.hr.presenceStatus)}</b><span>Statut du jour</span></div>
@@ -330,8 +340,8 @@ export default function App() {
                 {dashboard.user.manager && <div><b>{personalValue(dashboard.hr.teamAbsences)}</b><span>Absences équipe</span></div>}
               </div>
               <small className="updated">{dashboard.hr.nextEvent}</small>
-            </article>
-            {dashboard.applications.some((app) => app.code === 'PLANNING' && app.hasAccount) && <article className="summary-card planning-summary">
+            </article>}
+            {isView('PLANNING') && dashboard.applications.some((app) => app.code === 'PLANNING' && app.hasAccount) && <article className="summary-card planning-summary">
               <div className="panel-title"><div><p className="eyebrow">GESTION DES PLANNINGS</p><h2>Mes engagements ECR</h2></div><a href="http://localhost:3000/">Ouvrir →</a></div>
               <div className="planning-overview">
                 <div className="mini-ring" style={{ '--score': `${planningCompletion}%` } as React.CSSProperties}><b>{planningCompletion}%</b><span>réalisé</span></div>
@@ -341,7 +351,7 @@ export default function App() {
               <small className="updated">{personalValue(dashboard.planning.completedActions)} action(s) finalisée(s)</small>
             </article>}
           </section>}
-          {!isAdmin && <section className="cross-view">
+          {!isAdmin && dashboardView === 'ALL' && <section className="cross-view">
             <article className="cross-chart">
               <div className="panel-title"><div><p className="eyebrow">VISION CROISÉE</p><h2>Charge & attention par application</h2></div><span className="live-chip">TEMPS RÉEL</span></div>
               <div className="cross-bars">
@@ -359,7 +369,7 @@ export default function App() {
           {!isAdmin && <section className="detail-grid">
             <article className="detail-card">
               <div className="panel-title"><div><p className="eyebrow">À TRAITER</p><h2>Mes priorités</h2></div></div>
-              {dashboard.priorities.map((priority) => (
+              {dashboard.priorities.filter((priority) => dashboardView === 'ALL' || (dashboardView === 'HR' ? priority.source === 'RH' : dashboardView === 'PLANNING' ? priority.source === 'Plannings' : priority.source.includes('Tra'))).map((priority) => (
                 <a className="priority-row" href={priority.url} key={`${priority.source}-${priority.title}`}>
                   <span className={`priority-dot ${priority.level}`} />
                   <div><b>{priority.title}</b><small>{priority.source} · {priority.detail}</small></div><strong>→</strong>
