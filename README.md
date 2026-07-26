@@ -43,12 +43,12 @@ Construire et démarrer la stack :
 docker compose up -d --build
 ```
 
-Ouvrir `http://localhost:8080`, puis se connecter avec :
+Ouvrir `http://localhost:18080`, puis se connecter avec :
 
 - Matricule : `admin`
 - Mot de passe : valeur de `PORTAL_ADMIN_PASSWORD` dans `.env`
 
-Le backend reste également accessible sur `http://localhost:8081`. PostgreSQL
+Le backend reste également accessible sur `http://localhost:18081`. PostgreSQL
 n’est pas exposé sur la machine hôte ; seuls les conteneurs du réseau privé
 Docker peuvent y accéder.
 
