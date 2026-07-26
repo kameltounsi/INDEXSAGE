@@ -6,7 +6,7 @@ const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "SAGE INDEX — Dashboard de pilotage",
-  description: "Pilotage unifié de la traçabilité, de la qualité et des ressources humaines.",
+  description: "Pilotage unifié de la traçabilité, de la qualité, des ressources humaines et des plannings.",
   icons: { icon: "/favicon.svg" },
 };
 

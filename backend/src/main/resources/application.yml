@@ -20,5 +20,25 @@ management:
         include: health,info
 
 portal:
+  applications:
+    traceability-url: ${TRACEABILITY_APP_URL:http://localhost:5173/}
+    hr-url: ${HR_APP_URL:http://localhost:5170/}
+    planning-url: ${PLANNING_APP_URL:http://localhost:3000/}
   admin:
     password: ${PORTAL_ADMIN_PASSWORD}
+  jwt:
+    secret: ${JWT_SECRET}
+    lifetime-seconds: 28800
+  sources:
+    traceability:
+      url: ${TRACEABILITY_DB_URL:jdbc:postgresql://storepostgres:5432/store}
+      username: ${TRACEABILITY_DB_USERNAME:postgres}
+      password: ${TRACEABILITY_DB_PASSWORD}
+    hr:
+      url: ${HR_DB_URL:jdbc:postgresql://rh-postgresql-1:5432/rh}
+      username: ${HR_DB_USERNAME:postgres}
+      password: ${HR_DB_PASSWORD}
+    planning:
+      url: ${PLANNING_DB_URL:jdbc:postgresql://gestion-planning-postgres:5432/plannings}
+      username: ${PLANNING_DB_USERNAME:postgres}
+      password: ${PLANNING_DB_PASSWORD}

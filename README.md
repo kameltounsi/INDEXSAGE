@@ -1,10 +1,10 @@
 # SAGE INDEX — portail unifié
 
-Portail Angular + Spring Boot combinant les applications Traçabilité et Ressources Humaines.
+Portail React + Spring Boot combinant les applications Traçabilité, Ressources Humaines et Gestion des plannings.
 
 ## Architecture
 
-- `frontend/` : Angular 22, écran de connexion, dashboard personnalisé et administration des comptes.
+- `frontend/` : React 19 + Vite, écran de connexion, dashboard personnalisé et administration des comptes.
 - `backend/` : Spring Boot 4.1, Spring Security et Spring Data JPA.
 - `postgres` : PostgreSQL 17 avec volume Docker persistant.
 - `docker-compose.yml` : déploiement complet frontend + backend + PostgreSQL.
@@ -19,21 +19,22 @@ La valeur `TYPE DE TRAVAIL` est normalisée en majuscules. Toute valeur commenç
 - Comptes créés : 432 (`CADRE` et `INDIRECTS`)
 - Employés exclus : 1 296 (`DIRECTS`)
 - Identifiant initial : matricule
-- Statut initial : `ACTIVATION_REQUIRED`
+- Statut initial : `ACTIVE`
+- Mot de passe initial : matricule
 
-Aucun mot de passe par défaut n’est stocké dans le dépôt. L’administrateur active un
-compte via l’API `POST /api/accounts/{username}/activate` avec un mot de passe d’au
-moins 12 caractères. Spring Security stocke uniquement son hash BCrypt.
+Chaque compte importé est actif par défaut. Son mot de passe initial est son
+matricule ; Spring Security stocke uniquement le hash BCrypt de ce mot de passe.
 
 ## Déploiement Docker
 
-Le fichier `.env` doit contenir quatre variables :
+Le fichier `.env` doit notamment contenir les variables suivantes :
 
 ```dotenv
 POSTGRES_DB=sage_index
 POSTGRES_USER=sage_index
 POSTGRES_PASSWORD=un-mot-de-passe-postgres-fort
 PORTAL_ADMIN_PASSWORD=un-mot-de-passe-administrateur-fort
+PLANNING_DB_PASSWORD=mot-de-passe-de-la-base-plannings
 ```
 
 Construire et démarrer la stack :
@@ -44,7 +45,7 @@ docker compose up -d --build
 
 Ouvrir `http://localhost:8080`, puis se connecter avec :
 
-- Identifiant : `admin`
+- Matricule : `admin`
 - Mot de passe : valeur de `PORTAL_ADMIN_PASSWORD` dans `.env`
 
 Le backend reste également accessible sur `http://localhost:8081`. PostgreSQL
@@ -65,7 +66,7 @@ données, utiliser volontairement `docker compose down -v`.
 
 ## Démarrage sans Docker
 
-Prérequis : PostgreSQL, Java 21 et Node.js compatible avec Angular 22. Fournir
+Prérequis : PostgreSQL, Java 21 et Node.js 20 ou plus récent. Fournir
 `SPRING_DATASOURCE_URL`, `SPRING_DATASOURCE_USERNAME`,
 `SPRING_DATASOURCE_PASSWORD` et `PORTAL_ADMIN_PASSWORD`, puis lancer le backend
 avec `.\mvnw.cmd spring-boot:run`. Le frontend se lance avec `npm start`.

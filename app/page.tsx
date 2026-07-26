@@ -41,14 +41,14 @@ export default async function Home() {
           <nav>
             <a className="nav-item active" href="#overview"><span>⌂</span>Vue d’ensemble</a>
             <p>PILOTAGE</p><a className="nav-item" href="#performance"><span>⌁</span>Performance</a><a className="nav-item" href="#alerts"><span>!</span>Qualité & alertes <i>3</i></a>
-            <p>APPLICATIONS</p><a className="nav-item" href="/tracabilite"><span>◇</span>Traçabilité</a><a className="nav-item" href="/rh"><span>♙</span>Ressources humaines</a>
+            <p>APPLICATIONS</p><a className="nav-item" href="/tracabilite"><span>◇</span>Traçabilité</a><a className="nav-item" href="/rh"><span>♙</span>Ressources humaines</a><a className="nav-item" href="/plannings"><span>▦</span>Gestion des plannings</a>
             <p>OUTILS</p><a className="nav-item" href="#"><span>▥</span>Rapports</a><a className="nav-item" href="#"><span>⚙</span>Paramètres</a>
           </nav>
           <div className="data-health"><div><span>État des données</span><b>Synchronisé</b></div><i><span/></i><small>Dernière mise à jour il y a 2 min</small></div>
         </aside>
         <section className="content" id="overview">
           <div className="welcome">
-            <div><p className="eyebrow">VENDREDI 24 JUILLET 2026</p><h1>Bonjour {firstName}, voici votre activité.</h1><p>Une vision consolidée de la traçabilité et des ressources humaines.</p></div>
+            <div><p className="eyebrow">VENDREDI 24 JUILLET 2026</p><h1>Bonjour {firstName}, voici votre activité.</h1><p>Une vision consolidée de la traçabilité, des ressources humaines et des plannings.</p></div>
             <div className="welcome-actions"><button className="secondary-button">↓ Exporter</button><button className="period">30 derniers jours <span>⌄</span></button></div>
           </div>
           <section className="hero-kpis">
@@ -89,7 +89,7 @@ export default async function Home() {
               {[["24","JUL","AB","Amine Ben Salem","Congé annuel · 3 jours"],["29","JUL","ST","Sarra Trabelsi","Formation qualité · 1 jour"],["02","AOÛ","MA","Mehdi Ayari","Congé annuel · 5 jours"]].map(([d,m,initials,name,detail])=><div className="absence" key={name}><span className="date"><b>{d}</b><small>{m}</small></span><span className="avatar">{initials}</span><div><b>{name}</b><small>{detail}</small></div></div>)}
             </article>
           </section>
-          <footer><span>Données synchronisées il y a 2 min</span><div><a href="/tracabilite">Traçabilité</a><a href="/rh">Ressources humaines</a><button>↻ Actualiser</button></div></footer>
+          <footer><span>Données synchronisées il y a 2 min</span><div><a href="/tracabilite">Traçabilité</a><a href="/rh">Ressources humaines</a><a href="/plannings">Plannings</a><button>↻ Actualiser</button></div></footer>
         </section>
       </div>
     </main>

@@ -6,6 +6,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.List;
 import java.util.Locale;
@@ -14,10 +15,13 @@ import java.util.Locale;
 public class AccountImporter implements CommandLineRunner {
     private final UserAccountRepository repository;
     private final ObjectMapper objectMapper;
+    private final PasswordEncoder passwordEncoder;
 
-    public AccountImporter(UserAccountRepository repository, ObjectMapper objectMapper) {
+    public AccountImporter(UserAccountRepository repository, ObjectMapper objectMapper,
+                           PasswordEncoder passwordEncoder) {
         this.repository = repository;
         this.objectMapper = objectMapper;
+        this.passwordEncoder = passwordEncoder;
     }
 
     @Override
@@ -29,10 +33,13 @@ public class AccountImporter implements CommandLineRunner {
 
         for (SeedAccount item : source) {
             String normalizedType = item.workType() == null ? "" : item.workType().trim().toUpperCase(Locale.ROOT);
-            if (normalizedType.startsWith("DIRECT") || repository.existsByEmployeeId(item.employeeId())) {
+            if (normalizedType.startsWith("DIRECT")) {
                 continue;
             }
-            UserAccount account = new UserAccount();
+            UserAccount account = repository.findByEmployeeId(item.employeeId()).orElseGet(UserAccount::new);
+            boolean needsInitialPassword = account.getId() == null
+                    || account.getAccountStatus() == AccountStatus.ACTIVATION_REQUIRED
+                    || account.getPasswordHash() == null;
             account.setEmployeeId(item.employeeId());
             account.setMatricule(item.matricule());
             account.setUsername(item.username());
@@ -43,7 +50,10 @@ public class AccountImporter implements CommandLineRunner {
             account.setSupervisor(item.supervisor());
             account.setEmail(item.email());
             account.setEmployeeStatus(item.employeeStatus());
-            account.setAccountStatus(AccountStatus.ACTIVATION_REQUIRED);
+            if (needsInitialPassword) {
+                account.setPasswordHash(passwordEncoder.encode(item.matricule()));
+                account.setAccountStatus(AccountStatus.ACTIVE);
+            }
             account.setRoles(String.join(",", item.roles()));
             repository.save(account);
         }
