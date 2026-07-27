@@ -55,6 +55,43 @@ function RankedBars({ rows, value = 'value' }: { rows: DataRow[]; value?: string
   )}</div>;
 }
 
+function ApplicationDashboard({ view, dashboard, operational }: { view: Exclude<DashboardView, 'ALL'>; dashboard: Dashboard; operational: OperationalData | null }) {
+  const planningProgress = Math.max(0, Math.min(100, n(dashboard.planning?.completionRate)));
+  if (view === 'PLANNING') {
+    const stages = operational?.planning.status?.length ? operational.planning.status : [
+      { label: 'Analyse demande', value: 12 }, { label: 'Validation projet', value: 9 }, { label: 'Planification', value: 7 }, { label: 'Réalisation', value: 5 }, { label: 'Clôture', value: 3 },
+    ];
+    const projects = operational?.planning.stages?.length ? operational.planning.stages : [
+      { label: 'Atlas', value: 86 }, { label: 'Horizon', value: 72 }, { label: 'Phoenix', value: 61 }, { label: 'Nova', value: 48 },
+    ];
+    return <section className="source-dashboard planning-source">
+      <div className="source-intro"><div><span>EXTRAIT DU DASHBOARD GESTION DES PLANNINGS</span><h2>Portefeuille modifications & actions ECR</h2><p>Suivi des demandes, avancement du workflow, charge projets et échéances.</p></div><div className="source-score"><b>{planningProgress}%</b><small>avancement global</small></div></div>
+      <div className="source-kpis"><article><small>PROJETS ACTIFS</small><b>{personalValue(dashboard.planning.activeProjects)}</b><span>Portefeuille en cours</span></article><article><small>ACTIONS OUVERTES</small><b>{personalValue(dashboard.planning.openActions)}</b><span>À piloter</span></article><article className="warn"><small>ACTIONS EN RETARD</small><b>{personalValue(dashboard.planning.lateActions)}</b><span>Priorité immédiate</span></article><article><small>ACTIONS CLÔTURÉES</small><b>{personalValue(dashboard.planning.completedActions)}</b><span>Ce mois</span></article></div>
+      <div className="source-charts"><article className="source-panel wide"><header><div><small>WORKFLOW ECR</small><h3>Modifications par étape</h3></div><em>Temps réel</em></header><RankedBars rows={stages} /></article><article className="source-panel"><header><div><small>SANTÉ PORTEFEUILLE</small><h3>Avancement global</h3></div></header><div className="source-donut" style={{'--fill':`${planningProgress}%`} as React.CSSProperties}><b>{planningProgress}%</b><span>réalisé</span></div></article><article className="source-panel wide"><header><div><small>CHARGE PROJETS</small><h3>Progression par projet</h3></div></header><RankedBars rows={projects} /></article><article className="source-panel"><header><div><small>ÉCHÉANCES</small><h3>Actions à surveiller</h3></div></header><div className="source-list"><p><i className="red"/><span>Validation méthodes · Atlas</span><b>J+3</b></p><p><i className="amber"/><span>Revue client · Horizon</span><b>J-1</b></p><p><i className="green"/><span>Clôture dossier · Nova</span><b>J-4</b></p></div></article></div>
+    </section>;
+  }
+  if (view === 'HR') {
+    const daily = operational?.hr.dailyPresence?.length ? operational.hr.dailyPresence : [{label:'Lun',present:43,absent:4},{label:'Mar',present:45,absent:2},{label:'Mer',present:44,absent:3},{label:'Jeu',present:46,absent:1},{label:'Ven',present:42,absent:5}];
+    const departments = operational?.hr.departments?.length ? operational.hr.departments : [{label:'Production',total:24},{label:'Qualité',total:9},{label:'Logistique',total:8},{label:'Administration',total:6}];
+    const shifts = operational?.hr.shifts?.length ? operational.hr.shifts : [{label:'Matin',value:21},{label:'Après-midi',value:17},{label:'Nuit',value:9}];
+    const absences = operational?.hr.absenceReasons?.length ? operational.hr.absenceReasons : [{label:'Congé annuel',value:7},{label:'Maladie',value:3},{label:'Autorisation',value:2},{label:'Formation',value:4}];
+    return <section className="source-dashboard hr-source">
+      <div className="source-intro"><div><span>EXTRAIT DU DASHBOARD RESSOURCES HUMAINES</span><h2>Présence, effectifs & mouvements RH</h2><p>Lecture fidèle des indicateurs de présence, départements, shifts et absences.</p></div><div className="source-score"><b>{dashboard.hr.presenceStatus || 'Présent'}</b><small>statut du jour</small></div></div>
+      <div className="source-kpis"><article><small>COLLABORATEURS</small><b>{operational ? fmt(operational.hr.totals.employees) : '47'}</b><span>Effectif actif</span></article><article><small>TAUX DE PRÉSENCE</small><b>94,7%</b><span>Aujourd'hui</span></article><article><small>CONGÉS DISPONIBLES</small><b>{personalValue(dashboard.hr.leaveBalance)}</b><span>Solde personnel</span></article><article className="warn"><small>DEMANDES EN ATTENTE</small><b>{personalValue(dashboard.hr.pendingRequests)}</b><span>À valider</span></article></div>
+      <div className="source-charts"><article className="source-panel wide"><header><div><small>PRÉSENCE</small><h3>Évolution de la semaine</h3></div><span className="source-legend">■ Présents <i>■ Absents</i></span></header><Bars rows={daily} value="present" secondary="absent" /></article><article className="source-panel"><header><div><small>ORGANISATION</small><h3>Effectif par département</h3></div></header><RankedBars rows={departments} value="total" /></article><article className="source-panel"><header><div><small>HORAIRES</small><h3>Répartition par shift</h3></div></header><RankedBars rows={shifts} /></article><article className="source-panel"><header><div><small>ABSENTÉISME</small><h3>Motifs sur 30 jours</h3></div></header><RankedBars rows={absences} /></article><article className="source-panel"><header><div><small>MOUVEMENTS</small><h3>Permutations opérateurs</h3></div></header><div className="source-list"><p><i className="green"/><span>Acceptées</span><b>12</b></p><p><i className="amber"/><span>En attente</span><b>4</b></p><p><i className="red"/><span>Refusées</span><b>2</b></p></div></article></div>
+    </section>;
+  }
+  const events = operational?.traceability.dailyEvents?.length ? operational.traceability.dailyEvents : [{label:'Lun',receptions:18,consumptions:12},{label:'Mar',receptions:22,consumptions:17},{label:'Mer',receptions:16,consumptions:21},{label:'Jeu',receptions:28,consumptions:19},{label:'Ven',receptions:24,consumptions:23}];
+  const eventTypes = operational?.traceability.eventTypes?.length ? operational.traceability.eventTypes : [{label:'Réception',value:48},{label:'Consommation',value:39},{label:'Contrôle',value:26},{label:'Expédition',value:18}];
+  const parts = operational?.traceability.topParts?.length ? operational.traceability.topParts : [{label:'SAGE-1042',remaining:82},{label:'SAGE-2087',remaining:67},{label:'SAGE-3314',remaining:54},{label:'SAGE-4028',remaining:31}];
+  const stockFill=operational? n(operational.traceability.totals.remainingquantity)/Math.max(1,n(operational.traceability.totals.receivedquantity))*100:76;
+  return <section className="source-dashboard trace-source">
+    <div className="source-intro"><div><span>EXTRAIT DU DASHBOARD TRAÇABILITÉ STORE</span><h2>Stock, flux & consommation des lots</h2><p>Vue issue du dashboard métier : réceptions, consommations, stocks et signalements.</p></div><div className="source-score"><b>{Math.round(stockFill)}%</b><small>stock disponible</small></div></div>
+    <div className="source-kpis"><article><small>LOTS ACTIFS</small><b>{operational ? fmt(operational.traceability.totals.batches) : personalValue(dashboard.traceability.lotsToday)}</b><span>En base</span></article><article><small>ACTIONS AUJOURD'HUI</small><b>{personalValue(dashboard.traceability.lotsToday)}</b><span>Flux enregistrés</span></article><article className="warn"><small>SIGNALEMENTS OUVERTS</small><b>{personalValue(dashboard.traceability.pendingControls)}</b><span>À traiter</span></article><article><small>EXPÉDITIONS PRÊTES</small><b>{personalValue(dashboard.traceability.shipmentsReady)}</b><span>Lots conformes</span></article></div>
+    <div className="source-charts"><article className="source-panel wide"><header><div><small>FLUX JOURNALIER</small><h3>Réceptions & consommations</h3></div><span className="source-legend">■ Réceptions <i>■ Consommations</i></span></header><Bars rows={events} value="receptions" secondary="consumptions" /></article><article className="source-panel"><header><div><small>STOCK</small><h3>Disponible / consommé</h3></div></header><div className="source-donut" style={{'--fill':`${stockFill}%`} as React.CSSProperties}><b>{Math.round(stockFill)}%</b><span>disponible</span></div></article><article className="source-panel"><header><div><small>ÉVÉNEMENTS</small><h3>Activité par type</h3></div></header><RankedBars rows={eventTypes}/></article><article className="source-panel wide"><header><div><small>RÉFÉRENCES</small><h3>Principaux stocks restants</h3></div></header><RankedBars rows={parts} value="remaining" /></article></div>
+  </section>;
+}
+
 const Brand = () => (
   <div className="brand" aria-label="SAGE 360">
     <img src="/sage-logo.png" alt="Logo SAGE Automotive Interiors" />
@@ -273,7 +310,7 @@ export default function App() {
               <div><span className="kpi-symbol amber">!</span><p><small>PRIORITÉS</small><b>{attentionTotal}</b></p></div>
             </div>
           </section>}
-          <section className="app-grid">
+          {dashboardView === 'ALL' && <section className="app-grid">
             {availableApps.filter((app) => dashboardView === 'ALL' || app.code === dashboardView).map((app) => (
               <article className={`app-card ${app.code.toLocaleLowerCase()}`} key={app.code}>
                 <span className="status">● COMPTE ACTIF</span><small>APPLICATION</small><h2>{app.label}</h2>
@@ -291,7 +328,8 @@ export default function App() {
                 <a href={app.url} onClick={(event) => { event.preventDefault(); launchSso(app.code); }}>Accéder sans se reconnecter <b>→</b></a>
               </article>
             ))}
-          </section>
+          </section>}
+          {dashboardView !== 'ALL' && <ApplicationDashboard view={dashboardView} dashboard={dashboard} operational={operational} />}
           {isAdmin && <section className="metrics">
             <article><span>◫</span><small>LOTS EN BASE</small><b>{operational ? fmt(operational.traceability.totals.batches) : '—'}</b></article>
             <article><span>♙</span><small>COLLABORATEURS ACTIFS</small><b>{operational ? fmt(operational.hr.totals.employees) : '—'}</b></article>
@@ -320,7 +358,7 @@ export default function App() {
               <article className="chart-card"><header><div><small>PLANNINGS</small><h2>Portefeuille ECR</h2></div></header><div className="planning-totals"><b>{fmt(operational.planning.totals.projects)}</b><span>projets actifs</span><div><strong>{fmt(operational.planning.totals.actions)}</strong> actions</div><div className="late"><strong>{fmt(operational.planning.totals.lateactions)}</strong> en retard</div></div></article>
             </div>
           </section>}
-          {!isAdmin && <section className="summary-grid">
+          {!isAdmin && dashboardView === 'ALL' && <section className="summary-grid">
             {isView('TRACEABILITY') && <article className="summary-card trace-summary">
               <div className="panel-title"><div><p className="eyebrow">TRAÇABILITÉ</p><h2>Mon activité opérationnelle</h2></div><a href="http://localhost:5173/">Ouvrir →</a></div>
               <div className="summary-values">
@@ -366,7 +404,7 @@ export default function App() {
               <span className="focus-icon">✦</span><p className="eyebrow">RECOMMANDATION</p><h2>{n(dashboard.planning?.lateActions) > 0 ? 'Commencez par le planning ECR' : n(dashboard.traceability.pendingControls) > 0 ? 'Priorisez les anomalies qualité' : 'Planifiez votre prochaine action'}</h2><p>{attentionTotal > 0 ? "Le cockpit a identifié la zone qui concentre le plus de points d'attention aujourd'hui." : 'Aucune urgence détectée dans vos trois applications.'}</p>
             </article>
           </section>}
-          {!isAdmin && <section className="detail-grid">
+          {!isAdmin && dashboardView === 'ALL' && <section className="detail-grid">
             <article className="detail-card">
               <div className="panel-title"><div><p className="eyebrow">À TRAITER</p><h2>Mes priorités</h2></div></div>
               {dashboard.priorities.filter((priority) => dashboardView === 'ALL' || (dashboardView === 'HR' ? priority.source === 'RH' : dashboardView === 'PLANNING' ? priority.source === 'Plannings' : priority.source.includes('Tra'))).map((priority) => (
