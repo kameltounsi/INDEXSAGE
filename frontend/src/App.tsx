@@ -55,14 +55,24 @@ function RankedBars({ rows, value = 'value' }: { rows: DataRow[]; value?: string
   )}</div>;
 }
 
+function CombinedDashboard({ dashboard }: { dashboard: Dashboard }) {
+  const modules = [
+    { code:'trace', label:'Traçabilité', color:'#168477', headline:personalValue(dashboard.traceability.lotsToday), unit:'actions aujourd\'hui', attention:n(dashboard.traceability.pendingControls)+n(dashboard.traceability.nonConformities), detail:`${personalValue(dashboard.traceability.shipmentsReady)} expéditions prêtes` },
+    { code:'hr', label:'Ressources humaines', color:'#7a4d8f', headline:dashboard.hr.presenceStatus || '—', unit:'statut du jour', attention:n(dashboard.hr.pendingRequests)+n(dashboard.hr.teamAbsences), detail:`${personalValue(dashboard.hr.leaveBalance)} jours de congé` },
+    { code:'planning', label:'Gestion des plannings', color:'#c6791d', headline:`${Math.max(0,Math.min(100,n(dashboard.planning?.completionRate)))}%`, unit:'avancement ECR', attention:n(dashboard.planning?.lateActions), detail:`${personalValue(dashboard.planning?.openActions)} actions ouvertes` },
+  ];
+  const maxAttention=Math.max(1,...modules.map((item)=>item.attention));
+  return <section className="combined-dashboard"><div className="combined-head"><div><p className="eyebrow">SYNTHÈSE PERSONNALISÉE</p><h2>Mes trois applications en un coup d'œil</h2><span>Indicateurs consolidés pour {dashboard.user.name}</span></div><b>{modules.reduce((sum,item)=>sum+item.attention,0)}<small> points d'attention</small></b></div><div className="combined-modules">{modules.map((item)=><article key={item.code} style={{'--module':item.color} as React.CSSProperties}><header><i/><span>{item.label}</span></header><strong>{item.headline}</strong><small>{item.unit}</small><div><i style={{width:`${Math.max(5,item.attention/maxAttention*100)}%`}}/></div><footer><span>{item.detail}</span><b>{item.attention} à traiter</b></footer></article>)}</div></section>;
+}
+
 function ApplicationDashboard({ view, dashboard, operational }: { view: Exclude<DashboardView, 'ALL'>; dashboard: Dashboard; operational: OperationalData | null }) {
   const planningProgress = Math.max(0, Math.min(100, n(dashboard.planning?.completionRate)));
   if (view === 'PLANNING') {
     const stages = operational?.planning.status?.length ? operational.planning.status : [
-      { label: 'Analyse demande', value: 12 }, { label: 'Validation projet', value: 9 }, { label: 'Planification', value: 7 }, { label: 'Réalisation', value: 5 }, { label: 'Clôture', value: 3 },
+      { label: 'Actions ouvertes', value: n(dashboard.planning.openActions) }, { label: 'En retard', value: n(dashboard.planning.lateActions) }, { label: 'Finalisées', value: n(dashboard.planning.completedActions) }, { label: 'Projets actifs', value: n(dashboard.planning.activeProjects) },
     ];
     const projects = operational?.planning.stages?.length ? operational.planning.stages : [
-      { label: 'Atlas', value: 86 }, { label: 'Horizon', value: 72 }, { label: 'Phoenix', value: 61 }, { label: 'Nova', value: 48 },
+      { label: 'Mon avancement', value: planningProgress }, { label: 'Charge ouverte', value: Math.min(100, n(dashboard.planning.openActions) * 6) }, { label: 'Actions clôturées', value: Math.min(100, n(dashboard.planning.completedActions) * 8) }, { label: 'Maîtrise des délais', value: Math.max(0, 100 - n(dashboard.planning.lateActions) * 12) },
     ];
     return <section className="source-dashboard planning-source">
       <div className="source-intro"><div><span>EXTRAIT DU DASHBOARD GESTION DES PLANNINGS</span><h2>Portefeuille modifications & actions ECR</h2><p>Suivi des demandes, avancement du workflow, charge projets et échéances.</p></div><div className="source-score"><b>{planningProgress}%</b><small>avancement global</small></div></div>
@@ -71,7 +81,7 @@ function ApplicationDashboard({ view, dashboard, operational }: { view: Exclude<
     </section>;
   }
   if (view === 'HR') {
-    const daily = operational?.hr.dailyPresence?.length ? operational.hr.dailyPresence : [{label:'Lun',present:43,absent:4},{label:'Mar',present:45,absent:2},{label:'Mer',present:44,absent:3},{label:'Jeu',present:46,absent:1},{label:'Ven',present:42,absent:5}];
+    const daily = operational?.hr.dailyPresence?.length ? operational.hr.dailyPresence : [{label:'Lun',present:Math.max(0,47-n(dashboard.hr.teamAbsences)),absent:n(dashboard.hr.teamAbsences)},{label:'Mar',present:45,absent:2},{label:'Mer',present:44,absent:3},{label:'Jeu',present:46,absent:1},{label:'Ven',present:dashboard.hr.presenceStatus?46:42,absent:dashboard.hr.presenceStatus?1:5}];
     const departments = operational?.hr.departments?.length ? operational.hr.departments : [{label:'Production',total:24},{label:'Qualité',total:9},{label:'Logistique',total:8},{label:'Administration',total:6}];
     const shifts = operational?.hr.shifts?.length ? operational.hr.shifts : [{label:'Matin',value:21},{label:'Après-midi',value:17},{label:'Nuit',value:9}];
     const absences = operational?.hr.absenceReasons?.length ? operational.hr.absenceReasons : [{label:'Congé annuel',value:7},{label:'Maladie',value:3},{label:'Autorisation',value:2},{label:'Formation',value:4}];
@@ -81,7 +91,7 @@ function ApplicationDashboard({ view, dashboard, operational }: { view: Exclude<
       <div className="source-charts"><article className="source-panel wide"><header><div><small>PRÉSENCE</small><h3>Évolution de la semaine</h3></div><span className="source-legend">■ Présents <i>■ Absents</i></span></header><Bars rows={daily} value="present" secondary="absent" /></article><article className="source-panel"><header><div><small>ORGANISATION</small><h3>Effectif par département</h3></div></header><RankedBars rows={departments} value="total" /></article><article className="source-panel"><header><div><small>HORAIRES</small><h3>Répartition par shift</h3></div></header><RankedBars rows={shifts} /></article><article className="source-panel"><header><div><small>ABSENTÉISME</small><h3>Motifs sur 30 jours</h3></div></header><RankedBars rows={absences} /></article><article className="source-panel"><header><div><small>MOUVEMENTS</small><h3>Permutations opérateurs</h3></div></header><div className="source-list"><p><i className="green"/><span>Acceptées</span><b>12</b></p><p><i className="amber"/><span>En attente</span><b>4</b></p><p><i className="red"/><span>Refusées</span><b>2</b></p></div></article></div>
     </section>;
   }
-  const events = operational?.traceability.dailyEvents?.length ? operational.traceability.dailyEvents : [{label:'Lun',receptions:18,consumptions:12},{label:'Mar',receptions:22,consumptions:17},{label:'Mer',receptions:16,consumptions:21},{label:'Jeu',receptions:28,consumptions:19},{label:'Ven',receptions:24,consumptions:23}];
+  const events = operational?.traceability.dailyEvents?.length ? operational.traceability.dailyEvents : [{label:'Lun',receptions:n(dashboard.traceability.lotsToday),consumptions:n(dashboard.traceability.pendingControls)},{label:'Mar',receptions:Math.max(1,n(dashboard.traceability.lotsToday)-2),consumptions:n(dashboard.traceability.nonConformities)+2},{label:'Mer',receptions:n(dashboard.traceability.lotsToday)+3,consumptions:n(dashboard.traceability.pendingControls)+1},{label:'Jeu',receptions:n(dashboard.traceability.lotsToday)+1,consumptions:n(dashboard.traceability.nonConformities)},{label:'Ven',receptions:n(dashboard.traceability.lotsToday)+4,consumptions:n(dashboard.traceability.pendingControls)+2}];
   const eventTypes = operational?.traceability.eventTypes?.length ? operational.traceability.eventTypes : [{label:'Réception',value:48},{label:'Consommation',value:39},{label:'Contrôle',value:26},{label:'Expédition',value:18}];
   const parts = operational?.traceability.topParts?.length ? operational.traceability.topParts : [{label:'SAGE-1042',remaining:82},{label:'SAGE-2087',remaining:67},{label:'SAGE-3314',remaining:54},{label:'SAGE-4028',remaining:31}];
   const stockFill=operational? n(operational.traceability.totals.remainingquantity)/Math.max(1,n(operational.traceability.totals.receivedquantity))*100:76;
@@ -264,6 +274,8 @@ export default function App() {
 
   const isAdmin = dashboard.user.username === 'admin';
   const availableApps = dashboard.applications.filter((app) => app.hasAccount);
+  const dashboardOptions = ([['ALL','Vue globale'],['PLANNING','Plannings'],['TRACEABILITY','Traçabilité'],['HR','Ressources humaines']] as [DashboardView,string][])
+    .filter(([code]) => code === 'ALL' || availableApps.some((app) => app.code === code));
   const planningCompletion = Math.max(0, Math.min(100, n(dashboard.planning?.completionRate)));
   const attentionTotal = n(dashboard.metrics.attentionPoints) + n(dashboard.planning?.lateActions);
   const isView = (code: Exclude<DashboardView, 'ALL'>) => dashboardView === 'ALL' || dashboardView === code;
@@ -283,14 +295,14 @@ export default function App() {
         </div>
       </header>
       <div className="workspace">
-        <aside><nav><button className={dashboardView === 'ALL' ? 'active' : ''} onClick={() => setDashboardView('ALL')}>⌂ <span>Vue globale</span></button><p>APPLICATIONS</p><button className={dashboardView === 'PLANNING' ? 'active' : ''} onClick={() => setDashboardView('PLANNING')}>▦ <span>Plannings</span></button><button className={dashboardView === 'TRACEABILITY' ? 'active' : ''} onClick={() => setDashboardView('TRACEABILITY')}>◇ <span>Traçabilité</span></button><button className={dashboardView === 'HR' ? 'active' : ''} onClick={() => setDashboardView('HR')}>♙ <span>Ressources humaines</span></button>{isAdmin && <><p>ADMINISTRATION</p><button>⚙ <span>Comptes utilisateurs</span></button></>}</nav></aside>
+        <aside><nav><button className={dashboardView === 'ALL' ? 'active' : ''} onClick={() => setDashboardView('ALL')}>⌂ <span>Vue globale</span></button>{dashboardOptions.length>1&&<p>APPLICATIONS AUTORISÉES</p>}{dashboardOptions.slice(1).map(([code,label])=><button key={code} className={dashboardView === code ? 'active' : ''} onClick={() => setDashboardView(code)}>{code==='PLANNING'?'▦':code==='TRACEABILITY'?'◇':'♙'} <span>{label}</span></button>)}{isAdmin && <><p>ADMINISTRATION</p><button>⚙ <span>Comptes utilisateurs</span></button></>}</nav></aside>
         <main className={`dashboard view-${dashboardView.toLowerCase()}`}>
           <section className="welcome">
             <div><p className="eyebrow">{viewTitle.toUpperCase()}</p><h1>{dashboardView === 'ALL' ? `Bonjour ${dashboard.user.name.split(' ')[0]} 👋` : viewTitle}</h1><p>{dashboardView === 'ALL' ? `${dashboard.user.department} · ${dashboard.user.jobTitle}` : `Indicateurs et activité dédiés · ${dashboard.user.name}`}</p></div>
             <div className="welcome-meta"><span className="sync">● 3 sources synchronisées</span><small>{new Date().toLocaleDateString('fr-FR', { weekday: 'long', day: '2-digit', month: 'long' })}</small></div>
           </section>
           <section className="dashboard-switcher" aria-label="Choisir le dashboard">
-            {([['ALL','Vue globale'],['PLANNING','Planning'],['TRACEABILITY','Traçabilité'],['HR','Ressources humaines']] as [DashboardView,string][]).map(([code,label]) => <button key={code} className={dashboardView === code ? 'active' : ''} onClick={() => setDashboardView(code)}>{label}</button>)}
+            {dashboardOptions.map(([code,label]) => <button key={code} className={dashboardView === code ? 'active' : ''} onClick={() => setDashboardView(code)}>{label}</button>)}
           </section>
           {!isAdmin && dashboardView === 'ALL' && availableApps.length > 1 && <button className="launch-all" onClick={() => launchSso()} disabled={ssoLaunching}><span>✦</span><b>{ssoLaunching ? 'Ouverture sécurisée…' : `Ouvrir mes ${availableApps.length} applications`}</b><small>Une seule connexion · aucun mot de passe redemandé</small><strong>→</strong></button>}
           {!isAdmin && dashboardView === 'ALL' && <section className="command-center">
@@ -310,6 +322,7 @@ export default function App() {
               <div><span className="kpi-symbol amber">!</span><p><small>PRIORITÉS</small><b>{attentionTotal}</b></p></div>
             </div>
           </section>}
+          {dashboardView === 'ALL' && <CombinedDashboard dashboard={dashboard} />}
           {dashboardView === 'ALL' && <section className="app-grid">
             {availableApps.filter((app) => dashboardView === 'ALL' || app.code === dashboardView).map((app) => (
               <article className={`app-card ${app.code.toLocaleLowerCase()}`} key={app.code}>
