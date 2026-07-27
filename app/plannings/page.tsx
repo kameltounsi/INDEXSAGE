@@ -1,2 +1,2 @@
-import { redirect } from "next/navigation";
-export default function Page(){ redirect("/?view=planning"); }
+import Dashboard from "../page";
+export default function Page(){return <Dashboard initialView="planning"/>}

@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useEffect, useMemo, useState } from "react";
 
@@ -25,14 +25,16 @@ const kpis: Record<View, Array<[string,string,string,string,IconName]>> = {
 
 const chartData: Record<View, number[]> = { all:[62,71,66,79,74,88,82,91,84,93,89,96], planning:[58,64,61,72,69,77,75,83,81,89,86,92], trace:[70,76,73,85,80,89,86,94,91,96,93,98], rh:[75,78,76,83,81,86,84,90,88,94,91,95] };
 const days=["01","03","05","07","09","11","13","15","17","19","21","23"];
+const viewPaths:Record<View,string>={all:"/",planning:"/plannings",trace:"/tracabilite",rh:"/rh"};
 
 function MiniSpark({data}:{data:number[]}) { return <div className="mini-spark">{data.map((n,i)=><i key={i} style={{height:`${Math.max(18,n-45)}%`}} />)}</div> }
 function Ring({value,label}:{value:number,label:string}) { return <div className="ring" style={{"--ring":`${value*3.6}deg`} as React.CSSProperties}><div><b>{value}%</b><span>{label}</span></div></div> }
 
-export default function Dashboard() {
-  const [view,setView]=useState<View>("all");
+export default function Dashboard({initialView="all"}:{initialView?:View}) {
+  const [view,setView]=useState<View>(initialView);
   const [range,setRange]=useState("30 jours");
   useEffect(()=>{const requested=new URLSearchParams(window.location.search).get("view");if(requested&&requested in views)setView(requested as View)},[]);
+  const openView=(next:View)=>{setView(next);window.history.pushState({view:next},"",viewPaths[next])};
   const cfg=views[view]; const data=chartData[view];
   const line=useMemo(()=>data.map((v,i)=>`${i/(data.length-1)*100},${100-(v-50)*1.6}`).join(" "),[data]);
   const barLabels=view==="planning"?["Conception","Méthodes","Production","Qualité"]:view==="rh"?["Production","Qualité","Logistique","Admin."]:view==="trace"?["Réception","Production","Contrôle","Expédition"]:["Traçabilité","Planning","RH","Qualité"];
@@ -42,7 +44,7 @@ export default function Dashboard() {
       <a className="logo" href="#" aria-label="SAGE 360"><img src="/sage-logo.png" alt="Logo SAGE Automotive Interiors"/><span>SAGE 360</span></a>
       <nav>
         <p>ESPACE DE PILOTAGE</p>
-        {(Object.keys(views) as View[]).map((key)=><button key={key} onClick={()=>setView(key)} className={view===key?"active":""}><span>{icons[key==="all"?"grid":key==="planning"?"calendar":key==="trace"?"route":"users"]}</span><b>{views[key].label}</b>{key==="all"&&<em>4</em>}</button>)}
+        {(Object.keys(views) as View[]).map((key)=><button key={key} onClick={()=>openView(key)} className={view===key?"active":""}><span>{icons[key==="all"?"grid":key==="planning"?"calendar":key==="trace"?"route":"users"]}</span><b>{views[key].label}</b>{key==="all"&&<em>4</em>}</button>)}
         <p>ANALYSE</p><button><span>{icons.chart}</span><b>Rapports</b></button><button><span>{icons.clock}</span><b>Historique</b></button>
       </nav>
       <div className="sync"><span><i/> Systèmes synchronisés</span><b>3 / 3</b><small>Mise à jour il y a 2 min</small></div>
@@ -51,7 +53,7 @@ export default function Dashboard() {
       <header className="topbar"><div className="mobile-brand"><img src="/sage-logo.png" alt=""/><b>SAGE 360</b></div><label className="search"><span>{icons.search}</span><input aria-label="Rechercher" placeholder="Rechercher un lot, un projet, un collaborateur…"/><kbd>⌘ K</kbd></label><div className="top-actions"><button className="round">{icons.bell}<i>3</i></button><div className="person"><span>KT</span><p><b>Kamel Tounsi</b><small>Responsable opérations</small></p><em>⌄</em></div></div></header>
       <div className="page">
         <div className="headline"><div><div className="breadcrumb">PILOTAGE <span>/</span> {cfg.label.toUpperCase()}</div><h1>{cfg.title}</h1><p>{cfg.subtitle}</p></div><div className="actions"><button>{icons.download} Exporter</button><select value={range} onChange={e=>setRange(e.target.value)} aria-label="Période"><option>7 jours</option><option>30 jours</option><option>Ce trimestre</option></select></div></div>
-        <div className="view-switch" role="tablist">{(Object.keys(views) as View[]).map(key=><button role="tab" aria-selected={view===key} className={view===key?"active":""} onClick={()=>setView(key)} key={key}><span>{icons[key==="all"?"grid":key==="planning"?"calendar":key==="trace"?"route":"users"]}</span>{views[key].short}</button>)}</div>
+        <div className="view-switch" role="tablist">{(Object.keys(views) as View[]).map(key=><button role="tab" aria-selected={view===key} className={view===key?"active":""} onClick={()=>openView(key)} key={key}><span>{icons[key==="all"?"grid":key==="planning"?"calendar":key==="trace"?"route":"users"]}</span>{views[key].short}</button>)}</div>
         <section className="kpi-grid">{kpis[view].map((k,i)=><article className="kpi" key={k[0]}><div className="kpi-icon">{icons[k[4]]}</div><div className="delta">{k[2]}</div><small>{k[0]}</small><strong>{k[1]}</strong><footer><span>{k[3]}</span><MiniSpark data={data.slice(i,i+6).concat(data.slice(0,i))}/></footer></article>)}</section>
         <section className="grid-main">
           <article className="card performance"><div className="card-head"><div><span className="overline">{cfg.status}</span><h2>Évolution de la performance</h2><p>Comparaison avec la période précédente</p></div><div className="legend"><span><i/>Actuel</span><span><i/>Précédent</span></div></div><div className="score"><strong>{cfg.score}</strong><em>↗ +4,6%</em></div><div className="line-chart"><div className="y-axis"><span>100</span><span>90</span><span>80</span><span>70</span><span>60</span></div><div className="plot"><svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-label="Courbe de performance"><defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stopColor="var(--accent)" stopOpacity=".25"/><stop offset="1" stopColor="var(--accent)" stopOpacity="0"/></linearGradient></defs><polygon points={`0,100 ${line} 100,100`} fill="url(#fill)"/><polyline points={line} fill="none" stroke="var(--accent)" strokeWidth="2" vectorEffect="non-scaling-stroke"/></svg><div className="x-axis">{days.map(d=><span key={d}>{d}</span>)}</div></div></div></article>
