@@ -1,0 +1,572 @@
+{"kind":"deck","id":"pr/6dvyfa","name":"Deck"}
+{"kind":"layout","layoutId":"d5e89507-bcbf-40b1-8f11-d1c93b7212a5","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"af22ea09-af2e-43d6-9a57-b76b218c2aa4","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/08thah","slide":1,"title":"PORTAIL UNIFIÉ","textShapes":6}
+{"kind":"textbox","id":"sh/eh4fmhg7","slide":1,"text":"PORTAIL UNIFIÉ","textPreview":"PORTAIL UNIFIÉ","textChars":14,"textLines":1,"bbox":[62,62,400,30]}
+{"kind":"textbox","id":"sh/z2dwfmxs","slide":1,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[62,205,720,96]}
+{"kind":"textbox","id":"sh/o7mxcry9","slide":1,"text":"Une vue consolidée de la traçabilité, des ressources humaines et des plannings","textPreview":"Une vue consolidée de la traçabilité, des ressources humaines et des plannings","textChars":78,"textLines":1,"bbox":[62,320,760,105]}
+{"kind":"textbox","id":"sh/98fylwfu","slide":1,"text":"Projet de fin d’études • Présentation de la solution","textPreview":"Projet de fin d’études • Présentation de la solution","textChars":52,"textLines":1,"bbox":[62,590,700,35]}
+{"kind":"shape","id":"sh/m54fqhg3","slide":1,"bbox":[915,205,250,250]}
+{"kind":"textbox","id":"sh/n6dgjmxo","slide":1,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[940,235,200,95]}
+{"kind":"textbox","id":"sh/4b2xg7y5","slide":1,"text":"applications\nréunies dans\nun seul portail","textPreview":"applications | réunies dans | un seul portail","textChars":41,"textLines":3,"bbox":[940,335,200,100]}
+{"kind":"image","id":"im/kvalk7yt","slide":1,"name":"","alt":"Logo SAGE Automotive Interiors","bbox":[930,56,250,90]}
+{"kind":"notes","id":"nt/08thah","slide":1,"text":""}
+{"kind":"slide","id":"sl/duont1","slide":2,"title":"SAGE INDEX","textShapes":23}
+{"kind":"textbox","id":"sh/9wrylozm","slide":2,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/mtgza9gv","slide":2,"text":"Table des matières","textPreview":"Table des matières","textChars":18,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/nupgjehg","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/wzihgjyd","slide":2,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/x0ripozi","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[55,185,54,48]}
+{"kind":"textbox","id":"sh/ax0ze9g7","slide":2,"text":"Contexte général du projet","textPreview":"Contexte général du projet","textChars":26,"textLines":1,"bbox":[117,185,510,48]}
+{"kind":"shape","id":"sh/by9gnehs","slide":2,"bbox":[55,242,540,1]}
+{"kind":"textbox","id":"sh/c3eh4zit","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[55,271,54,48]}
+{"kind":"textbox","id":"sh/d47yd4ze","slide":2,"text":"Organisme d’accueil","textPreview":"Organisme d’accueil","textChars":19,"textLines":1,"bbox":[117,271,510,48]}
+{"kind":"shape","id":"sh/pwjyxwji","slide":2,"bbox":[55,328,540,1]}
+{"kind":"textbox","id":"sh/ovah4bid","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[55,357,54,48]}
+{"kind":"textbox","id":"sh/3u1gv61s","slide":2,"text":"Problématique et enjeux","textPreview":"Problématique et enjeux","textChars":23,"textLines":1,"bbox":[117,357,510,48]}
+{"kind":"shape","id":"sh/2tsz2107","slide":2,"bbox":[55,414,540,1]}
+{"kind":"textbox","id":"sh/xkjy1gzu","slide":2,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[55,443,54,48]}
+{"kind":"textbox","id":"sh/cjah8bi9","slide":2,"text":"Étude de l’existant","textPreview":"Étude de l’existant","textChars":19,"textLines":1,"bbox":[117,443,510,48]}
+{"kind":"shape","id":"sh/bi1gz61o","slide":2,"bbox":[55,500,540,1]}
+{"kind":"textbox","id":"sh/ahsz6103","slide":2,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[55,529,54,48]}
+{"kind":"textbox","id":"sh/lo3y5gzq","slide":2,"text":"Solution proposée","textPreview":"Solution proposée","textChars":17,"textLines":1,"bbox":[117,529,510,48]}
+{"kind":"shape","id":"sh/knuhcvi5","slide":2,"bbox":[55,586,540,1]}
+{"kind":"textbox","id":"sh/kr218zqh","slide":2,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[660,185,54,48]}
+{"kind":"textbox","id":"sh/5sbi1472","slide":2,"text":"Besoins fonctionnels et non fonctionnels","textPreview":"Besoins fonctionnels et non fonctionnels","textChars":40,"textLines":1,"bbox":[722,185,510,48]}
+{"kind":"shape","id":"sh/ipkj6p8b","slide":2,"bbox":[660,242,540,1]}
+{"kind":"textbox","id":"sh/jqt0zupw","slide":2,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[660,271,54,48]}
+{"kind":"textbox","id":"sh/sv21czqt","slide":2,"text":"Valeur ajoutée de la solution","textPreview":"Valeur ajoutée de la solution","textChars":29,"textLines":1,"bbox":[722,271,510,48]}
+{"kind":"shape","id":"sh/twvi547y","slide":2,"bbox":[660,328,540,1]}
+{"kind":"textbox","id":"sh/6tkja98n","slide":2,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[660,357,54,48]}
+{"kind":"textbox","id":"sh/7ut03up8","slide":2,"text":"Méthodologie adoptée","textPreview":"Méthodologie adoptée","textChars":20,"textLines":1,"bbox":[722,357,510,48]}
+{"kind":"shape","id":"sh/8zi10fq9","slide":2,"bbox":[660,414,540,1]}
+{"kind":"textbox","id":"sh/90ritk7u","slide":2,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[660,443,54,48]}
+{"kind":"textbox","id":"sh/rex4fi9c","slide":2,"text":"Technologies utilisées","textPreview":"Technologies utilisées","textChars":22,"textLines":1,"bbox":[722,443,510,48]}
+{"kind":"shape","id":"sh/qdo36dsr","slide":2,"bbox":[660,500,540,1]}
+{"kind":"textbox","id":"sh/dgzmhsri","slide":2,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[660,529,54,48]}
+{"kind":"textbox","id":"sh/cfql8nax","slide":2,"text":"Démonstration vidéo de la solution","textPreview":"Démonstration vidéo de la solution","textChars":34,"textLines":1,"bbox":[722,529,510,48]}
+{"kind":"shape","id":"sh/3qx4by9g","slide":2,"bbox":[660,586,540,1]}
+{"kind":"notes","id":"nt/duont1","slide":2,"text":""}
+{"kind":"slide","id":"sl/368zqk","slide":3,"title":"SAGE INDEX","textShapes":11}
+{"kind":"textbox","id":"sh/nyl0ni9s","slide":3,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/ozuhgnqd","slide":3,"text":"Le projet répond à une fragmentation opérationnelle","textPreview":"Le projet répond à une fragmentation opérationnelle","textChars":51,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/p03ipsry","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/etszat8b","slide":3,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/fu1gjy9g","slide":3,"text":"Trois applications métier produisent des données complémentaires, mais leur consultation séparée ralentit la prise de décision.","textPreview":"Trois applications métier produisent des données complémentaires, mais leur consultation séparée ralentit la prise de décision.","textChars":127,"textLines":1,"bbox":[48,176,1120,64]}
+{"kind":"shape","id":"sh/0vuhc3q1","slide":3,"bbox":[48,285,355,245]}
+{"kind":"shape","id":"sh/1w3yl8rm","slide":3,"bbox":[48,285,8,245]}
+{"kind":"textbox","id":"sh/ypwzmx8f","slide":3,"text":"Traçabilité","textPreview":"Traçabilité","textChars":11,"textLines":1,"bbox":[74,303,311,38]}
+{"kind":"textbox","id":"sh/zq50v290","slide":3,"text":"Lots, réceptions, consommations, contrôles, non-conformités et expéditions.","textPreview":"Lots, réceptions, consommations, contrôles, non-conformités et expéditions.","textChars":75,"textLines":1,"bbox":[74,347,311,167]}
+{"kind":"shape","id":"sh/nyxcre90","slide":3,"bbox":[463,285,355,245]}
+{"kind":"shape","id":"sh/2xovy9sf","slide":3,"bbox":[463,285,8,245]}
+{"kind":"textbox","id":"sh/p0zutorq","slide":3,"text":"Ressources humaines","textPreview":"Ressources humaines","textChars":19,"textLines":1,"bbox":[489,303,311,38]}
+{"kind":"textbox","id":"sh/ozqd0jal","slide":3,"text":"Présence, pointage, congés, demandes, équipes et capacité disponible.","textPreview":"Présence, pointage, congés, demandes, équipes et capacité disponible.","textChars":69,"textLines":1,"bbox":[489,347,311,167]}
+{"kind":"shape","id":"sh/bmhcvy9w","slide":3,"bbox":[878,285,355,245]}
+{"kind":"shape","id":"sh/al8v2tsb","slide":3,"bbox":[878,285,8,245]}
+{"kind":"textbox","id":"sh/xozux8r2","slide":3,"text":"Plannings","textPreview":"Plannings","textChars":9,"textLines":1,"bbox":[904,303,311,38]}
+{"kind":"textbox","id":"sh/cnqd43ah","slide":3,"text":"Projets ECR, actions, jalons, échéances, retards et avancement.","textPreview":"Projets ECR, actions, jalons, échéances, retards et avancement.","textChars":63,"textLines":1,"bbox":[904,347,311,167]}
+{"kind":"textbox","id":"sh/zq1czy98","slide":3,"text":"Objectif : transformer trois lectures isolées en une vision cohérente et personnalisée.","textPreview":"Objectif : transformer trois lectures isolées en une vision cohérente et personnalisée.","textChars":87,"textLines":1,"bbox":[48,574,1120,44]}
+{"kind":"notes","id":"nt/368zqk","slide":3,"text":""}
+{"kind":"slide","id":"sl/jpglut","slide":4,"title":"SAGE INDEX","textShapes":12}
+{"kind":"textbox","id":"sh/yd8fut43","slide":4,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/lgzyp8ne","slide":4,"text":"SAGE Automotive Interiors : un environnement industriel exigeant","textPreview":"SAGE Automotive Interiors : un environnement industriel exigeant","textChars":64,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/0fqxw3mt","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/n21gri5k","slide":4,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/94jyt8nq","slide":4,"text":"Cadre du projet","textPreview":"Cadre du projet","textChars":15,"textLines":1,"bbox":[48,178,380,40]}
+{"kind":"textbox","id":"sh/83ax03m5","slide":4,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,238,24,32]}
+{"kind":"textbox","id":"sh/v61gvi5g","slide":4,"text":"Activités industrielles où la continuité, la qualité et la traçabilité sont critiques.","textPreview":"Activités industrielles où la continuité, la qualité et la traçabilité sont critiques.","textChars":86,"textLines":1,"bbox":[76,238,517,38]}
+{"kind":"textbox","id":"sh/a5sf2d4b","slide":4,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,320,24,32]}
+{"kind":"textbox","id":"sh/8vu90z25","slide":4,"text":"Multiplicité des processus et des profils : production, qualité, RH, méthodes et management.","textPreview":"Multiplicité des processus et des profils : production, qualité, RH, méthodes et management.","textChars":92,"textLines":1,"bbox":[76,320,517,38]}
+{"kind":"textbox","id":"sh/9w3a94jq","slide":4,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,402,24,32]}
+{"kind":"textbox","id":"sh/m9sry9kf","slide":4,"text":"Besoin d’un accès fiable aux indicateurs opérationnels pour agir rapidement.","textPreview":"Besoin d’un accès fiable aux indicateurs opérationnels pour agir rapidement.","textChars":76,"textLines":1,"bbox":[76,402,517,38]}
+{"kind":"shape","id":"sh/7uls7e10","slide":4,"bbox":[665,270,500,250]}
+{"kind":"textbox","id":"sh/wzut4j2h","slide":4,"text":"Mission confiée","textPreview":"Mission confiée","textChars":15,"textLines":1,"bbox":[700,300,430,40]}
+{"kind":"textbox","id":"sh/h03adoj2","slide":4,"text":"Concevoir un portail sécurisé qui fédère les applications existantes, consolide leurs données et adapte l’expérience au collaborateur connecté.","textPreview":"Concevoir un portail sécurisé qui fédère les applications existantes, consolide leurs données et adapte l’expérience au collaborateur con...","textChars":143,"textLines":1,"bbox":[700,355,430,125]}
+{"kind":"image","id":"im/7yhw3yxc","slide":4,"name":"","alt":"Logo SAGE Automotive Interiors","bbox":[1000,170,210,80]}
+{"kind":"notes","id":"nt/jpglut","slide":4,"text":""}
+{"kind":"slide","id":"sl/j2z81p","slide":5,"title":"SAGE INDEX","textShapes":11}
+{"kind":"textbox","id":"sh/nulwrupg","slide":5,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/8vux0zq1","slide":5,"text":"Le défi : unifier sans remplacer les applications métier","textPreview":"Le défi : unifier sans remplacer les applications métier","textChars":56,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/9w3et47m","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/axcf298r","slide":5,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/vylwvupc","slide":5,"bbox":[48,190,555,170]}
+{"kind":"shape","id":"sh/wzux4zqx","slide":5,"bbox":[48,190,8,170]}
+{"kind":"textbox","id":"sh/x03ex47i","slide":5,"text":"01 • Accès dispersé","textPreview":"01 • Accès dispersé","textChars":19,"textLines":1,"bbox":[74,208,511,38]}
+{"kind":"textbox","id":"sh/i1wf6983","slide":5,"text":"Plusieurs interfaces, identifiants et chemins de navigation augmentent la friction.","textPreview":"Plusieurs interfaces, identifiants et chemins de navigation augmentent la friction.","textChars":83,"textLines":1,"bbox":[74,252,511,92]}
+{"kind":"shape","id":"sh/j25gzepo","slide":5,"bbox":[677,190,555,170]}
+{"kind":"shape","id":"sh/zqlc3258","slide":5,"bbox":[677,190,8,170]}
+{"kind":"textbox","id":"sh/ypcbux4n","slide":5,"text":"02 • Vision en silos","textPreview":"02 • Vision en silos","textChars":20,"textLines":1,"bbox":[703,208,511,38]}
+{"kind":"textbox","id":"sh/lcnu5sny","slide":5,"text":"Les signaux Traçabilité, RH et Planning ne sont pas rapprochés au même endroit.","textPreview":"Les signaux Traçabilité, RH et Planning ne sont pas rapprochés au même endroit.","textChars":79,"textLines":1,"bbox":[703,252,511,92]}
+{"kind":"shape","id":"sh/0butwnmt","slide":5,"bbox":[48,405,555,170]}
+{"kind":"shape","id":"sh/bmlczi5w","slide":5,"bbox":[48,405,8,170]}
+{"kind":"textbox","id":"sh/qlcbqd4b","slide":5,"text":"03 • Décision tardive","textPreview":"03 • Décision tardive","textChars":21,"textLines":1,"bbox":[74,423,511,38]}
+{"kind":"textbox","id":"sh/do3u1sn2","slide":5,"text":"Les priorités et retards sont identifiés après consultation de plusieurs sources.","textPreview":"Les priorités et retards sont identifiés après consultation de plusieurs sources.","textChars":81,"textLines":1,"bbox":[74,467,511,92]}
+{"kind":"shape","id":"sh/cnutsnmh","slide":5,"bbox":[677,405,555,170]}
+{"kind":"shape","id":"sh/vi5cbm5g","slide":5,"bbox":[677,405,8,170]}
+{"kind":"textbox","id":"sh/ahwv2h4v","slide":5,"text":"04 • Sécurité et adoption","textPreview":"04 • Sécurité et adoption","textChars":25,"textLines":1,"bbox":[703,423,511,38]}
+{"kind":"textbox","id":"sh/6d0falo3","slide":5,"text":"L’unification doit préserver les droits, la confidentialité et la simplicité d’usage.","textPreview":"L’unification doit préserver les droits, la confidentialité et la simplicité d’usage.","textChars":85,"textLines":1,"bbox":[703,467,511,92]}
+{"kind":"notes","id":"nt/j2z81p","slide":5,"text":""}
+{"kind":"slide","id":"sl/va6xsa","slide":6,"title":"SAGE INDEX","textShapes":12}
+{"kind":"textbox","id":"sh/3e1sbqt4","slide":6,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/4fatkvup","slide":6,"text":"L’existant est riche, mais l’expérience reste fragmentée","textPreview":"L’existant est riche, mais l’expérience reste fragmentée","textChars":56,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/pgjad0ba","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/qhsbm5cv","slide":6,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/ri1cfatg","slide":6,"text":"Avant","textPreview":"Avant","textChars":5,"textLines":1,"bbox":[48,182,200,34]}
+{"kind":"textbox","id":"sh/cjatovul","slide":6,"text":"Après intégration","textPreview":"Après intégration","textChars":17,"textLines":1,"bbox":[680,182,300,34]}
+{"kind":"shape","id":"sh/dkjuh0b6","slide":6,"bbox":[48,245,450,70]}
+{"kind":"textbox","id":"sh/e5cbq5cr","slide":6,"text":"Traçabilité","textPreview":"Traçabilité","textChars":11,"textLines":1,"bbox":[74,260,390,38]}
+{"kind":"shape","id":"sh/z6lcjatc","slide":6,"bbox":[48,347,450,70]}
+{"kind":"textbox","id":"sh/fidoj6pg","slide":6,"text":"Ressources humaines","textPreview":"Ressources humaines","textChars":19,"textLines":1,"bbox":[74,362,390,38]}
+{"kind":"shape","id":"sh/uh4nq18v","slide":6,"bbox":[48,449,450,70]}
+{"kind":"textbox","id":"sh/hkv6lg7m","slide":6,"text":"Gestion des plannings","textPreview":"Gestion des plannings","textChars":21,"textLines":1,"bbox":[74,464,390,38]}
+{"kind":"textbox","id":"sh/gjm5sbq1","slide":6,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[545,334,80,70]}
+{"kind":"shape","id":"sh/7et4fmp4","slide":6,"bbox":[680,245,500,275]}
+{"kind":"textbox","id":"sh/6dknm18z","slide":6,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[710,280,440,50]}
+{"kind":"textbox","id":"sh/tgvmhw7a","slide":6,"text":"Authentification unique\nDashboard consolidé\nAccès direct aux trois modules","textPreview":"Authentification unique | Dashboard consolidé | Accès direct aux trois modules","textChars":74,"textLines":3,"bbox":[730,350,400,125]}
+{"kind":"textbox","id":"sh/sfm5orqp","slide":6,"text":"Principe d’architecture : conserver les systèmes sources et ajouter une couche de portail, d’agrégation et de sécurité.","textPreview":"Principe d’architecture : conserver les systèmes sources et ajouter une couche de portail, d’agrégation et de sécurité.","textChars":119,"textLines":1,"bbox":[48,575,1120,45]}
+{"kind":"notes","id":"nt/va6xsa","slide":6,"text":""}
+{"kind":"slide","id":"sl/82b98f","slide":7,"title":"SAGE INDEX","textShapes":19}
+{"kind":"textbox","id":"sh/h8rq1kn6","slide":7,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/u5g7q54v","slide":7,"text":"La solution crée un point d’entrée unique et personnalisé","textPreview":"La solution crée un point d’entrée unique et personnalisé","textChars":57,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/v69oza5g","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/8jypov6p","slide":7,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/tk76x0na","slide":7,"bbox":[65,245,230,245]}
+{"kind":"textbox","id":"sh/6hg7mloj","slide":7,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[87,265,50,38]}
+{"kind":"textbox","id":"sh/7ipovq54","slide":7,"text":"Connexion","textPreview":"Connexion","textChars":9,"textLines":1,"bbox":[87,315,185,44]}
+{"kind":"textbox","id":"sh/kfypkv6t","slide":7,"text":"Matricule + mot de passe\nJeton JWT sécurisé","textPreview":"Matricule + mot de passe | Jeton JWT sécurisé","textChars":43,"textLines":2,"bbox":[87,375,185,85]}
+{"kind":"textbox","id":"sh/lg76tgne","slide":7,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[299,335,45,45]}
+{"kind":"shape","id":"sh/xoj218ba","slide":7,"bbox":[345,245,230,245]}
+{"kind":"textbox","id":"sh/wna183ap","slide":7,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[367,265,50,38]}
+{"kind":"textbox","id":"sh/bm1kzyt4","slide":7,"text":"Profil utilisateur","textPreview":"Profil utilisateur","textChars":18,"textLines":1,"bbox":[367,315,185,44]}
+{"kind":"textbox","id":"sh/alsj6tsj","slide":7,"text":"Applications autorisées\nRôle, service, identité","textPreview":"Applications autorisées | Rôle, service, identité","textChars":47,"textLines":2,"bbox":[367,375,185,85]}
+{"kind":"textbox","id":"sh/9kjix8by","slide":7,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[579,335,45,45]}
+{"kind":"shape","id":"sh/oja143ad","slide":7,"bbox":[625,245,230,245]}
+{"kind":"textbox","id":"sh/ni10vyt8","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[647,265,50,38]}
+{"kind":"textbox","id":"sh/mh8j2tsn","slide":7,"text":"Agrégation","textPreview":"Agrégation","textChars":10,"textLines":1,"bbox":[647,315,185,44]}
+{"kind":"textbox","id":"sh/1gzitob2","slide":7,"text":"Lecture des bases métier\nNormalisation des indicateurs","textPreview":"Lecture des bases métier | Normalisation des indicateurs","textChars":54,"textLines":2,"bbox":[647,375,185,85]}
+{"kind":"textbox","id":"sh/0fq10jah","slide":7,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[859,335,45,45]}
+{"kind":"shape","id":"sh/cbetwnmp","slide":7,"bbox":[905,245,230,245]}
+{"kind":"textbox","id":"sh/dcna5snu","slide":7,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[927,265,50,38]}
+{"kind":"textbox","id":"sh/q9wbud4j","slide":7,"text":"Pilotage","textPreview":"Pilotage","textChars":8,"textLines":1,"bbox":[927,315,185,44]}
+{"kind":"textbox","id":"sh/ra5s3i54","slide":7,"text":"Vue globale + vues dédiées\nPriorités et activité récente","textPreview":"Vue globale + vues dédiées | Priorités et activité récente","textChars":56,"textLines":2,"bbox":[927,375,185,85]}
+{"kind":"textbox","id":"sh/47uts36d","slide":7,"text":"Le portail devient la couche de lecture commune, sans perturber les outils métier déjà en place.","textPreview":"Le portail devient la couche de lecture commune, sans perturber les outils métier déjà en place.","textChars":96,"textLines":1,"bbox":[65,550,1070,46]}
+{"kind":"notes","id":"nt/82b98f","slide":7,"text":""}
+{"kind":"slide","id":"sl/kkoo6o","slide":8,"title":"RÉALISATION PERSONNELLE","textShapes":17}
+{"kind":"textbox","id":"sh/vmh4zy1k","slide":8,"text":"RÉALISATION PERSONNELLE","textPreview":"RÉALISATION PERSONNELLE","textChars":23,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/wnq58325","slide":8,"text":"Ma contribution : concevoir un écosystème de quatre applications","textPreview":"Ma contribution : concevoir un écosystème de quatre applications","textChars":64,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/xozm1oja","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/mho329kn","slide":8,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/nix4vel8","slide":8,"text":"Je ne me suis pas limité à intégrer des logiciels existants : j’ai créé les trois applications métier puis le portail qui les fédère.","textPreview":"Je ne me suis pas limité à intégrer des logiciels existants : j’ai créé les trois applications métier puis le portail qui les fédère.","textChars":133,"textLines":1,"bbox":[48,170,1120,60]}
+{"kind":"shape","id":"sh/8jql4j2t","slide":8,"bbox":[48,285,260,235]}
+{"kind":"textbox","id":"sh/9kzmxo3e","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[70,305,40,34]}
+{"kind":"textbox","id":"sh/6dsnedk7","slide":8,"text":"Traçabilité","textPreview":"Traçabilité","textChars":11,"textLines":1,"bbox":[70,355,215,50]}
+{"kind":"textbox","id":"sh/7e147i1s","slide":8,"text":"Flux matière, lots, stock et qualité","textPreview":"Flux matière, lots, stock et qualité","textChars":36,"textLines":1,"bbox":[70,420,215,60]}
+{"kind":"shape","id":"sh/rulkne5s","slide":8,"bbox":[348,285,260,235]}
+{"kind":"textbox","id":"sh/qtsje947","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[370,305,40,34]}
+{"kind":"textbox","id":"sh/dw32p4ny","slide":8,"text":"SAGE RH","textPreview":"SAGE RH","textChars":7,"textLines":1,"bbox":[370,355,215,50]}
+{"kind":"textbox","id":"sh/cvu1gzmd","slide":8,"text":"Personnel, présence et processus RH","textPreview":"Personnel, présence et processus RH","textChars":35,"textLines":1,"bbox":[370,420,215,60]}
+{"kind":"shape","id":"sh/zylkre5o","slide":8,"bbox":[648,285,260,235]}
+{"kind":"textbox","id":"sh/excji943","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[670,305,40,34]}
+{"kind":"textbox","id":"sh/1032tonu","slide":8,"text":"Gestion Planning","textPreview":"Gestion Planning","textChars":16,"textLines":1,"bbox":[670,355,215,50]}
+{"kind":"textbox","id":"sh/0zulkjm9","slide":8,"text":"Workflow ECR, actions et délais","textPreview":"Workflow ECR, actions et délais","textChars":31,"textLines":1,"bbox":[670,420,215,60]}
+{"kind":"shape","id":"sh/n25kvy50","slide":8,"bbox":[948,285,260,235]}
+{"kind":"textbox","id":"sh/m1w3mt4f","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[970,305,40,34]}
+{"kind":"textbox","id":"sh/ihgnexon","slide":8,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[970,355,215,50]}
+{"kind":"textbox","id":"sh/jip4nip8","slide":8,"text":"SSO, consolidation et pilotage","textPreview":"SSO, consolidation et pilotage","textChars":30,"textLines":1,"bbox":[970,420,215,60]}
+{"kind":"textbox","id":"sh/kjy5gn6t","slide":8,"text":"Analyse métier • UX/UI • Modélisation des données • API REST • Sécurité • Tests • Docker • Déploiement","textPreview":"Analyse métier • UX/UI • Modélisation des données • API REST • Sécurité • Tests • Docker • Déploiement","textChars":102,"textLines":1,"bbox":[48,570,1135,44]}
+{"kind":"notes","id":"nt/kkoo6o","slide":8,"text":""}
+{"kind":"slide","id":"sl/eyfk6e","slide":9,"title":"APPLICATION 1","textShapes":29}
+{"kind":"textbox","id":"sh/6pona9wj","slide":9,"text":"APPLICATION 1","textPreview":"APPLICATION 1","textChars":13,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/tsf65ofu","slide":9,"text":"SAGE INDEX : le portail et centre de pilotage unifié","textPreview":"SAGE INDEX : le portail et centre de pilotage unifié","textChars":52,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/sr65cje9","slide":9,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/jmdozuxs","slide":9,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/il4n6pw7","slide":9,"text":"Fonctionnalités utilisateur","textPreview":"Fonctionnalités utilisateur","textChars":27,"textLines":1,"bbox":[48,180,500,38]}
+{"kind":"textbox","id":"sh/5of614fy","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,225,24,32]}
+{"kind":"textbox","id":"sh/kn658zed","slide":9,"text":"Connexion sécurisée par matricule et mot de passe","textPreview":"Connexion sécurisée par matricule et mot de passe","textChars":49,"textLines":1,"bbox":[76,225,532,38]}
+{"kind":"textbox","id":"sh/3ihobyxw","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,283,24,32]}
+{"kind":"textbox","id":"sh/2h87itwb","slide":9,"text":"SSO : ouverture des applications sans nouvelle connexion","textPreview":"SSO : ouverture des applications sans nouvelle connexion","textChars":56,"textLines":1,"bbox":[76,283,532,38]}
+{"kind":"textbox","id":"sh/0zetw76t","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,341,24,32]}
+{"kind":"textbox","id":"sh/10nupc7y","slide":9,"text":"Dashboard personnalisé selon les comptes disponibles","textPreview":"Dashboard personnalisé selon les comptes disponibles","textChars":52,"textLines":1,"bbox":[76,341,532,38]}
+{"kind":"textbox","id":"sh/exwbuxon","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,399,24,32]}
+{"kind":"textbox","id":"sh/zy5cn2p8","slide":9,"text":"Vue globale, sélecteur de dashboard et indicateur de focus","textPreview":"Vue globale, sélecteur de dashboard et indicateur de focus","textChars":58,"textLines":1,"bbox":[76,399,532,38]}
+{"kind":"textbox","id":"sh/cvutsn6h","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,457,24,32]}
+{"kind":"textbox","id":"sh/dwnuls72","slide":9,"text":"Priorités croisées et activité récente des trois domaines","textPreview":"Priorités croisées et activité récente des trois domaines","textChars":57,"textLines":1,"bbox":[76,457,532,38]}
+{"kind":"textbox","id":"sh/qtcbqxob","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,515,24,32]}
+{"kind":"textbox","id":"sh/rulcjipw","slide":9,"text":"Changement de mot de passe et déconnexion sécurisée","textPreview":"Changement de mot de passe et déconnexion sécurisée","textChars":51,"textLines":1,"bbox":[76,515,532,38]}
+{"kind":"textbox","id":"sh/4ruton6l","slide":9,"text":"Fonctionnalités administrateur","textPreview":"Fonctionnalités administrateur","textChars":30,"textLines":1,"bbox":[680,180,500,38]}
+{"kind":"textbox","id":"sh/ps3uhs76","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,225,24,32]}
+{"kind":"textbox","id":"sh/5oval4zu","slide":9,"text":"Importer les comptes depuis les données employés","textPreview":"Importer les comptes depuis les données employés","textChars":48,"textLines":1,"bbox":[708,225,522,38]}
+{"kind":"textbox","id":"sh/knm9sji9","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,283,24,32]}
+{"kind":"textbox","id":"sh/jmdsjeho","slide":9,"text":"Exclure automatiquement les profils DIRECTS","textPreview":"Exclure automatiquement les profils DIRECTS","textChars":43,"textLines":1,"bbox":[708,283,522,38]}
+{"kind":"textbox","id":"sh/il4rq903","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,341,24,32]}
+{"kind":"textbox","id":"sh/xkvah4zi","slide":9,"text":"Consulter les statistiques et la liste paginée","textPreview":"Consulter les statistiques et la liste paginée","textChars":46,"textLines":1,"bbox":[708,341,522,38]}
+{"kind":"textbox","id":"sh/wj29ozid","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,399,24,32]}
+{"kind":"textbox","id":"sh/vytsfuhs","slide":9,"text":"Rechercher un collaborateur par ses informations","textPreview":"Rechercher un collaborateur par ses informations","textChars":48,"textLines":1,"bbox":[708,399,522,38]}
+{"kind":"textbox","id":"sh/axkrmp07","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,457,24,32]}
+{"kind":"textbox","id":"sh/hgfatoz2","slide":9,"text":"Activer un compte et définir son mot de passe","textPreview":"Activer un compte et définir son mot de passe","textChars":45,"textLines":1,"bbox":[708,457,522,38]}
+{"kind":"textbox","id":"sh/gf6903yh","slide":9,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,515,24,32]}
+{"kind":"textbox","id":"sh/y107ulgz","slide":9,"text":"Surveiller la disponibilité des trois sources métier","textPreview":"Surveiller la disponibilité des trois sources métier","textChars":52,"textLines":1,"bbox":[708,515,522,38]}
+{"kind":"notes","id":"nt/eyfk6e","slide":9,"text":""}
+{"kind":"slide","id":"sl/ctxd1m","slide":10,"title":"APPLICATION 2","textShapes":22}
+{"kind":"textbox","id":"sh/14fal4b2","slide":10,"text":"APPLICATION 2","textPreview":"APPLICATION 2","textChars":13,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/e1orqpsb","slide":10,"text":"Traçabilité : suivre les lots et sécuriser les flux","textPreview":"Traçabilité : suivre les lots et sécuriser les flux","textChars":51,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/f2xsjutw","slide":10,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/szm9ofa5","slide":10,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/t0fahkbq","slide":10,"bbox":[48,180,360,170]}
+{"kind":"shape","id":"sh/6x4rmpsf","slide":10,"bbox":[48,180,8,170]}
+{"kind":"textbox","id":"sh/7ydsfatk","slide":10,"text":"Flux opérationnels","textPreview":"Flux opérationnels","textChars":18,"textLines":1,"bbox":[74,198,316,38]}
+{"kind":"textbox","id":"sh/cvqt0jap","slide":10,"text":"Réception des matières, consommation, mouvement des lots et suivi des quantités restantes.","textPreview":"Réception des matières, consommation, mouvement des lots et suivi des quantités restantes.","textChars":90,"textLines":1,"bbox":[74,242,316,92]}
+{"kind":"shape","id":"sh/dwzatobu","slide":10,"bbox":[460,180,360,170]}
+{"kind":"shape","id":"sh/5ofy5o32","slide":10,"bbox":[460,180,8,170]}
+{"kind":"textbox","id":"sh/kn6xw32h","slide":10,"text":"Qualité & anomalies","textPreview":"Qualité & anomalies","textChars":19,"textLines":1,"bbox":[486,198,316,38]}
+{"kind":"textbox","id":"sh/jmxg3ylw","slide":10,"text":"Contrôles en attente, incidents de consommation, non-conformités et résolution des problèmes.","textPreview":"Contrôles en attente, incidents de consommation, non-conformités et résolution des problèmes.","textChars":93,"textLines":1,"bbox":[486,242,316,92]}
+{"kind":"shape","id":"sh/y1ofut4b","slide":10,"bbox":[872,180,360,170]}
+{"kind":"shape","id":"sh/x0fy1o3q","slide":10,"bbox":[872,180,8,170]}
+{"kind":"textbox","id":"sh/wz6xsjm5","slide":10,"text":"Analyse","textPreview":"Analyse","textChars":7,"textLines":1,"bbox":[898,198,316,38]}
+{"kind":"textbox","id":"sh/byxgzelk","slide":10,"text":"Événements sur 14 jours, types d’opérations, projets, principales références et quantités.","textPreview":"Événements sur 14 jours, types d’opérations, projets, principales références et quantités.","textChars":90,"textLines":1,"bbox":[898,242,316,92]}
+{"kind":"textbox","id":"sh/ax4fq94z","slide":10,"text":"Indicateurs disponibles dans le portail","textPreview":"Indicateurs disponibles dans le portail","textChars":39,"textLines":1,"bbox":[48,405,560,38]}
+{"kind":"textbox","id":"sh/hwzyd83u","slide":10,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,450,24,32]}
+{"kind":"textbox","id":"sh/gvqh4n2p","slide":10,"text":"Lots et actions traités aujourd’hui","textPreview":"Lots et actions traités aujourd’hui","textChars":35,"textLines":1,"bbox":[76,450,502,38]}
+{"kind":"textbox","id":"sh/0bi9wbex","slide":10,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,498,24,32]}
+{"kind":"textbox","id":"sh/1crapgfi","slide":10,"text":"Réceptions vs consommations","textPreview":"Réceptions vs consommations","textChars":27,"textLines":1,"bbox":[76,498,502,38]}
+{"kind":"textbox","id":"sh/e90rulwr","slide":10,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,546,24,32]}
+{"kind":"textbox","id":"sh/za9snqxc","slide":10,"text":"Anomalies et contrôles ouverts","textPreview":"Anomalies et contrôles ouverts","textChars":30,"textLines":1,"bbox":[76,546,502,38]}
+{"kind":"textbox","id":"sh/c7i9sbe1","slide":10,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,594,24,32]}
+{"kind":"textbox","id":"sh/d8ralgf6","slide":10,"text":"Stock reçu, consommé et restant","textPreview":"Stock reçu, consommé et restant","textChars":31,"textLines":1,"bbox":[76,594,502,38]}
+{"kind":"textbox","id":"sh/q5grq1wv","slide":10,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,642,24,32]}
+{"kind":"textbox","id":"sh/r6p8j6xg","slide":10,"text":"Activité récente par utilisateur et par lot","textPreview":"Activité récente par utilisateur et par lot","textChars":43,"textLines":1,"bbox":[76,642,502,38]}
+{"kind":"shape","id":"sh/4jy9orep","slide":10,"bbox":[680,425,500,175]}
+{"kind":"textbox","id":"sh/pk7qhwfa","slide":10,"text":"Personnalisation","textPreview":"Personnalisation","textChars":16,"textLines":1,"bbox":[710,450,430,35]}
+{"kind":"textbox","id":"sh/7e5srmhw","slide":10,"text":"Les données sont filtrées par matricule : événements réalisés, références manipulées, projets associés et problèmes signalés par le collaborateur.","textPreview":"Les données sont filtrées par matricule : événements réalisés, références manipulées, projets associés et problèmes signalés par le colla...","textChars":146,"textLines":1,"bbox":[710,495,430,85]}
+{"kind":"notes","id":"nt/ctxd1m","slide":10,"text":""}
+{"kind":"slide","id":"sl/kgtxky","slide":11,"title":"CONCEPTION • TRAÇABILITÉ","textShapes":24}
+{"kind":"textbox","id":"sh/gjiho3ql","slide":11,"text":"CONCEPTION • TRAÇABILITÉ","textPreview":"CONCEPTION • TRAÇABILITÉ","textChars":24,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/fi9gfyp0","slide":11,"text":"J’ai construit Traçabilité autour du cycle réel de la matière","textPreview":"J’ai construit Traçabilité autour du cycle réel de la matière","textChars":61,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/uh0zmt8f","slide":11,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/tg7ydo7u","slide":11,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/8fyhkjq9","slide":11,"text":"Modules développés","textPreview":"Modules développés","textChars":18,"textLines":1,"bbox":[48,178,360,35]}
+{"kind":"textbox","id":"sh/7epgbypo","slide":11,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,220,24,32]}
+{"kind":"textbox","id":"sh/6tgzit83","slide":11,"text":"Catalogue composants, familles, projets et versions","textPreview":"Catalogue composants, familles, projets et versions","textChars":51,"textLines":1,"bbox":[76,220,527,38]}
+{"kind":"textbox","id":"sh/ls7y9o7y","slide":11,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,276,24,32]}
+{"kind":"textbox","id":"sh/kryhgjqd","slide":11,"text":"Réceptions multi-lignes et génération de lots SAGE","textPreview":"Réceptions multi-lignes et génération de lots SAGE","textChars":50,"textLines":1,"bbox":[76,276,527,38]}
+{"kind":"textbox","id":"sh/25c725ov","slide":11,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,332,24,32]}
+{"kind":"textbox","id":"sh/nq58va5g","slide":11,"text":"Stock, scan STB, consommation et restes de lots","textPreview":"Stock, scan STB, consommation et restes de lots","textChars":47,"textLines":1,"bbox":[76,332,527,38]}
+{"kind":"textbox","id":"sh/orep4f61","slide":11,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,388,24,32]}
+{"kind":"textbox","id":"sh/psnqxkn6","slide":11,"text":"Historique de traçabilité avec filtres et exports","textPreview":"Historique de traçabilité avec filtres et exports","textChars":49,"textLines":1,"bbox":[76,388,527,38]}
+{"kind":"textbox","id":"sh/e1c7y5oj","slide":11,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,444,24,32]}
+{"kind":"textbox","id":"sh/f2l8ra54","slide":11,"text":"Étiquettes code-barres / QR et documents PDF","textPreview":"Étiquettes code-barres / QR et documents PDF","textChars":44,"textLines":1,"bbox":[76,444,527,38]}
+{"kind":"textbox","id":"sh/03up0f6p","slide":11,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,500,24,32]}
+{"kind":"textbox","id":"sh/143qtkna","slide":11,"text":"Alertes temps réel, anomalies et assistant intégré","textPreview":"Alertes temps réel, anomalies et assistant intégré","textChars":50,"textLines":1,"bbox":[76,500,527,38]}
+{"kind":"textbox","id":"sh/6xs7ulon","slide":11,"text":"Architecture réalisée","textPreview":"Architecture réalisée","textChars":21,"textLines":1,"bbox":[680,178,360,35]}
+{"kind":"shape","id":"sh/ry1onq58","slide":11,"bbox":[680,225,500,95]}
+{"kind":"shape","id":"sh/v2h4vml0","slide":11,"bbox":[680,225,8,95]}
+{"kind":"textbox","id":"sh/u18n2h4f","slide":11,"text":"Frontend","textPreview":"Frontend","textChars":8,"textLines":1,"bbox":[706,243,456,38]}
+{"kind":"textbox","id":"sh/h4zmxw36","slide":11,"text":"React 19 • TypeScript • Vite • React Router • Axios","textPreview":"React 19 • TypeScript • Vite • React Router • Axios","textChars":51,"textLines":1,"bbox":[706,287,456,17]}
+{"kind":"shape","id":"sh/w3q54rml","slide":11,"bbox":[680,335,500,95]}
+{"kind":"shape","id":"sh/j6h4z6lw","slide":11,"bbox":[680,335,8,95]}
+{"kind":"textbox","id":"sh/i58n614b","slide":11,"text":"Backend","textPreview":"Backend","textChars":7,"textLines":1,"bbox":[706,353,456,38]}
+{"kind":"textbox","id":"sh/58jm1g32","slide":11,"text":"Java 17 • Spring Boot 4 • JPA • JWT • WebSocket","textPreview":"Java 17 • Spring Boot 4 • JPA • JWT • WebSocket","textChars":47,"textLines":1,"bbox":[706,397,456,17]}
+{"kind":"shape","id":"sh/47a58bmh","slide":11,"bbox":[680,445,500,95]}
+{"kind":"shape","id":"sh/zax4n2ls","slide":11,"bbox":[680,445,8,95]}
+{"kind":"textbox","id":"sh/y9o3ux47","slide":11,"text":"Services & données","textPreview":"Services & données","textChars":18,"textLines":1,"bbox":[706,463,456,38]}
+{"kind":"textbox","id":"sh/o32t8jyt","slide":11,"text":"PostgreSQL • Cloudinary • Excel • PDFBox • ZXing","textPreview":"PostgreSQL • Cloudinary • Excel • PDFBox • ZXing","textChars":48,"textLines":1,"bbox":[706,507,456,17]}
+{"kind":"textbox","id":"sh/p4bahofe","slide":11,"text":"Accès par rôles : Admin • Logistique • Coupe • Engineering","textPreview":"Accès par rôles : Admin • Logistique • Coupe • Engineering","textChars":58,"textLines":1,"bbox":[680,565,500,34]}
+{"kind":"notes","id":"nt/kgtxky","slide":11,"text":""}
+{"kind":"slide","id":"sl/tkdw87","slide":12,"title":"APPLICATION 3","textShapes":22}
+{"kind":"textbox","id":"sh/hwjax0zu","slide":12,"text":"APPLICATION 3","textPreview":"APPLICATION 3","textChars":13,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/utsrml03","slide":12,"text":"Ressources humaines : piloter présence, équipes et demandes","textPreview":"Ressources humaines : piloter présence, équipes et demandes","textChars":59,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/fu1svqho","slide":12,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/sra9kbix","slide":12,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/tsjatgzi","slide":12,"bbox":[48,180,360,170]}
+{"kind":"shape","id":"sh/658ri107","slide":12,"bbox":[48,180,8,170]}
+{"kind":"textbox","id":"sh/7q1sr6hc","slide":12,"text":"Présence & pointage","textPreview":"Présence & pointage","textChars":19,"textLines":1,"bbox":[74,198,316,38]}
+{"kind":"textbox","id":"sh/cnutwfyh","slide":12,"text":"Statut du jour, heures travaillées, présences et absences sur 14 jours.","textPreview":"Statut du jour, heures travaillées, présences et absences sur 14 jours.","textChars":71,"textLines":1,"bbox":[74,242,316,92]}
+{"kind":"shape","id":"sh/do3a5kzm","slide":12,"bbox":[460,180,360,170]}
+{"kind":"shape","id":"sh/lo3upoz6","slide":12,"bbox":[460,180,8,170]}
+{"kind":"textbox","id":"sh/knutwjil","slide":12,"text":"Demandes RH","textPreview":"Demandes RH","textChars":11,"textLines":1,"bbox":[486,198,316,38]}
+{"kind":"textbox","id":"sh/zmlcnehg","slide":12,"text":"Demandes personnelles, types, statuts, validations et événements à venir.","textPreview":"Demandes personnelles, types, statuts, validations et événements à venir.","textChars":73,"textLines":1,"bbox":[486,242,316,92]}
+{"kind":"shape","id":"sh/ylcbu90v","slide":12,"bbox":[872,180,360,170]}
+{"kind":"shape","id":"sh/xk3ul4za","slide":12,"bbox":[872,180,8,170]}
+{"kind":"textbox","id":"sh/cjutszip","slide":12,"text":"Organisation","textPreview":"Organisation","textChars":12,"textLines":1,"bbox":[898,198,316,38]}
+{"kind":"textbox","id":"sh/bylcjuh4","slide":12,"text":"Effectifs par département, shifts, lignes de production et heures supplémentaires.","textPreview":"Effectifs par département, shifts, lignes de production et heures supplémentaires.","textChars":82,"textLines":1,"bbox":[898,242,316,92]}
+{"kind":"textbox","id":"sh/axsbqp0j","slide":12,"text":"Fonctionnalités et indicateurs","textPreview":"Fonctionnalités et indicateurs","textChars":30,"textLines":1,"bbox":[48,405,550,38]}
+{"kind":"textbox","id":"sh/hgnux8ze","slide":12,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,450,24,32]}
+{"kind":"textbox","id":"sh/wfed43yt","slide":12,"text":"Taux de présence et historique des pointages","textPreview":"Taux de présence et historique des pointages","textChars":44,"textLines":1,"bbox":[76,450,512,38]}
+{"kind":"textbox","id":"sh/gzmx0765","slide":12,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,498,24,32]}
+{"kind":"textbox","id":"sh/10vetc7q","slide":12,"text":"Demandes en attente et demandes finalisées","textPreview":"Demandes en attente et demandes finalisées","textChars":42,"textLines":1,"bbox":[76,498,512,38]}
+{"kind":"textbox","id":"sh/ex4fyxoz","slide":12,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,546,24,32]}
+{"kind":"textbox","id":"sh/fydwr2pk","slide":12,"text":"Motifs d’absence sur les 30 derniers jours","textPreview":"Motifs d’absence sur les 30 derniers jours","textChars":42,"textLines":1,"bbox":[76,546,512,38]}
+{"kind":"textbox","id":"sh/svmxwn69","slide":12,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,594,24,32]}
+{"kind":"textbox","id":"sh/twveps7e","slide":12,"text":"Répartition des collaborateurs par département","textPreview":"Répartition des collaborateurs par département","textChars":46,"textLines":1,"bbox":[76,594,512,38]}
+{"kind":"textbox","id":"sh/6tkvuxo3","slide":12,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,642,24,32]}
+{"kind":"textbox","id":"sh/rudwn2po","slide":12,"text":"Vue manager : absences et situation de l’équipe","textPreview":"Vue manager : absences et situation de l’équipe","textChars":47,"textLines":1,"bbox":[76,642,512,38]}
+{"kind":"shape","id":"sh/kr2dsn6x","slide":12,"bbox":[680,425,500,175]}
+{"kind":"textbox","id":"sh/5sbels7i","slide":12,"text":"Lecture personnalisée","textPreview":"Lecture personnalisée","textChars":21,"textLines":1,"bbox":[710,450,430,35]}
+{"kind":"textbox","id":"sh/n29gvi94","slide":12,"text":"Le portail rapproche le matricule et l’e-mail du compte RH pour afficher la situation du collaborateur et, si nécessaire, celle de son équipe.","textPreview":"Le portail rapproche le matricule et l’e-mail du compte RH pour afficher la situation du collaborateur et, si nécessaire, celle de son éq...","textChars":142,"textLines":1,"bbox":[710,495,430,85]}
+{"kind":"notes","id":"nt/tkdw87","slide":12,"text":""}
+{"kind":"slide","id":"sl/ucasr1","slide":13,"title":"CONCEPTION • SAGE RH","textShapes":24}
+{"kind":"textbox","id":"sh/t47q5kv2","slide":13,"text":"CONCEPTION • SAGE RH","textPreview":"CONCEPTION • SAGE RH","textChars":20,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/61grapwr","slide":13,"text":"J’ai transformé les processus RH en workflows numériques","textPreview":"J’ai transformé les processus RH en workflows numériques","textChars":56,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/72p83udw","slide":13,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/kzy98fel","slide":13,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/l07q1kv6","slide":13,"text":"Modules développés","textPreview":"Modules développés","textChars":18,"textLines":1,"bbox":[48,178,360,35]}
+{"kind":"textbox","id":"sh/ydgr65wf","slide":13,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,220,24,32]}
+{"kind":"textbox","id":"sh/jyp8zad0","slide":13,"text":"Dossier salarié et référentiels organisationnels","textPreview":"Dossier salarié et référentiels organisationnels","textChars":48,"textLines":1,"bbox":[76,220,527,38]}
+{"kind":"textbox","id":"sh/4vi9kjep","slide":13,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,276,24,32]}
+{"kind":"textbox","id":"sh/pwbad4va","slide":13,"text":"Pointage, présence, absence et historique","textPreview":"Pointage, présence, absence et historique","textChars":41,"textLines":1,"bbox":[76,276,527,38]}
+{"kind":"textbox","id":"sh/9gra9of6","slide":13,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,332,24,32]}
+{"kind":"textbox","id":"sh/8fi9gje1","slide":13,"text":"Permutations et disponibilité des opérateurs","textPreview":"Permutations et disponibilité des opérateurs","textChars":44,"textLines":1,"bbox":[76,332,527,38]}
+{"kind":"textbox","id":"sh/7e987exg","slide":13,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,388,24,32]}
+{"kind":"textbox","id":"sh/md0re9wv","slide":13,"text":"Demandes RH et avances sur salaire","textPreview":"Demandes RH et avances sur salaire","textChars":34,"textLines":1,"bbox":[76,388,527,38]}
+{"kind":"textbox","id":"sh/lcrq54fa","slide":13,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,444,24,32]}
+{"kind":"textbox","id":"sh/0by9czep","slide":13,"text":"Conversion EDI DELFOR vers CSV","textPreview":"Conversion EDI DELFOR vers CSV","textChars":30,"textLines":1,"bbox":[76,444,527,38]}
+{"kind":"textbox","id":"sh/zap83ex4","slide":13,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,500,24,32]}
+{"kind":"textbox","id":"sh/y9gra9wj","slide":13,"text":"Notifications, tableaux de bord et exports Excel/PDF","textPreview":"Notifications, tableaux de bord et exports Excel/PDF","textChars":52,"textLines":1,"bbox":[76,500,527,38]}
+{"kind":"textbox","id":"sh/58bah8fe","slide":13,"text":"Architecture réalisée","textPreview":"Architecture réalisée","textChars":21,"textLines":1,"bbox":[680,178,360,35]}
+{"kind":"shape","id":"sh/4729o3e9","slide":13,"bbox":[680,225,500,95]}
+{"kind":"shape","id":"sh/onul0bqh","slide":13,"bbox":[680,225,8,95]}
+{"kind":"textbox","id":"sh/po329g72","slide":13,"text":"Frontend","textPreview":"Frontend","textChars":8,"textLines":1,"bbox":[706,243,456,38]}
+{"kind":"textbox","id":"sh/21c3y18b","slide":13,"text":"React • TypeScript • Vite • TanStack Query • composants UI","textPreview":"React • TypeScript • Vite • TanStack Query • composants UI","textChars":58,"textLines":1,"bbox":[706,287,456,17]}
+{"kind":"shape","id":"sh/32lk769w","slide":13,"bbox":[680,335,500,95]}
+{"kind":"shape","id":"sh/gzalwrq5","slide":13,"bbox":[680,335,8,95]}
+{"kind":"textbox","id":"sh/10j25wrq","slide":13,"text":"Backend","textPreview":"Backend","textChars":7,"textLines":1,"bbox":[706,353,456,38]}
+{"kind":"textbox","id":"sh/exsju18f","slide":13,"text":"Java 17 • Spring Boot 3.5 • JPA • MapStruct • REST","textPreview":"Java 17 • Spring Boot 3.5 • JPA • MapStruct • REST","textChars":50,"textLines":1,"bbox":[706,397,456,17]}
+{"kind":"shape","id":"sh/fy1k3m90","slide":13,"bbox":[680,445,500,95]}
+{"kind":"shape","id":"sh/sva1srq9","slide":13,"bbox":[680,445,8,95]}
+{"kind":"textbox","id":"sh/twj21wru","slide":13,"text":"Sécurité & données","textPreview":"Sécurité & données","textChars":18,"textLines":1,"bbox":[706,463,456,38]}
+{"kind":"textbox","id":"sh/vqh4bmtg","slide":13,"text":"PostgreSQL • JWT + refresh token • BCrypt • OTP e-mail","textPreview":"PostgreSQL • JWT + refresh token • BCrypt • OTP e-mail","textChars":54,"textLines":1,"bbox":[706,507,456,17]}
+{"kind":"textbox","id":"sh/up832hsb","slide":13,"text":"Rôles : Super Admin • Admin • Superviseur • Manager • Planificateur • Infirmière","textPreview":"Rôles : Super Admin • Admin • Superviseur • Manager • Planificateur • Infirmière","textChars":80,"textLines":1,"bbox":[680,558,500,48]}
+{"kind":"notes","id":"nt/ucasr1","slide":13,"text":""}
+{"kind":"slide","id":"sl/38b0tg","slide":14,"title":"APPLICATION 4","textShapes":22}
+{"kind":"textbox","id":"sh/mxsrutcf","slide":14,"text":"APPLICATION 4","textPreview":"APPLICATION 4","textChars":13,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/903a58b6","slide":14,"text":"Gestion des plannings : maîtriser projets, actions et délais","textPreview":"Gestion des plannings : maîtriser projets, actions et délais","textChars":60,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/8za9w3ul","slide":14,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/v2ls7ytc","slide":14,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/u1crydcr","slide":14,"bbox":[48,180,360,170]}
+{"kind":"shape","id":"sh/ho3a98b2","slide":14,"bbox":[48,180,8,170]}
+{"kind":"textbox","id":"sh/w3u903ux","slide":14,"text":"Portefeuille ECR","textPreview":"Portefeuille ECR","textChars":16,"textLines":1,"bbox":[74,198,316,38]}
+{"kind":"textbox","id":"sh/b6h8veds","slide":14,"text":"Demandes de modification, projets actifs, étapes du workflow et progression globale.","textPreview":"Demandes de modification, projets actifs, étapes du workflow et progression globale.","textChars":84,"textLines":1,"bbox":[74,242,316,92]}
+{"kind":"shape","id":"sh/a58rm9cn","slide":14,"bbox":[460,180,360,170]}
+{"kind":"shape","id":"sh/0zqpo7et","slide":14,"bbox":[460,180,8,170]}
+{"kind":"textbox","id":"sh/10z6xcve","slide":14,"text":"Gestion des actions","textPreview":"Gestion des actions","textChars":19,"textLines":1,"bbox":[486,198,316,38]}
+{"kind":"textbox","id":"sh/ex87mxw3","slide":14,"text":"Actions ouvertes, assignations, statuts, criticité et actions finalisées.","textPreview":"Actions ouvertes, assignations, statuts, criticité et actions finalisées.","textChars":73,"textLines":1,"bbox":[486,242,316,92]}
+{"kind":"shape","id":"sh/zyhov2do","slide":14,"bbox":[872,180,360,170]}
+{"kind":"shape","id":"sh/8naps7e5","slide":14,"bbox":[872,180,8,170]}
+{"kind":"textbox","id":"sh/9oj61cvq","slide":14,"text":"Échéances","textPreview":"Échéances","textChars":9,"textLines":1,"bbox":[898,198,316,38]}
+{"kind":"textbox","id":"sh/m1s7qxwz","slide":14,"text":"Dates limites, actions en retard et éléments à surveiller dans les prochains jours.","textPreview":"Dates limites, actions en retard et éléments à surveiller dans les prochains jours.","textChars":83,"textLines":1,"bbox":[898,242,316,92]}
+{"kind":"textbox","id":"sh/nm1oz2dk","slide":14,"text":"Fonctionnalités et indicateurs","textPreview":"Fonctionnalités et indicateurs","textChars":30,"textLines":1,"bbox":[48,405,550,38]}
+{"kind":"textbox","id":"sh/4r65gne1","slide":14,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,450,24,32]}
+{"kind":"textbox","id":"sh/psf6psv6","slide":14,"text":"Nombre de projets actifs et d’actions","textPreview":"Nombre de projets actifs et d’actions","textChars":37,"textLines":1,"bbox":[76,450,512,38]}
+{"kind":"textbox","id":"sh/5o7md4na","slide":14,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,498,24,32]}
+{"kind":"textbox","id":"sh/4nylkz6p","slide":14,"text":"Répartition des actions par statut","textPreview":"Répartition des actions par statut","textChars":34,"textLines":1,"bbox":[76,498,512,38]}
+{"kind":"textbox","id":"sh/jmp4bep4","slide":14,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,546,24,32]}
+{"kind":"textbox","id":"sh/ilg3i9oj","slide":14,"text":"Avancement par projet et par étape","textPreview":"Avancement par projet et par étape","textChars":34,"textLines":1,"bbox":[76,546,512,38]}
+{"kind":"textbox","id":"sh/tsrmhon6","slide":14,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,594,24,32]}
+{"kind":"textbox","id":"sh/sri5oj6l","slide":14,"text":"Taux de complétion du portefeuille","textPreview":"Taux de complétion du portefeuille","textChars":34,"textLines":1,"bbox":[76,594,512,38]}
+{"kind":"textbox","id":"sh/rq94fe50","slide":14,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,642,24,32]}
+{"kind":"textbox","id":"sh/6p0nm9ov","slide":14,"text":"Liste des échéances et retards prioritaires","textPreview":"Liste des échéances et retards prioritaires","textChars":43,"textLines":1,"bbox":[76,642,512,38]}
+{"kind":"shape","id":"sh/1grmloni","slide":14,"bbox":[680,425,500,175]}
+{"kind":"textbox","id":"sh/gfi5sj6x","slide":14,"text":"Continuité du travail","textPreview":"Continuité du travail","textChars":21,"textLines":1,"bbox":[710,450,430,35]}
+{"kind":"textbox","id":"sh/y1cjml4f","slide":14,"text":"Depuis le portail, l’utilisateur ouvre directement l’application Planning avec son identifiant, son rôle et son contexte d’accès.","textPreview":"Depuis le portail, l’utilisateur ouvre directement l’application Planning avec son identifiant, son rôle et son contexte d’accès.","textChars":129,"textLines":1,"bbox":[710,495,430,85]}
+{"kind":"notes","id":"nt/38b0tg","slide":14,"text":""}
+{"kind":"slide","id":"sl/ei3zkk","slide":15,"title":"CONCEPTION • GESTION PLANNING","textShapes":27}
+{"kind":"textbox","id":"sh/dsvexw3e","slide":15,"text":"CONCEPTION • GESTION PLANNING","textPreview":"CONCEPTION • GESTION PLANNING","textChars":29,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/qpkvm14n","slide":15,"text":"J’ai migré le planning Access vers une plateforme web ECR","textPreview":"J’ai migré le planning Access vers une plateforme web ECR","textChars":57,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/rqtwvml8","slide":15,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/4n2dkrmx","slide":15,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/pobetw32","slide":15,"text":"Workflow métier implémenté","textPreview":"Workflow métier implémenté","textChars":26,"textLines":1,"bbox":[48,175,540,36]}
+{"kind":"textbox","id":"sh/21kvih4r","slide":15,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,215,24,32]}
+{"kind":"textbox","id":"sh/32twrmlc","slide":15,"text":"Validation de faisabilité","textPreview":"Validation de faisabilité","textChars":25,"textLines":1,"bbox":[76,215,492,38]}
+{"kind":"textbox","id":"sh/gzidg7ml","slide":15,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,268,24,32]}
+{"kind":"textbox","id":"sh/h0repc36","slide":15,"text":"Gestion de projet","textPreview":"Gestion de projet","textChars":17,"textLines":1,"bbox":[76,268,492,38]}
+{"kind":"textbox","id":"sh/ho3ep8z2","slide":15,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,321,24,32]}
+{"kind":"textbox","id":"sh/gnudg3ih","slide":15,"text":"Développement produit et processus","textPreview":"Développement produit et processus","textChars":34,"textLines":1,"bbox":[76,321,492,38]}
+{"kind":"textbox","id":"sh/fmlwnyhw","slide":15,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,374,24,32]}
+{"kind":"textbox","id":"sh/ulcvet0b","slide":15,"text":"Validation client","textPreview":"Validation client","textChars":17,"textLines":1,"bbox":[76,374,492,38]}
+{"kind":"textbox","id":"sh/tk3el8zq","slide":15,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,427,24,32]}
+{"kind":"textbox","id":"sh/sjudc3i5","slide":15,"text":"Préparation PPAP / SOP","textPreview":"Préparation PPAP / SOP","textChars":22,"textLines":1,"bbox":[76,427,492,38]}
+{"kind":"textbox","id":"sh/7ilcjyhk","slide":15,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,480,24,32]}
+{"kind":"textbox","id":"sh/6hsvat0f","slide":15,"text":"Lancement puis clôture ou annulation","textPreview":"Lancement puis clôture ou annulation","textChars":36,"textLines":1,"bbox":[76,480,492,38]}
+{"kind":"textbox","id":"sh/5gjuhozu","slide":15,"text":"Fonctions transverses","textPreview":"Fonctions transverses","textChars":21,"textLines":1,"bbox":[48,555,500,32]}
+{"kind":"textbox","id":"sh/kvad8ji9","slide":15,"text":"Checklists • responsables • preuves • criticité • pénalités • documents • exports","textPreview":"Checklists • responsables • preuves • criticité • pénalités • documents • exports","textChars":81,"textLines":1,"bbox":[48,590,570,40]}
+{"kind":"textbox","id":"sh/wzedojq5","slide":15,"text":"Architecture réalisée","textPreview":"Architecture réalisée","textChars":21,"textLines":1,"bbox":[680,175,360,36]}
+{"kind":"shape","id":"sh/x0nexo7q","slide":15,"bbox":[680,220,500,88]}
+{"kind":"shape","id":"sh/axwvmt8z","slide":15,"bbox":[680,220,8,88]}
+{"kind":"textbox","id":"sh/by5wvypk","slide":15,"text":"Frontend","textPreview":"Frontend","textChars":8,"textLines":1,"bbox":[706,238,456,38]}
+{"kind":"textbox","id":"sh/ovudkjqt","slide":15,"text":"React 19 • Vite • React Router • jsPDF • html2canvas","textPreview":"React 19 • Vite • React Router • jsPDF • html2canvas","textChars":52,"textLines":1,"bbox":[706,282,456,10]}
+{"kind":"shape","id":"sh/9wneto7e","slide":15,"bbox":[680,322,500,88]}
+{"kind":"shape","id":"sh/m9cvi983","slide":15,"bbox":[680,322,8,88]}
+{"kind":"textbox","id":"sh/nalwrep8","slide":15,"text":"Backend","textPreview":"Backend","textChars":7,"textLines":1,"bbox":[706,340,456,38]}
+{"kind":"textbox","id":"sh/8rydw3qd","slide":15,"text":"Spring Boot • JPA • WebSocket • Actuator • API REST","textPreview":"Spring Boot • JPA • WebSocket • Actuator • API REST","textChars":51,"textLines":1,"bbox":[706,384,456,10]}
+{"kind":"shape","id":"sh/ts7e587i","slide":15,"bbox":[680,424,500,88]}
+{"kind":"shape","id":"sh/3yt8b6dw","slide":15,"bbox":[680,424,8,88]}
+{"kind":"textbox","id":"sh/2xk7i1wr","slide":15,"text":"Industrialisation","textPreview":"Industrialisation","textChars":17,"textLines":1,"bbox":[706,442,456,38]}
+{"kind":"textbox","id":"sh/p0vqdgv2","slide":15,"text":"PostgreSQL • Docker • Jenkins • SonarQube • JaCoCo","textPreview":"PostgreSQL • Docker • Jenkins • SonarQube • JaCoCo","textChars":50,"textLines":1,"bbox":[706,486,456,10]}
+{"kind":"shape","id":"sh/4zmpkbeh","slide":15,"bbox":[680,526,500,88]}
+{"kind":"shape","id":"sh/r2d8f6d8","slide":15,"bbox":[680,526,8,88]}
+{"kind":"textbox","id":"sh/q147mlwn","slide":15,"text":"Observabilité","textPreview":"Observabilité","textChars":13,"textLines":1,"bbox":[706,544,456,38]}
+{"kind":"textbox","id":"sh/d4vqhgve","slide":15,"text":"Prometheus • Grafana • health checks • alertes e-mail","textPreview":"Prometheus • Grafana • health checks • alertes e-mail","textChars":53,"textLines":1,"bbox":[706,588,456,10]}
+{"kind":"notes","id":"nt/ei3zkk","slide":15,"text":""}
+{"kind":"slide","id":"sl/kky477","slide":16,"title":"SAGE INDEX","textShapes":25}
+{"kind":"textbox","id":"sh/9kni14re","slide":16,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/mhcjqp8n","slide":16,"text":"Les besoins couvrent l’usage métier et la qualité de service","textPreview":"Les besoins couvrent l’usage métier et la qualité de service","textChars":60,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/ni50zu98","slide":16,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/0vu1ozqh","slide":16,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/1w3ixkr2","slide":16,"text":"Fonctionnels","textPreview":"Fonctionnels","textChars":12,"textLines":1,"bbox":[48,185,470,38]}
+{"kind":"textbox","id":"sh/etcjmp8r","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,235,24,32]}
+{"kind":"textbox","id":"sh/zul0vu9c","slide":16,"text":"Authentifier et personnaliser le dashboard","textPreview":"Authentifier et personnaliser le dashboard","textChars":42,"textLines":1,"bbox":[76,235,492,38]}
+{"kind":"textbox","id":"sh/cru1kfql","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,300,24,32]}
+{"kind":"textbox","id":"sh/ds3itkr6","slide":16,"text":"Afficher les applications accessibles","textPreview":"Afficher les applications accessibles","textChars":37,"textLines":1,"bbox":[76,300,492,38]}
+{"kind":"textbox","id":"sh/to3qtor2","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,365,24,32]}
+{"kind":"textbox","id":"sh/snupkjqh","slide":16,"text":"Consolider KPI, graphiques et alertes","textPreview":"Consolider KPI, graphiques et alertes","textChars":37,"textLines":1,"bbox":[76,365,492,38]}
+{"kind":"textbox","id":"sh/7ml8ry9w","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,430,24,32]}
+{"kind":"textbox","id":"sh/6lc7it8r","slide":16,"text":"Administrer les comptes importés","textPreview":"Administrer les comptes importés","textChars":32,"textLines":1,"bbox":[76,430,492,38]}
+{"kind":"textbox","id":"sh/5k3qpor6","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[48,495,24,32]}
+{"kind":"textbox","id":"sh/kjupgjql","slide":16,"text":"Accéder aux vues Traçabilité, RH et Planning","textPreview":"Accéder aux vues Traçabilité, RH et Planning","textChars":44,"textLines":1,"bbox":[76,495,492,38]}
+{"kind":"textbox","id":"sh/jil8ne90","slide":16,"text":"Non fonctionnels","textPreview":"Non fonctionnels","textChars":16,"textLines":1,"bbox":[680,185,470,38]}
+{"kind":"textbox","id":"sh/ixc7e9sf","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,235,24,32]}
+{"kind":"textbox","id":"sh/xwjql4ru","slide":16,"text":"Sécurité : JWT, BCrypt et contrôle d’accès","textPreview":"Sécurité : JWT, BCrypt et contrôle d’accès","textChars":42,"textLines":1,"bbox":[708,235,492,38]}
+{"kind":"textbox","id":"sh/wvapcza9","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,300,24,32]}
+{"kind":"textbox","id":"sh/ozep8ji5","slide":16,"text":"Performance et disponibilité des tableaux de bord","textPreview":"Performance et disponibilité des tableaux de bord","textChars":49,"textLines":1,"bbox":[708,300,492,38]}
+{"kind":"textbox","id":"sh/90nq14zq","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,365,24,32]}
+{"kind":"textbox","id":"sh/mxw7690f","slide":16,"text":"Résilience si une source métier est indisponible","textPreview":"Résilience si une source métier est indisponible","textChars":48,"textLines":1,"bbox":[708,365,492,38]}
+{"kind":"textbox","id":"sh/ny58zehk","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,430,24,32]}
+{"kind":"textbox","id":"sh/0bep4zi9","slide":16,"text":"Déploiement reproductible avec Docker","textPreview":"Déploiement reproductible avec Docker","textChars":37,"textLines":1,"bbox":[708,430,492,38]}
+{"kind":"textbox","id":"sh/1cnqx4zu","slide":16,"text":"•","textPreview":"•","textChars":1,"textLines":1,"bbox":[680,495,24,32]}
+{"kind":"textbox","id":"sh/e9c72p03","slide":16,"text":"Maintenabilité, lisibilité et évolutivité","textPreview":"Maintenabilité, lisibilité et évolutivité","textChars":41,"textLines":1,"bbox":[708,495,492,38]}
+{"kind":"notes","id":"nt/kky477","slide":16,"text":""}
+{"kind":"slide","id":"sl/6pf1ig","slide":17,"title":"SAGE INDEX","textShapes":15}
+{"kind":"textbox","id":"sh/j2dwnax8","slide":17,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/43mdwfyt","slide":17,"text":"La valeur ajoutée se mesure à trois niveaux","textPreview":"La valeur ajoutée se mesure à trois niveaux","textChars":43,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/54fep0fe","slide":17,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/ux4vqlgr","slide":17,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/vydwjqxw","slide":17,"text":"1 728","textPreview":"1 728","textChars":5,"textLines":1,"bbox":[70,235,300,90]}
+{"kind":"textbox","id":"sh/wzmdsvyh","slide":17,"text":"employés analysés","textPreview":"employés analysés","textChars":17,"textLines":1,"bbox":[70,325,300,36]}
+{"kind":"textbox","id":"sh/h0vel0f2","slide":17,"text":"432","textPreview":"432","textChars":3,"textLines":1,"bbox":[490,235,300,90]}
+{"kind":"textbox","id":"sh/mtkvmlgf","slide":17,"text":"comptes CADRE & INDIRECTS","textPreview":"comptes CADRE & INDIRECTS","textChars":25,"textLines":1,"bbox":[490,325,300,44]}
+{"kind":"textbox","id":"sh/7utcfqx0","slide":17,"text":"3 / 3","textPreview":"3 / 3","textChars":5,"textLines":1,"bbox":[910,235,300,90]}
+{"kind":"textbox","id":"sh/r69kv250","slide":17,"text":"systèmes réunis","textPreview":"systèmes réunis","textChars":15,"textLines":1,"bbox":[910,325,300,36]}
+{"kind":"shape","id":"sh/q50j2xof","slide":17,"bbox":[70,425,340,140]}
+{"kind":"shape","id":"sh/d8r2xcn6","slide":17,"bbox":[70,425,8,140]}
+{"kind":"textbox","id":"sh/c7i1476l","slide":17,"text":"Pour l’utilisateur","textPreview":"Pour l’utilisateur","textChars":18,"textLines":1,"bbox":[96,443,296,38]}
+{"kind":"textbox","id":"sh/zatkz25c","slide":17,"text":"Moins de navigation, accès personnalisé et priorités visibles.","textPreview":"Moins de navigation, accès personnalisé et priorités visibles.","textChars":62,"textLines":1,"bbox":[96,487,296,62]}
+{"kind":"shape","id":"sh/y90j6hor","slide":17,"bbox":[470,425,340,140]}
+{"kind":"shape","id":"sh/lcb21cn2","slide":17,"bbox":[470,425,8,140]}
+{"kind":"textbox","id":"sh/0b21876h","slide":17,"text":"Pour le management","textPreview":"Pour le management","textChars":18,"textLines":1,"bbox":[496,443,296,38]}
+{"kind":"textbox","id":"sh/fep0nips","slide":17,"text":"Lecture transversale et arbitrage plus rapide.","textPreview":"Lecture transversale et arbitrage plus rapide.","textChars":46,"textLines":1,"bbox":[496,487,296,62]}
+{"kind":"shape","id":"sh/udgjudo7","slide":17,"bbox":[870,425,340,140]}
+{"kind":"shape","id":"sh/it4n2l8v","slide":17,"bbox":[870,425,8,140]}
+{"kind":"textbox","id":"sh/jux4vqpg","slide":17,"text":"Pour l’IT","textPreview":"Pour l’IT","textChars":9,"textLines":1,"bbox":[896,443,296,38]}
+{"kind":"textbox","id":"sh/kv654vq1","slide":17,"text":"Architecture conteneurisée, sécurisée et extensible.","textPreview":"Architecture conteneurisée, sécurisée et extensible.","textChars":52,"textLines":1,"bbox":[896,487,296,62]}
+{"kind":"notes","id":"nt/6pf1ig","slide":17,"text":""}
+{"kind":"slide","id":"sl/8nqzf6","slide":18,"title":"SAGE INDEX","textShapes":19}
+{"kind":"textbox","id":"sh/l4buh032","slide":18,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/y1kbmlkr","slide":18,"text":"Une démarche incrémentale guidée par les usages","textPreview":"Une démarche incrémentale guidée par les usages","textChars":47,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/z2tcfqlc","slide":18,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/cz2tkv2l","slide":18,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/x0budg36","slide":18,"bbox":[55,250,260,255]}
+{"kind":"textbox","id":"sh/ad0bilkf","slide":18,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[77,270,45,38]}
+{"kind":"textbox","id":"sh/be9cbql0","slide":18,"text":"Analyser","textPreview":"Analyser","textChars":8,"textLines":1,"bbox":[77,325,210,42]}
+{"kind":"textbox","id":"sh/obitgbmp","slide":18,"text":"Cartographier les applications, données et profils.","textPreview":"Cartographier les applications, données et profils.","textChars":51,"textLines":1,"bbox":[77,385,210,80]}
+{"kind":"textbox","id":"sh/pcra9g3a","slide":18,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[313,340,40,40]}
+{"kind":"shape","id":"sh/5cry9sn2","slide":18,"bbox":[355,250,260,255]}
+{"kind":"textbox","id":"sh/4bix0nmx","slide":18,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[377,270,45,38]}
+{"kind":"textbox","id":"sh/3a9g7i5c","slide":18,"text":"Concevoir","textPreview":"Concevoir","textChars":9,"textLines":1,"bbox":[377,325,210,42]}
+{"kind":"textbox","id":"sh/i90fyd4r","slide":18,"text":"Définir parcours, sécurité, architecture et maquettes.","textPreview":"Définir parcours, sécurité, architecture et maquettes.","textChars":54,"textLines":1,"bbox":[377,385,210,80]}
+{"kind":"textbox","id":"sh/h87y58n6","slide":18,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[613,340,40,40]}
+{"kind":"shape","id":"sh/g7yxwnml","slide":18,"bbox":[655,250,260,255]}
+{"kind":"textbox","id":"sh/v6pg3i50","slide":18,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[677,270,45,38]}
+{"kind":"textbox","id":"sh/u5gfudof","slide":18,"text":"Construire","textPreview":"Construire","textChars":10,"textLines":1,"bbox":[677,325,210,42]}
+{"kind":"textbox","id":"sh/t47e18na","slide":18,"text":"Développer frontend, backend et agrégations métier.","textPreview":"Développer frontend, backend et agrégations métier.","textChars":51,"textLines":1,"bbox":[677,385,210,80]}
+{"kind":"textbox","id":"sh/8jyxs36p","slide":18,"text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[913,340,40,40]}
+{"kind":"shape","id":"sh/0n2x83el","slide":18,"bbox":[955,250,260,255]}
+{"kind":"textbox","id":"sh/lobyh8vq","slide":18,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[977,270,45,38]}
+{"kind":"textbox","id":"sh/yl0f6twf","slide":18,"text":"Valider","textPreview":"Valider","textChars":7,"textLines":1,"bbox":[977,325,210,42]}
+{"kind":"textbox","id":"sh/zmtgfyd0","slide":18,"text":"Tester, construire, corriger et préparer le déploiement.","textPreview":"Tester, construire, corriger et préparer le déploiement.","textChars":56,"textLines":1,"bbox":[977,385,210,80]}
+{"kind":"textbox","id":"sh/cjix43e9","slide":18,"text":"Boucle continue : retour utilisateur → ajustement des indicateurs → validation technique.","textPreview":"Boucle continue : retour utilisateur → ajustement des indicateurs → validation technique.","textChars":89,"textLines":1,"bbox":[55,560,1120,40]}
+{"kind":"notes","id":"nt/8nqzf6","slide":18,"text":""}
+{"kind":"slide","id":"sl/oeote8","slide":19,"title":"SAGE INDEX","textShapes":15}
+{"kind":"textbox","id":"sh/gb2tg7up","slide":19,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/vatcn2t4","slide":19,"text":"Une architecture moderne, sécurisée et déployable","textPreview":"Une architecture moderne, sécurisée et déployable","textChars":49,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/u9kbehcj","slide":19,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/5gvutwb6","slide":19,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/4fmdkrul","slide":19,"bbox":[48,180,560,105]}
+{"kind":"shape","id":"sh/3etcrmt0","slide":19,"bbox":[48,180,8,105]}
+{"kind":"textbox","id":"sh/idkvihcf","slide":19,"text":"Frontend","textPreview":"Frontend","textChars":8,"textLines":1,"bbox":[74,198,516,38]}
+{"kind":"textbox","id":"sh/lkruhsb2","slide":19,"text":"React 19 • TypeScript • Vite • Nginx","textPreview":"React 19 • TypeScript • Vite • Nginx","textChars":36,"textLines":1,"bbox":[74,242,516,27]}
+{"kind":"shape","id":"sh/kjit8nuh","slide":19,"bbox":[658,180,560,105]}
+{"kind":"shape","id":"sh/6to7y147","slide":19,"bbox":[658,180,8,105]}
+{"kind":"textbox","id":"sh/rexor65s","slide":19,"text":"Backend","textPreview":"Backend","textChars":7,"textLines":1,"bbox":[684,198,516,38]}
+{"kind":"textbox","id":"sh/sf6p0bmd","slide":19,"text":"Java 21 • Spring Boot 4.1 • Spring Security • JPA","textPreview":"Java 21 • Spring Boot 4.1 • Spring Security • JPA","textChars":49,"textLines":1,"bbox":[684,242,516,27]}
+{"kind":"shape","id":"sh/tgf6tgny","slide":19,"bbox":[48,315,560,105]}
+{"kind":"shape","id":"sh/eho7214j","slide":19,"bbox":[48,315,8,105]}
+{"kind":"textbox","id":"sh/fihov6l4","slide":19,"text":"Données","textPreview":"Données","textChars":7,"textLines":1,"bbox":[74,333,516,38]}
+{"kind":"textbox","id":"sh/gjqp4bm9","slide":19,"text":"PostgreSQL 17 • connexions aux bases métier","textPreview":"PostgreSQL 17 • connexions aux bases métier","textChars":43,"textLines":1,"bbox":[74,377,516,27]}
+{"kind":"shape","id":"sh/1kz6xg3u","slide":19,"bbox":[658,315,560,105]}
+{"kind":"shape","id":"sh/2l876l4f","slide":19,"bbox":[658,315,8,105]}
+{"kind":"textbox","id":"sh/3mhozql0","slide":19,"text":"Sécurité","textPreview":"Sécurité","textChars":8,"textLines":1,"bbox":[684,333,516,38]}
+{"kind":"textbox","id":"sh/zq1onq18","slide":19,"text":"JWT • BCrypt • rôles • variables d’environnement","textPreview":"JWT • BCrypt • rôles • variables d’environnement","textChars":48,"textLines":1,"bbox":[684,377,516,27]}
+{"kind":"shape","id":"sh/ypsnulkn","slide":19,"bbox":[48,450,560,105]}
+{"kind":"shape","id":"sh/lcj6p0jy","slide":19,"bbox":[48,450,8,105]}
+{"kind":"textbox","id":"sh/0ba5wv2t","slide":19,"text":"Déploiement","textPreview":"Déploiement","textChars":11,"textLines":1,"bbox":[74,468,516,38]}
+{"kind":"textbox","id":"sh/bmhoj61w","slide":19,"text":"Docker Compose • health checks • réseaux privés","textPreview":"Docker Compose • health checks • réseaux privés","textChars":47,"textLines":1,"bbox":[74,512,516,27]}
+{"kind":"shape","id":"sh/ql8nqlkb","slide":19,"bbox":[658,450,560,105]}
+{"kind":"shape","id":"sh/doz6lgj2","slide":19,"bbox":[658,450,8,105]}
+{"kind":"textbox","id":"sh/cnq5sb2h","slide":19,"text":"Qualité","textPreview":"Qualité","textChars":7,"textLines":1,"bbox":[684,468,516,38]}
+{"kind":"textbox","id":"sh/3ih4f610","slide":19,"text":"Tests Spring • build TypeScript/Vite • contrôle des rendus","textPreview":"Tests Spring • build TypeScript/Vite • contrôle des rendus","textChars":58,"textLines":1,"bbox":[684,512,516,27]}
+{"kind":"notes","id":"nt/oeote8","slide":19,"text":""}
+{"kind":"slide","id":"sl/f5891g","slide":20,"title":"SAGE INDEX","textShapes":14}
+{"kind":"textbox","id":"sh/k7i1cryx","slide":20,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/z6pkjmhc","slide":20,"text":"Les données restent dans leurs domaines, le portail orchestre la lecture","textPreview":"Les données restent dans leurs domaines, le portail orchestre la lecture","textChars":72,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/y5gjahgr","slide":20,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/d472hwz6","slide":20,"bbox":[48,142,76,5]}
+{"kind":"shape","id":"sh/c3y18ryl","slide":20,"bbox":[170,175,940,76]}
+{"kind":"textbox","id":"sh/b2pkfmh0","slide":20,"text":"Utilisateur","textPreview":"Utilisateur","textChars":11,"textLines":1,"bbox":[195,190,210,44]}
+{"kind":"textbox","id":"sh/q1gj6hgf","slide":20,"text":"Navigateur / interface SAGE INDEX","textPreview":"Navigateur / interface SAGE INDEX","textChars":33,"textLines":1,"bbox":[410,190,670,44]}
+{"kind":"textbox","id":"sh/h0b2tgfa","slide":20,"text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[595,251,90,28]}
+{"kind":"shape","id":"sh/wz2lkby5","slide":20,"bbox":[170,280,940,76]}
+{"kind":"textbox","id":"sh/61gfa94f","slide":20,"text":"Présentation","textPreview":"Présentation","textChars":12,"textLines":1,"bbox":[195,295,210,44]}
+{"kind":"textbox","id":"sh/72pwje50","slide":20,"text":"React + Vite servi par Nginx","textPreview":"React + Vite servi par Nginx","textChars":28,"textLines":1,"bbox":[410,295,670,44]}
+{"kind":"textbox","id":"sh/s3yxcjml","slide":20,"text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[595,356,90,28]}
+{"kind":"shape","id":"sh/t47elon6","slide":20,"bbox":[170,385,940,76]}
+{"kind":"textbox","id":"sh/idwf69oj","slide":20,"text":"Services","textPreview":"Services","textChars":8,"textLines":1,"bbox":[195,400,210,44]}
+{"kind":"textbox","id":"sh/je5wfe54","slide":20,"text":"Spring Boot • Authentification • Dashboard • Comptes","textPreview":"Spring Boot • Authentification • Dashboard • Comptes","textChars":52,"textLines":1,"bbox":[410,400,670,44]}
+{"kind":"textbox","id":"sh/kfex8j69","slide":20,"text":"↓","textPreview":"↓","textChars":1,"textLines":1,"bbox":[595,461,90,28]}
+{"kind":"shape","id":"sh/507eh4nu","slide":20,"bbox":[170,490,940,76]}
+{"kind":"textbox","id":"sh/290fit4n","slide":20,"text":"Données","textPreview":"Données","textChars":7,"textLines":1,"bbox":[195,505,210,44]}
+{"kind":"textbox","id":"sh/3a9gry58","slide":20,"text":"PostgreSQL portail + bases Traçabilité, RH et Planning","textPreview":"PostgreSQL portail + bases Traçabilité, RH et Planning","textChars":54,"textLines":1,"bbox":[410,505,670,44]}
+{"kind":"notes","id":"nt/f5891g","slide":20,"text":""}
+{"kind":"slide","id":"sl/s3h3rd","slide":21,"title":"SAGE INDEX","textShapes":19}
+{"kind":"textbox","id":"sh/9wf69wv2","slide":21,"text":"SAGE INDEX","textPreview":"SAGE INDEX","textChars":10,"textLines":1,"bbox":[48,30,320,28]}
+{"kind":"textbox","id":"sh/m947yhwb","slide":21,"text":"Démonstration : du login à la décision","textPreview":"Démonstration : du login à la décision","textChars":38,"textLines":1,"bbox":[48,64,1120,64]}
+{"kind":"textbox","id":"sh/nado7mdw","slide":21,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1170,660,55,22]}
+{"kind":"shape","id":"sh/wz6p4rut","slide":21,"bbox":[48,142,76,5]}
+{"kind":"textbox","id":"sh/x0fqdwvy","slide":21,"text":"00:00","textPreview":"00:00","textChars":5,"textLines":1,"bbox":[55,175,100,40]}
+{"kind":"shape","id":"sh/axo72hcn","slide":21,"bbox":[170,175,1040,62]}
+{"kind":"textbox","id":"sh/vyx8bmd8","slide":21,"text":"Connexion","textPreview":"Connexion","textChars":9,"textLines":1,"bbox":[195,183,245,42]}
+{"kind":"textbox","id":"sh/c32ps7e9","slide":21,"text":"S’authentifier avec le matricule.","textPreview":"S’authentifier avec le matricule.","textChars":33,"textLines":1,"bbox":[455,183,725,42]}
+{"kind":"textbox","id":"sh/d4v61svu","slide":21,"text":"00:20","textPreview":"00:20","textChars":5,"textLines":1,"bbox":[55,263,100,40]}
+{"kind":"shape","id":"sh/l8rupsr2","slide":21,"bbox":[170,263,1040,62]}
+{"kind":"textbox","id":"sh/07itgnah","slide":21,"text":"Vue globale","textPreview":"Vue globale","textChars":11,"textLines":1,"bbox":[195,271,245,42]}
+{"kind":"textbox","id":"sh/z6psni9c","slide":21,"text":"Lire les trois domaines et les points d’attention.","textPreview":"Lire les trois domaines et les points d’attention.","textChars":50,"textLines":1,"bbox":[455,271,725,42]}
+{"kind":"textbox","id":"sh/y5gbedsr","slide":21,"text":"00:55","textPreview":"00:55","textChars":5,"textLines":1,"bbox":[55,351,100,40]}
+{"kind":"shape","id":"sh/9wrutsre","slide":21,"bbox":[170,351,1040,62]}
+{"kind":"textbox","id":"sh/8bitk7at","slide":21,"text":"Vues métier","textPreview":"Vues métier","textChars":11,"textLines":1,"bbox":[195,359,245,42]}
+{"kind":"textbox","id":"sh/na9cr298","slide":21,"text":"Explorer Traçabilité, RH puis Planning.","textPreview":"Explorer Traçabilité, RH puis Planning.","textChars":39,"textLines":1,"bbox":[455,359,725,42]}
+{"kind":"textbox","id":"sh/m90bixsn","slide":21,"text":"01:35","textPreview":"01:35","textChars":5,"textLines":1,"bbox":[55,439,100,40]}
+{"kind":"shape","id":"sh/x0buhcra","slide":21,"bbox":[170,439,1040,62]}
+{"kind":"textbox","id":"sh/wz2to7ap","slide":21,"text":"Administration","textPreview":"Administration","textChars":14,"textLines":1,"bbox":[195,447,245,42]}
+{"kind":"textbox","id":"sh/gfa50fmd","slide":21,"text":"Rechercher, activer ou désactiver un compte.","textPreview":"Rechercher, activer ou désactiver un compte.","textChars":44,"textLines":1,"bbox":[455,447,725,42]}
+{"kind":"textbox","id":"sh/hg3m9k3y","slide":21,"text":"02:00","textPreview":"02:00","textChars":5,"textLines":1,"bbox":[55,527,100,40]}
+{"kind":"shape","id":"sh/utsny547","slide":21,"bbox":[170,527,1040,62]}
+{"kind":"textbox","id":"sh/fu147als","slide":21,"text":"Conclusion","textPreview":"Conclusion","textChars":10,"textLines":1,"bbox":[195,535,245,42]}
+{"kind":"textbox","id":"sh/4ju54fm9","slide":21,"text":"Montrer le gain : une seule entrée, une vision consolidée.","textPreview":"Montrer le gain : une seule entrée, une vision consolidée.","textChars":58,"textLines":1,"bbox":[455,535,725,42]}
+{"kind":"textbox","id":"sh/pk3mdk3u","slide":21,"text":"Support vidéo à intégrer : capture écran du portail sur http://localhost:18080","textPreview":"Support vidéo à intégrer : capture écran du portail sur http://localhost:18080","textChars":78,"textLines":1,"bbox":[55,635,1060,30]}
+{"kind":"notes","id":"nt/s3h3rd","slide":21,"text":""}
+{"kind":"slide","id":"sl/39bute","slide":22,"title":"SYNTHÈSE","textShapes":4}
+{"kind":"textbox","id":"sh/zetwzuxk","slide":22,"text":"SYNTHÈSE","textPreview":"SYNTHÈSE","textChars":8,"textLines":1,"bbox":[62,62,300,30]}
+{"kind":"textbox","id":"sh/ytkf6pgz","slide":22,"text":"Un portail.\nTrois métiers.\nUne décision plus rapide.","textPreview":"Un portail. | Trois métiers. | Une décision plus rapide.","textChars":52,"textLines":3,"bbox":[62,185,870,250]}
+{"kind":"textbox","id":"sh/9kvy54fm","slide":22,"text":"SAGE INDEX sécurise l’accès, consolide les données et rend l’information opérationnelle immédiatement exploitable.","textPreview":"SAGE INDEX sécurise l’accès, consolide les données et rend l’information opérationnelle immédiatement exploitable.","textChars":114,"textLines":1,"bbox":[62,505,880,82]}
+{"kind":"textbox","id":"sh/8jmxcze1","slide":22,"text":"Questions & échanges","textPreview":"Questions & échanges","textChars":20,"textLines":1,"bbox":[62,625,420,32]}
+{"kind":"image","id":"im/tg7q10bm","slide":22,"name":"","alt":"Logo SAGE Automotive Interiors","bbox":[930,56,250,90]}
+{"kind":"notes","id":"nt/39bute","slide":22,"text":""}

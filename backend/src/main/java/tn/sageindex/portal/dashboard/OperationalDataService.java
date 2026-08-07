@@ -69,6 +69,11 @@ public class OperationalDataService {
                 "nonConformities", openIssues,
                 "shipmentsReady", null,
                 "lastUpdate", trace.get("lastupdate"),
+                "dailyEvents", trace.get("dailyEvents"),
+                "eventTypes", trace.get("eventTypes"),
+                "topParts", trace.get("topParts"),
+                "projects", trace.get("projects"),
+                "dailyQuantities", trace.get("dailyQuantities"),
                 "available", trace.get("available")));
         response.put("hr", map(
                 "presenceStatus", hr.get("presencestatus"),
@@ -76,6 +81,10 @@ public class OperationalDataService {
                 "pendingRequests", pendingRequests,
                 "teamAbsences", hr.get("teamabsences"),
                 "nextEvent", pendingRequests > 0 ? pendingRequests + " demande(s) en attente" : "Aucune demande en attente",
+                "dailyPresence", hr.get("dailyPresence"),
+                "requestTypes", hr.get("requestTypes"),
+                "requestStatus", hr.get("requestStatus"),
+                "attendanceHours", hr.get("attendanceHours"),
                 "available", hr.get("available")));
         response.put("planning", map(
                 "totalActions", planning.get("totalactions"),
@@ -84,6 +93,11 @@ public class OperationalDataService {
                 "completedActions", planning.get("completedactions"),
                 "activeProjects", planning.get("activeprojects"),
                 "completionRate", planning.get("completionrate"),
+                "status", planning.get("status"),
+                "projects", planning.get("projects"),
+                "deadlines", planning.get("deadlines"),
+                "stages", planning.get("stages"),
+                "criticality", planning.get("criticality"),
                 "available", planning.get("available")));
         response.put("priorities", priorities(openIssues, pendingRequests, number(planning.get("lateactions"))));
         response.put("recentActivity", mergeActivity(trace, hr, planning));
@@ -117,6 +131,39 @@ public class OperationalDataService {
                            to_char(created_at,'DD/MM/YYYY HH24:MI') time
                     from traceability_logs t join users u on u.id=t.actor_id
                     where u.matricule=? order by created_at desc limit 5
+                    """, matricule));
+            data.put("dailyEvents", preparedRows(c, """
+                    select to_char(x::date,'DD/MM') label,
+                           count(t.id) filter(where u.id is not null and t.event_type='RECEPTION') receptions,
+                           count(t.id) filter(where u.id is not null and t.event_type like 'CONSUME%') consumptions
+                    from generate_series(current_date-13,current_date,'1 day') x
+                    left join traceability_logs t on t.created_at::date=x::date
+                    left join users u on u.id=t.actor_id and u.matricule=?
+                    group by x order by x
+                    """, matricule));
+            data.put("eventTypes", preparedRows(c, """
+                    select t.event_type label,count(*) value from traceability_logs t
+                    join users u on u.id=t.actor_id where u.matricule=?
+                    group by t.event_type order by value desc
+                    """, matricule));
+            data.put("topParts", preparedRows(c, """
+                    select s.part_number label,round(sum(s.remaining_qty)::numeric,2) remaining
+                    from stock_items s join users u on u.id=s.created_by_id where u.matricule=?
+                    group by s.part_number order by remaining desc limit 8
+                    """, matricule));
+            data.put("projects", preparedRows(c, """
+                    select coalesce(nullif(t.project,''),'Sans projet') label,count(*) value
+                    from traceability_logs t join users u on u.id=t.actor_id where u.matricule=?
+                    group by t.project order by value desc limit 8
+                    """, matricule));
+            data.put("dailyQuantities", preparedRows(c, """
+                    select to_char(x::date,'DD/MM') label,
+                           round(coalesce(sum(abs(t.delta_qty)) filter(where u.id is not null and t.event_type='RECEPTION'),0)::numeric,2) received,
+                           round(coalesce(sum(abs(t.delta_qty)) filter(where u.id is not null and t.event_type like 'CONSUME%'),0)::numeric,2) consumed
+                    from generate_series(current_date-13,current_date,'1 day') x
+                    left join traceability_logs t on t.created_at::date=x::date
+                    left join users u on u.id=t.actor_id and u.matricule=?
+                    group by x order by x
                     """, matricule));
             data.put("available", true);
         } catch (SQLException e) {
@@ -163,6 +210,31 @@ public class OperationalDataService {
                     from attendance a join employee e on e.id=a.employee_id
                     where e.matricule=? order by date desc limit 5
                     """, account.getMatricule()));
+            data.put("dailyPresence", preparedRows(c, """
+                    select to_char(x::date,'DD/MM') label,
+                           count(a.id) filter(where a.clock_in is not null) present,
+                           count(a.id) filter(where a.id is not null and a.clock_in is null) absent
+                    from generate_series(current_date-13,current_date,'1 day') x
+                    left join employee e on e.matricule=?
+                    left join attendance a on a.employee_id=e.id and a.date=x::date
+                    group by x order by x
+                    """, account.getMatricule()));
+            data.put("requestTypes", preparedRows(c, """
+                    select coalesce(r.request_type,'Non renseigné') label,count(*) value
+                    from request r join employee e on e.id=r.employee_id where e.matricule=?
+                    group by r.request_type order by value desc
+                    """, account.getMatricule()));
+            data.put("requestStatus", preparedRows(c, """
+                    select coalesce(r.status,'Non renseigné') label,count(*) value
+                    from request r join employee e on e.id=r.employee_id where e.matricule=?
+                    group by r.status order by value desc
+                    """, account.getMatricule()));
+            data.put("attendanceHours", preparedRows(c, """
+                    select to_char(a.date,'DD/MM') label,
+                           round((coalesce(a.total_attendance,0)/3600000000000)::numeric,1) value
+                    from attendance a join employee e on e.id=a.employee_id
+                    where e.matricule=? and a.date>=current_date-13 order by a.date
+                    """, account.getMatricule()));
             data.put("available", true);
         } catch (SQLException e) {
             data.put("available", false);
@@ -204,6 +276,35 @@ public class OperationalDataService {
                     from ecr_action a join app_user u
                       on lower(a.responsible) in (lower(u.full_name),lower(coalesce(u.username,'')))
                     where u.matricule=? order by coalesce(a.closed_date,a.created_at) desc limit 5
+                    """, matricule));
+            data.put("status", preparedRows(c, """
+                    select coalesce(a.status,'TODO') label,count(*) value from ecr_action a join app_user u
+                      on lower(a.responsible) in (lower(u.full_name),lower(coalesce(u.username,'')))
+                    where u.matricule=? group by a.status order by value desc
+                    """, matricule));
+            data.put("projects", preparedRows(c, """
+                    select concat(r.modification_number,' · ',r.modification_project) label,
+                           round(100.0*count(*) filter(where a.status='DONE')/nullif(count(*),0),1) value
+                    from ecr_action a join ecr_request r on r.id=a.ecr_id join app_user u
+                      on lower(a.responsible) in (lower(u.full_name),lower(coalesce(u.username,'')))
+                    where u.matricule=? group by r.id,r.modification_number,r.modification_project order by count(*) desc limit 8
+                    """, matricule));
+            data.put("deadlines", preparedRows(c, """
+                    select a.title label,to_char(a.deadline,'DD/MM/YYYY') deadline,
+                           (a.deadline-current_date) days from ecr_action a join app_user u
+                      on lower(a.responsible) in (lower(u.full_name),lower(coalesce(u.username,'')))
+                    where u.matricule=? and a.deadline is not null and a.status not in ('DONE','CANCELLED')
+                    order by a.deadline limit 5
+                    """, matricule));
+            data.put("stages", preparedRows(c, """
+                    select coalesce(a.stage,'Non définie') label,count(*) value from ecr_action a join app_user u
+                      on lower(a.responsible) in (lower(u.full_name),lower(coalesce(u.username,'')))
+                    where u.matricule=? group by a.stage order by value desc
+                    """, matricule));
+            data.put("criticality", preparedRows(c, """
+                    select coalesce(a.criticality,'Non définie') label,count(*) value from ecr_action a join app_user u
+                      on lower(a.responsible) in (lower(u.full_name),lower(coalesce(u.username,'')))
+                    where u.matricule=? group by a.criticality order by value desc
                     """, matricule));
             data.put("available", true);
         } catch (SQLException e) {
@@ -323,6 +424,8 @@ public class OperationalDataService {
               select (select count(*) from employee where not deleted and not has_left_company) employees,
               (select count(*) from department) departments,(select count(*) from attendance) attendanceRecords,
               (select count(*) from free_operators where status='ACTIVE') freeOperators,
+              (select count(*) from attendance where date=current_date and clock_in is not null) presentToday,
+              greatest((select count(*) from employee where not deleted and not has_left_company)-(select count(*) from attendance where date=current_date and clock_in is not null),0) absentToday,
               (select round((coalesce(sum(overtime),0)/3600000000000)::numeric,1) from attendance where date>=date_trunc('month',current_date)) monthlyOvertime
               """));
             d.put("dailyPresence",rows(c,"""
@@ -356,12 +459,26 @@ public class OperationalDataService {
             d.put("totals",one(c,"""
               select (select count(*) from app_user where enabled) users,
               (select count(*) from ecr_request where not archived) projects,
+              (select count(*) from ecr_request where not archived and current_stage not in ('CLOSED','CANCELLED')) activeRequests,
+              (select count(*) from ecr_request where not archived and current_stage='CLOSED') closedRequests,
+              (select count(*) from ecr_request where not archived and current_stage='CANCELLED') cancelledRequests,
               (select count(*) from ecr_action) actions,
               (select count(*) from ecr_action where status='LATE' or (deadline<current_date and status not in ('DONE','CANCELLED'))) lateActions,
               (select count(*) from ecr_action where status='DONE') completedActions
               """));
             d.put("status",rows(c,"select coalesce(status,'TODO') label,count(*) value from ecr_action group by status order by value desc"));
             d.put("stages",rows(c,"select coalesce(current_stage,'NON_DEFINI') label,count(*) value from ecr_request where not archived group by current_stage order by value desc"));
+            d.put("projects",rows(c,"select coalesce(modification_project,'Non renseigné') label,count(*) value from ecr_request where not archived group by modification_project order by value desc limit 8"));
+            d.put("clients",rows(c,"select coalesce(client,'Non renseigné') label,count(*) value from ecr_request where not archived group by client order by value desc limit 8"));
+            d.put("changeTypes",rows(c,"""
+              select label,sum(value) value from (
+                select 'Nouveau projet' label,count(*) filter(where new_version) value from ecr_request where not archived
+                union all select 'Digit change',count(*) filter(where digit_change) from ecr_request where not archived
+                union all select 'Component change',count(*) filter(where component_change) from ecr_request where not archived
+                union all select 'Process change',count(*) filter(where process_change) from ecr_request where not archived
+                union all select 'Supplier change',count(*) filter(where supplier_change) from ecr_request where not archived
+              ) x group by label order by value desc
+              """));
         }catch(SQLException e){d.put("connected",false);d.put("error","Source Plannings indisponible");}
         return d;
     }

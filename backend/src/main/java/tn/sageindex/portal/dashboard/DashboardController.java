@@ -52,6 +52,7 @@ public class DashboardController {
         response.put("metrics", Map.of());
         response.put("traceability", Map.of());
         response.put("hr", Map.of());
+        response.put("planning", Map.of());
         response.put("priorities", List.of());
         response.put("recentActivity", List.of());
         return response;
