@@ -47,7 +47,7 @@ export default function Dashboard({initialView="all"}:{initialView?:View}) {
   const barVals=view==="planning"?[92,78,84,68]:view==="rh"?[90,90,92,100]:view==="trace"?[96,83,72,58]:[94,88,95,84];
   return <main className={`app theme-${cfg.color}`}>
     <aside className="rail">
-      <a className="logo" href="#" aria-label="SAGE HUB"><img src="/sage-logo.png" alt="Logo SAGE Automotive Interiors"/><span>SAGE HUB</span></a>
+      <a className="logo" href="#" aria-label="SAGE 360"><img src="/sage-logo.png" alt="Logo SAGE Automotive Interiors"/><span>SAGE 360</span></a>
       <nav>
         <p>ESPACE DE PILOTAGE</p>
         {(Object.keys(views) as View[]).map((key)=><button key={key} onClick={()=>openView(key)} className={view===key?"active":""}><span>{icons[key==="all"?"grid":key==="planning"?"calendar":key==="trace"?"route":"users"]}</span><b>{views[key].label}</b>{key==="all"&&<em>4</em>}</button>)}
@@ -56,7 +56,7 @@ export default function Dashboard({initialView="all"}:{initialView?:View}) {
       <div className="sync"><span><i/> Systèmes synchronisés</span><b>3 / 3</b><small>Mise à jour il y a 2 min</small></div>
     </aside>
     <section className="workspace">
-      <header className="topbar"><div className="mobile-brand"><img src="/sage-logo.png" alt=""/><b>SAGE HUB</b></div><label className="search"><span>{icons.search}</span><input aria-label="Rechercher" placeholder="Rechercher un lot, un projet, un collaborateur…"/><kbd>⌘ K</kbd></label><div className="top-actions"><button className="round">{icons.bell}<i>3</i></button><div className="person"><span>KT</span><p><b>Kamel Tounsi</b><small>Responsable opérations</small></p><em>⌄</em></div></div></header>
+      <header className="topbar"><div className="mobile-brand"><img src="/sage-logo.png" alt=""/><b>SAGE 360</b></div><label className="search"><span>{icons.search}</span><input aria-label="Rechercher" placeholder="Rechercher un lot, un projet, un collaborateur…"/><kbd>⌘ K</kbd></label><div className="top-actions"><button className="round">{icons.bell}<i>3</i></button><div className="person"><span>KT</span><p><b>Kamel Tounsi</b><small>Responsable opérations</small></p><em>⌄</em></div></div></header>
       <div className="page">
         <div className="headline"><div><div className="breadcrumb">PILOTAGE <span>/</span> {cfg.label.toUpperCase()}</div><h1>{cfg.title}</h1><p>{cfg.subtitle}</p></div><div className="actions"><button>{icons.download} Exporter</button><select value={range} onChange={e=>setRange(e.target.value)} aria-label="Période"><option>7 jours</option><option>30 jours</option><option>Ce trimestre</option></select></div></div>
         <div className="view-switch" role="tablist">{(Object.keys(views) as View[]).map(key=><button role="tab" aria-selected={view===key} className={view===key?"active":""} onClick={()=>openView(key)} key={key}><span>{icons[key==="all"?"grid":key==="planning"?"calendar":key==="trace"?"route":"users"]}</span>{views[key].short}</button>)}</div>
@@ -68,9 +68,8 @@ export default function Dashboard({initialView="all"}:{initialView?:View}) {
           <article className="card activity"><div className="card-head"><div><span className="overline">EN DIRECT</span><h2>Activité récente</h2><p>Dernières opérations enregistrées</p></div><span className="live"><i/> LIVE</span></div><div className="timeline">{detail.activity.map((a,i)=><div key={i}><span className={`event e${i}`}>{icons[a[3] as IconName]}</span><p><b>{a[0]}</b><small>{a[1]}</small></p><time>{a[2]}</time></div>)}</div><button className="full">Voir toute l'activité <span>→</span></button></article>
         </section>
         <section className="lower-grid"><article className="card alerts"><div className="card-head"><div><span className="overline">PRIORITÉS</span><h2>Alertes nécessitant votre attention</h2></div><button>Tout afficher</button></div>{detail.alerts.map((a,i)=><div className="alert-row" key={a[1]}><span className={`severity s${i}`}>{i?"!":"!!"}</span><p><em>{a[0]}</em><b>{a[1]}</b><small>{a[2]}</small></p><time>{a[3]}</time><button>→</button></div>)}</article><article className="card goal"><div className="card-head"><div><span className="overline">OBJECTIF MENSUEL</span><h2>{detail.goal[0]}</h2></div><b>Juillet</b></div><div className="goal-number"><strong>{detail.goal[1]}</strong><span>{detail.goal[2]} <small>/ {detail.goal[3]}</small></span></div><i className="goal-bar"><b style={{width:detail.goal[1]}}/></i><div className="goal-foot"><span><i className="dot green"/>Dans les temps</span><b>6 jours restants</b></div></article></section>
-        <footer className="page-foot"><span><i/> Données synchronisées il y a 2 min</span><p>SAGE HUB · Centre de pilotage unifié</p><button>↻ Actualiser</button></footer>
+        <footer className="page-foot"><span><i/> Données synchronisées il y a 2 min</span><p>SAGE 360 · Centre de pilotage unifié</p><button>↻ Actualiser</button></footer>
       </div>
     </section>
   </main>
 }
-

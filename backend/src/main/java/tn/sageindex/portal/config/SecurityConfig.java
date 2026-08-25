@@ -5,11 +5,9 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.config.Customizer;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
-import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.security.crypto.password.PasswordEncoder;
-import org.springframework.security.provisioning.InMemoryUserDetailsManager;
 import org.springframework.security.web.SecurityFilterChain;
 import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 import org.springframework.security.config.http.SessionCreationPolicy;
@@ -32,20 +30,11 @@ public class SecurityConfig {
     }
 
     @Bean
-    UserDetailsService userDetailsService(UserAccountRepository repository, PasswordEncoder encoder,
-                                          @Value("${portal.admin.password}") String adminPassword) {
-        InMemoryUserDetailsManager admin = new InMemoryUserDetailsManager(
-                User.withUsername("admin")
-                        .password(encoder.encode(adminPassword))
-                        .roles("ADMIN")
-                        .build());
+    UserDetailsService userDetailsService(UserAccountRepository repository) {
         return username -> {
-            if ("admin".equals(username)) {
-                return admin.loadUserByUsername(username);
-            }
             return repository.findByUsername(username)
                     .filter(account -> account.getAccountStatus() == AccountStatus.ACTIVE)
-                    .map(account -> User.withUsername(account.getUsername())
+                    .map(account -> org.springframework.security.core.userdetails.User.withUsername(account.getUsername())
                             .password(account.getPasswordHash())
                             .roles(account.getRoles().split(","))
                             .build())

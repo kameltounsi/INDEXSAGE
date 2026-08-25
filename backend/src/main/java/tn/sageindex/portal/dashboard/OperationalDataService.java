@@ -2,6 +2,8 @@ package tn.sageindex.portal.dashboard;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import tn.sageindex.portal.account.UserAccount;
 import java.sql.*;
 import java.time.Instant;
@@ -9,6 +11,8 @@ import java.util.*;
 
 @Service
 public class OperationalDataService {
+    private static final Logger log = LoggerFactory.getLogger(OperationalDataService.class);
+    private static final int QUERY_TIMEOUT_SECONDS = 10;
     @Value("${portal.sources.traceability.url}") private String traceUrl;
     @Value("${portal.sources.traceability.username}") private String traceUser;
     @Value("${portal.sources.traceability.password}") private String tracePassword;
@@ -19,21 +23,74 @@ public class OperationalDataService {
     @Value("${portal.sources.planning.username}") private String planningDbUser;
     @Value("${portal.sources.planning.password}") private String planningDbPassword;
     @Value("${portal.applications.planning-url:http://localhost:3000/}") private String planningUrl;
+    @Value("${portal.applications.traceability-url:http://localhost:5173/}") private String traceabilityUrl;
+    @Value("${portal.applications.hr-url:http://localhost:5170/}") private String hrApplicationUrl;
 
     public Map<String,Boolean> applicationAccess(UserAccount account) {
-        Map<String,Object> trace = personalTraceability(account.getMatricule());
-        Map<String,Object> hr = personalHr(account);
-        Map<String,Object> planning = personalPlanning(account.getMatricule());
         return Map.of(
-                "TRACEABILITY", number(trace.get("usermatches")) > 0,
-                "HR", number(hr.get("usermatches")) > 0,
-                "PLANNING", number(planning.get("usermatches")) > 0);
+                "TRACEABILITY", accountExists(traceUrl, traceUser, tracePassword,
+                        "select 1 from users where matricule=? limit 1", account.getMatricule()),
+                "HR", accountExists(hrUrl, hrUser, hrPassword,
+                        "select 1 from employee where matricule=? and not deleted and not has_left_company limit 1", account.getMatricule()),
+                "PLANNING", accountExists(planningDbUrl, planningDbUser, planningDbPassword,
+                        "select 1 from app_user where matricule=? limit 1", account.getMatricule()));
+    }
+
+    public Optional<EmployeeProfile> findActiveEmployee(String matricule) {
+        String sql = """
+                select e.id, e.full_name, e.email, d.name department, j.title job_title,
+                       et.type work_type, s.full_name supervisor
+                from employee e
+                left join department d on d.id=e.department_id
+                left join job_title j on j.id=e.job_title_id
+                left join employment_type et on et.id=e.employment_type_id
+                left join employee s on s.id=e.supervisor_id
+                where e.matricule=? and not e.deleted and not coalesce(e.has_left_company,false)
+                limit 1
+                """;
+        try (Connection connection = DriverManager.getConnection(hrUrl, hrUser, hrPassword);
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setQueryTimeout(QUERY_TIMEOUT_SECONDS);
+            statement.setString(1, matricule);
+            try (ResultSet result = statement.executeQuery()) {
+                if (!result.next()) return Optional.empty();
+                return Optional.of(new EmployeeProfile(result.getLong("id"), result.getString("full_name"),
+                        result.getString("email"), result.getString("department"),
+                        result.getString("job_title"), result.getString("work_type"),
+                        result.getString("supervisor")));
+            }
+        } catch (SQLException exception) {
+            log.warn("Recherche RH indisponible pour le matricule {}: {}", matricule, exception.getMessage());
+            throw new IllegalStateException("La base des employés est temporairement indisponible", exception);
+        }
+    }
+
+    public record EmployeeProfile(long employeeId, String fullName, String email, String department,
+                                  String jobTitle, String workType, String supervisor) {}
+
+    private boolean accountExists(String url, String username, String password, String sql, String matricule) {
+        try (Connection connection = DriverManager.getConnection(url, username, password);
+             PreparedStatement statement = connection.prepareStatement(sql)) {
+            statement.setQueryTimeout(QUERY_TIMEOUT_SECONDS);
+            statement.setString(1, matricule);
+            try (ResultSet result = statement.executeQuery()) { return result.next(); }
+        } catch (SQLException exception) {
+            log.warn("Vérification d'application indisponible pour le matricule {}: {}", matricule, exception.getMessage());
+            return false;
+        }
     }
 
     public Map<String,Object> loadFor(UserAccount account) {
         Map<String,Object> trace = personalTraceability(account.getMatricule());
         Map<String,Object> hr = personalHr(account);
         Map<String,Object> planning = personalPlanning(account.getMatricule());
+        boolean traceAccess = number(trace.get("usermatches")) > 0;
+        boolean hrAccess = number(hr.get("usermatches")) > 0;
+        boolean planningAccess = number(planning.get("usermatches")) > 0;
+        // Enforce module isolation in the API, not only in the user interface.
+        if (!traceAccess) trace = new LinkedHashMap<>();
+        if (!hrAccess) hr = new LinkedHashMap<>();
+        if (!planningAccess) planning = new LinkedHashMap<>();
         boolean manager = isManager(account.getJobTitle());
 
         Map<String,Object> user = new LinkedHashMap<>();
@@ -43,6 +100,7 @@ public class OperationalDataService {
         user.put("username", account.getUsername());
         user.put("matricule", account.getMatricule());
         user.put("manager", manager);
+        user.put("admin", Arrays.asList(account.getRoles().split(",")).contains("ADMIN"));
 
         long lotsToday = number(trace.get("lotstoday"));
         long openIssues = number(trace.get("openissues"));
@@ -50,13 +108,16 @@ public class OperationalDataService {
         Map<String,Object> response = new LinkedHashMap<>();
         response.put("user", user);
         response.put("applications", List.of(
-                application("TRACEABILITY", "Traçabilité", number(trace.get("usermatches")) > 0,
-                        "http://localhost:5173/", account.getMatricule(), text(trace.get("accountrole")), ""),
-                application("HR", "Ressources Humaines", number(hr.get("usermatches")) > 0,
-                        "http://localhost:5170/", account.getMatricule(), "", text(hr.get("accountemail"))),
-                application("PLANNING", "Gestion des plannings", number(planning.get("usermatches")) > 0,
+                application("TRACEABILITY", "Traçabilité", traceAccess,
+                        traceabilityUrl, account.getMatricule(), text(trace.get("accountrole")), "",
+                        false),
+                application("HR", "Ressources Humaines", hrAccess,
+                        hrApplicationUrl, account.getMatricule(), "", text(hr.get("accountemail")),
+                        false),
+                application("PLANNING", "Gestion des plannings", planningAccess,
                         planningUrl, firstText(planning.get("accountusername"), account.getMatricule()),
-                        text(planning.get("accountrole")), text(planning.get("accountemail")))));
+                        text(planning.get("accountrole")), text(planning.get("accountemail")),
+                        false)));
         response.put("metrics", map(
                 "lotsProcessed", lotsToday,
                 "attendanceRate", hr.get("attendancerate"),
@@ -167,6 +228,7 @@ public class OperationalDataService {
                     """, matricule));
             data.put("available", true);
         } catch (SQLException e) {
+            log.warn("Extraction Traçabilité indisponible pour le matricule {}: {}", matricule, e.getMessage());
             data.put("available", false);
             data.put("recentActivity", List.of());
         }
@@ -177,19 +239,29 @@ public class OperationalDataService {
         Map<String,Object> data = new LinkedHashMap<>();
         try (Connection c = DriverManager.getConnection(hrUrl, hrUser, hrPassword)) {
             Map<String,Object> values = preparedOne(c, """
-                    select count(distinct e.id) userMatches,
-                           max(e.email) accountEmail,
-                           case when today.clock_in is not null then 'Présent'
-                                when today.id is not null then 'Absent' else 'Non renseigné' end presenceStatus,
-                           round(100.0*count(a.id) filter(where a.clock_in is not null)
-                                 / nullif(count(a.id),0),1) attendanceRate,
-                           count(distinct r.id) filter(where upper(coalesce(r.status,'')) not in ('APPROVED','REJECTED','CANCELLED','VALIDATED')) pendingRequests,
-                           count(distinct r.id) filter(where upper(coalesce(r.status,'')) in ('APPROVED','VALIDATED')) completedRequests
-                    from employee e
-                    left join attendance today on today.employee_id=e.id and today.date=current_date
-                    left join attendance a on a.employee_id=e.id and a.date>=current_date-30
-                    left join request r on r.employee_id=e.id
-                    where e.matricule=? group by today.id,today.clock_in
+                    with selected_employee as (
+                      select id,email from employee where matricule=? and not deleted and not has_left_company
+                    ), attendance_stats as (
+                      select count(*) records,
+                             count(*) filter(where a.clock_in is not null) present_records
+                      from attendance a join selected_employee e on e.id=a.employee_id
+                      where a.date>=current_date-30
+                    ), request_stats as (
+                      select count(*) filter(where upper(coalesce(r.status,'')) not in ('APPROVED','REJECTED','CANCELLED','VALIDATED')) pending,
+                             count(*) filter(where upper(coalesce(r.status,'')) in ('APPROVED','VALIDATED')) completed
+                      from request r join selected_employee e on e.id=r.employee_id
+                    ), today_status as (
+                      select bool_or(a.clock_in is not null) present, count(*) records
+                      from attendance a join selected_employee e on e.id=a.employee_id where a.date=current_date
+                    )
+                    select (select count(*) from selected_employee) userMatches,
+                           (select max(email) from selected_employee) accountEmail,
+                           case when coalesce((select present from today_status),false) then 'Présent'
+                                when coalesce((select records from today_status),0)>0 then 'Absent' else 'Non renseigné' end presenceStatus,
+                           round(100.0*(select present_records from attendance_stats)
+                                 / nullif((select records from attendance_stats),0),1) attendanceRate,
+                           coalesce((select pending from request_stats),0) pendingRequests,
+                           coalesce((select completed from request_stats),0) completedRequests
                     """, account.getMatricule());
             data.putAll(values);
             long teamAbsences = 0;
@@ -237,6 +309,7 @@ public class OperationalDataService {
                     """, account.getMatricule()));
             data.put("available", true);
         } catch (SQLException e) {
+            log.warn("Extraction RH indisponible pour le matricule {}: {}", account.getMatricule(), e.getMessage());
             data.put("available", false);
             data.put("presencestatus", "Indisponible");
             data.put("recentActivity", List.of());
@@ -308,6 +381,7 @@ public class OperationalDataService {
                     """, matricule));
             data.put("available", true);
         } catch (SQLException e) {
+            log.warn("Extraction Planning indisponible pour le matricule {}: {}", matricule, e.getMessage());
             data.clear();
             data.put("usermatches", 0L);
             data.put("available", false);
@@ -317,19 +391,24 @@ public class OperationalDataService {
     }
 
     private Map<String,Object> application(String code, String label, boolean hasAccount, String url,
-                                           String identifier, String role, String email) {
+                                           String identifier, String role, String email, boolean fullDataAccess) {
         Map<String,Object> result = new LinkedHashMap<>();
         result.put("code", code);
         result.put("label", label);
         result.put("hasAccount", hasAccount);
         result.put("url", url);
         result.put("identifier", identifier);
-        result.put("role", role);
+        result.put("role", role(role, fullDataAccess));
         result.put("email", email);
         return result;
     }
 
     private String text(Object value) { return value == null ? "" : value.toString(); }
+
+    private String role(Object role, boolean fullAccess) {
+        String value = text(role).trim();
+        return fullAccess ? "Accès complet aux données" : value;
+    }
 
     private String firstText(Object preferred, String fallback) {
         String value = text(preferred).trim();
@@ -339,9 +418,9 @@ public class OperationalDataService {
     private List<Map<String,Object>> priorities(long openIssues, long pendingRequests, long lateActions) {
         List<Map<String,Object>> result = new ArrayList<>();
         if (openIssues > 0) result.add(Map.of("source", "Traçabilité", "level", "urgent",
-                "title", openIssues + " non-conformité(s) à traiter", "detail", "Données de votre compte", "url", "http://localhost:5173/"));
+                "title", openIssues + " non-conformité(s) à traiter", "detail", "Données de votre compte", "url", traceabilityUrl));
         if (pendingRequests > 0) result.add(Map.of("source", "RH", "level", "warning",
-                "title", pendingRequests + " demande(s) RH en attente", "detail", "Données de votre dossier", "url", "http://localhost:5170/"));
+                "title", pendingRequests + " demande(s) RH en attente", "detail", "Données de votre dossier", "url", hrApplicationUrl));
         if (lateActions > 0) result.add(Map.of("source", "Plannings", "level", "urgent",
                 "title", lateActions + " action(s) en retard", "detail", "Planning ECR personnel", "url", planningUrl));
         return result;
@@ -375,6 +454,7 @@ public class OperationalDataService {
 
     private List<Map<String,Object>> preparedRows(Connection c,String sql,Object parameter)throws SQLException {
         try(PreparedStatement s=c.prepareStatement(sql)){
+            s.setQueryTimeout(QUERY_TIMEOUT_SECONDS);
             s.setObject(1,parameter);
             try(ResultSet rs=s.executeQuery()) { return readRows(rs); }
         }
@@ -388,6 +468,7 @@ public class OperationalDataService {
         out.put("planning", planning());
         return out;
     }
+
 
     private Map<String,Object> traceability() {
         Map<String,Object> d=new LinkedHashMap<>();
@@ -412,7 +493,7 @@ public class OperationalDataService {
             d.put("stockByStatus",rows(c,"select status label,count(*) value,round(sum(remaining_qty)::numeric,2) quantity from stock_items group by status order by value desc"));
             d.put("topParts",rows(c,"select part_number label,count(*) batches,round(sum(received_qty)::numeric,2) received,round(sum(remaining_qty)::numeric,2) remaining from stock_items group by part_number order by received desc limit 8"));
             d.put("recentActivity",rows(c,"select event_type type,coalesce(part_number,'—') part,coalesce(batch_sage,'—') batch,to_char(created_at,'DD/MM HH24:MI') time from traceability_logs order by created_at desc limit 8"));
-        }catch(SQLException e){d.put("connected",false);d.put("error","Source Traçabilité indisponible");}
+        }catch(SQLException e){log.warn("Extraction globale Traçabilité impossible: {}",e.getMessage());d.put("connected",false);d.put("error","Source Traçabilité indisponible");}
         return d;
     }
 
@@ -448,7 +529,7 @@ public class OperationalDataService {
             d.put("productionLines",rows(c,"select coalesce(p.name,'Non affectée') label,count(*) value from employee e left join production_line p on p.id=e.production_line_id where not e.deleted and not e.has_left_company group by p.name order by value desc limit 10"));
             d.put("overtime",rows(c,"select to_char(date,'DD/MM') label,round((coalesce(sum(overtime),0)/3600000000000)::numeric,1) value from attendance where date>=current_date-13 group by date order by date"));
             d.put("absenceReasons",rows(c,"select coalesce(r.reason,'Non renseignée') label,count(*) value from attendance a left join absence_reason r on r.id=a.absence_reason_id where a.date>=current_date-30 and a.clock_in is null group by r.reason order by value desc"));
-        }catch(SQLException e){d.put("connected",false);d.put("error","Source RH indisponible");}
+        }catch(SQLException e){log.warn("Extraction globale RH impossible: {}",e.getMessage());d.put("connected",false);d.put("error","Source RH indisponible");}
         return d;
     }
 
@@ -479,7 +560,7 @@ public class OperationalDataService {
                 union all select 'Supplier change',count(*) filter(where supplier_change) from ecr_request where not archived
               ) x group by label order by value desc
               """));
-        }catch(SQLException e){d.put("connected",false);d.put("error","Source Plannings indisponible");}
+        }catch(SQLException e){log.warn("Extraction globale Planning impossible: {}",e.getMessage());d.put("connected",false);d.put("error","Source Plannings indisponible");}
         return d;
     }
 
@@ -487,8 +568,11 @@ public class OperationalDataService {
         List<Map<String,Object>> all=rows(c,sql);return all.isEmpty()?Map.of():all.getFirst();
     }
     private List<Map<String,Object>> rows(Connection c,String sql)throws SQLException{
-        try(Statement s=c.createStatement();ResultSet rs=s.executeQuery(sql)){
+        try(Statement s=c.createStatement()){
+            s.setQueryTimeout(QUERY_TIMEOUT_SECONDS);
+            try(ResultSet rs=s.executeQuery(sql)){
             return readRows(rs);
+            }
         }
     }
 

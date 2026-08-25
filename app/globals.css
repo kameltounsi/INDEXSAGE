@@ -3,7 +3,7 @@
 @media(max-width:1100px){.app{grid-template-columns:190px 1fr}.kpi-grid{grid-template-columns:1fr 1fr}.search{width:300px}.rail nav button b{font-size:9px}}
 @media(max-width:760px){.app{display:block}.rail{display:none}.topbar{padding:0 15px}.mobile-brand{display:flex}.search{display:none}.person p,.person em{display:none}.page{padding:18px 13px}.headline{display:block}.actions{margin-top:14px}.view-switch{display:flex;overflow-x:auto}.view-switch button{padding:0 11px;white-space:nowrap}.kpi-grid{grid-template-columns:1fr 1fr}.grid-main,.lower-grid{grid-template-columns:1fr}.headline h1{font-size:22px}}
 
-/* Palette fonctionnelle SAGE HUB : une teinte par univers. */
+/* Palette fonctionnelle SAGE 360 : une teinte par univers. */
 .theme-blue{--accent:#687b18;--soft:#eef2df}
 .theme-orange{--accent:#c6791d;--soft:#fff2df}
 .theme-teal{--accent:#168477;--soft:#e3f4f0}

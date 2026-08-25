@@ -6,55 +6,69 @@ import io.jsonwebtoken.security.Keys;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import javax.crypto.SecretKey;
 import java.nio.charset.StandardCharsets;
 import java.time.Instant;
 import java.util.Date;
-import java.util.Set;
 import java.util.UUID;
 import java.util.Base64;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.Map;
 import java.security.MessageDigest;
 
 @Service
 public class JwtService {
     private final SecretKey key;
     private final long lifetimeSeconds;
-    private final Set<String> revoked = ConcurrentHashMap.newKeySet();
-    private final Map<String, Instant> revokedBefore = new ConcurrentHashMap<>();
+    private final PortalSessionRepository sessions;
 
     public JwtService(@Value("${portal.jwt.secret}") String secret,
-                      @Value("${portal.jwt.lifetime-seconds:28800}") long lifetimeSeconds) {
+                      @Value("${portal.jwt.lifetime-seconds:28800}") long lifetimeSeconds,
+                      PortalSessionRepository sessions) {
         this.key = Keys.hmacShaKeyFor(secret.getBytes(StandardCharsets.UTF_8));
         this.lifetimeSeconds = lifetimeSeconds;
+        this.sessions = sessions;
     }
 
+    @Transactional
     public String create(UserDetails user) {
         Instant now = Instant.now();
-        return Jwts.builder().subject(user.getUsername()).id(UUID.randomUUID().toString())
+        Instant expiresAt = now.plusSeconds(lifetimeSeconds);
+        String tokenId = UUID.randomUUID().toString();
+        String token = Jwts.builder().subject(user.getUsername()).id(tokenId)
                 .claim("roles", user.getAuthorities().stream().map(Object::toString).toList())
                 .claim("pwd", fingerprint(user.getPassword()))
-                .issuedAt(Date.from(now)).expiration(Date.from(now.plusSeconds(lifetimeSeconds)))
+                .issuedAt(Date.from(now)).expiration(Date.from(expiresAt))
                 .signWith(key).compact();
+        // La clé primaire username garantit une seule session active par compte.
+        sessions.saveAndFlush(new PortalSession(user.getUsername(), tokenId, now, expiresAt));
+        return token;
     }
 
+    @Transactional(readOnly = true)
     public Claims parse(String token) {
         Claims claims = Jwts.parser().verifyWith(key).build().parseSignedClaims(token).getPayload();
-        if (revoked.contains(claims.getId())) throw new IllegalArgumentException("Token révoqué");
-        Instant cutoff = revokedBefore.get(claims.getSubject());
-        if (cutoff != null && claims.getIssuedAt().toInstant().isBefore(cutoff))
-            throw new IllegalArgumentException("Session révoquée");
+        PortalSession active = sessions.findById(claims.getSubject())
+                .orElseThrow(() -> new IllegalArgumentException("Session terminée"));
+        if (!MessageDigest.isEqual(active.getTokenId().getBytes(StandardCharsets.UTF_8),
+                claims.getId().getBytes(StandardCharsets.UTF_8)))
+            throw new IllegalArgumentException("Une nouvelle session a remplacé ce token");
+        if (active.getExpiresAt().isBefore(Instant.now()))
+            throw new IllegalArgumentException("Session expirée");
         return claims;
     }
 
+    @Transactional
     public void revoke(String token) {
-        try { revoked.add(parse(token).getId()); } catch (RuntimeException ignored) { }
+        try {
+            Claims claims = parse(token);
+            sessions.deleteById(claims.getSubject());
+        } catch (RuntimeException ignored) { }
     }
 
+    @Transactional
     public void revokeAll(String username) {
-        revokedBefore.put(username, Instant.now().plusMillis(1));
+        sessions.deleteById(username);
     }
 
     public boolean validFor(Claims claims, UserDetails user) {
