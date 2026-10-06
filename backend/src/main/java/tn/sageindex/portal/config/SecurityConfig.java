@@ -33,10 +33,12 @@ public class SecurityConfig {
     UserDetailsService userDetailsService(UserAccountRepository repository) {
         return username -> {
             return repository.findByUsername(username)
-                    .filter(account -> account.getAccountStatus() == AccountStatus.ACTIVE)
+                    .filter(account -> account.getAccountStatus() == AccountStatus.ACTIVE
+                            || account.getAccountStatus() == AccountStatus.PASSWORD_CHANGE_REQUIRED)
                     .map(account -> org.springframework.security.core.userdetails.User.withUsername(account.getUsername())
                             .password(account.getPasswordHash())
-                            .roles(account.getRoles().split(","))
+                            .roles(account.getAccountStatus() == AccountStatus.PASSWORD_CHANGE_REQUIRED
+                                    ? new String[]{"PASSWORD_CHANGE"} : account.getRoles().split(","))
                             .build())
                     .orElseThrow(() -> new org.springframework.security.core.userdetails.UsernameNotFoundException(username));
         };
@@ -54,9 +56,11 @@ public class SecurityConfig {
                         .requestMatchers("/error").permitAll()
                         .requestMatchers("/api/auth/login").permitAll()
                         .requestMatchers("/api/sso/exchange").permitAll()
+                        .requestMatchers("/api/auth/change-password", "/api/auth/logout").authenticated()
                         .requestMatchers("/api/accounts/**").hasRole("ADMIN")
                         .requestMatchers("/api/dashboard/operational").hasRole("ADMIN")
-                        .anyRequest().authenticated())
+                        .anyRequest().access(new org.springframework.security.web.access.expression.WebExpressionAuthorizationManager(
+                                "isAuthenticated() and !hasRole('PASSWORD_CHANGE')")))
                 .httpBasic(httpBasic -> httpBasic.disable())
                 .addFilterBefore(jwtFilter, UsernamePasswordAuthenticationFilter.class)
                 .build();

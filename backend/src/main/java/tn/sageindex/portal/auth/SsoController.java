@@ -31,11 +31,11 @@ public class SsoController {
 
     @PostMapping("/launch")
     public Map<String,Object> launch(Authentication authentication) {
-        if ("admin".equals(authentication.getName())) {
-            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Le compte administrateur du portail n'est pas un compte métier");
-        }
         UserAccount account = repository.findByUsername(authentication.getName())
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED));
+        if (Long.valueOf(-1L).equals(account.getEmployeeId())) {
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST, "Le compte administrateur du portail n'est pas un compte métier");
+        }
         Map<String,Boolean> access = dataService.applicationAccess(account);
         List<Map<String,String>> launches = new ArrayList<>();
         addLaunch(launches, access, "TRACEABILITY", traceabilityUrl, account.getMatricule());
@@ -50,6 +50,9 @@ public class SsoController {
         if (ticket == null || ticket.expiresAt().isBefore(Instant.now()) || !ticket.application().equals(request.application())) {
             throw new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Ticket SSO invalide ou expiré");
         }
+        repository.findByMatricule(ticket.matricule())
+                .filter(account -> account.getAccountStatus() == tn.sageindex.portal.account.AccountStatus.ACTIVE)
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.UNAUTHORIZED, "Compte SSO indisponible"));
         return Map.of("matricule", ticket.matricule());
     }
 

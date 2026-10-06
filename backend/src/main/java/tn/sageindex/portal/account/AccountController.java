@@ -1,7 +1,6 @@
 package tn.sageindex.portal.account;
 
 import jakarta.validation.Valid;
-import jakarta.validation.constraints.Size;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
 import org.springframework.data.domain.Page;
@@ -71,8 +70,8 @@ public class AccountController {
         account.setEmail(employee.email() == null || employee.email().isBlank()
                 ? matricule + "@sage-index.local" : employee.email());
         account.setEmployeeStatus("Employé actuel");
-        account.setPasswordHash(passwordEncoder.encode(matricule));
-        account.setAccountStatus(AccountStatus.ACTIVE);
+        account.setPasswordHash(null);
+        account.setAccountStatus(AccountStatus.ACTIVATION_REQUIRED);
         account.setRoles("USER");
         return view(repository.save(account));
     }
@@ -84,19 +83,26 @@ public class AccountController {
         return AccountView.from(account, applications);
     }
 
+    @org.springframework.transaction.annotation.Transactional
     @PostMapping("/{username}/activate")
-    public ResponseEntity<AccountView> activate(@PathVariable String username,
-                                                 @Valid @RequestBody ActivateAccountRequest request) {
-        return repository.findByUsername(username)
+    public ResponseEntity<ActivationView> activate(@PathVariable String username) {
+        return repository.findForActivationByUsername(username)
                 .map(account -> {
-                    account.setPasswordHash(passwordEncoder.encode(request.password()));
-                    account.setAccountStatus(AccountStatus.ACTIVE);
-                    return ResponseEntity.ok(view(repository.save(account)));
+                    if (account.getAccountStatus() != AccountStatus.ACTIVATION_REQUIRED) {
+                        throw new ResponseStatusException(HttpStatus.CONFLICT, "Ce compte n'est pas en attente d'activation");
+                    }
+                    byte[] bytes = new byte[24];
+                    new java.security.SecureRandom().nextBytes(bytes);
+                    String temporaryPassword = java.util.Base64.getUrlEncoder().withoutPadding().encodeToString(bytes);
+                    account.setPasswordHash(passwordEncoder.encode(temporaryPassword));
+                    account.setAccountStatus(AccountStatus.PASSWORD_CHANGE_REQUIRED);
+                    return ResponseEntity.ok().cacheControl(org.springframework.http.CacheControl.noStore())
+                            .body(new ActivationView(view(repository.save(account)), temporaryPassword));
                 })
                 .orElseGet(() -> ResponseEntity.notFound().build());
     }
 
-    public record ActivateAccountRequest(@Size(min = 12, max = 128) String password) {}
+    public record ActivationView(AccountView account, String temporaryPassword) {}
     public record CreateAccountRequest(@NotBlank @Pattern(regexp = "[0-9]+", message = "Le matricule doit contenir uniquement des chiffres") String matricule) {}
 
     public record AccountView(Long id, String username, String matricule, String fullName,

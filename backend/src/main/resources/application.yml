@@ -25,6 +25,7 @@ portal:
     hr-url: ${HR_APP_URL:http://localhost:5170/}
     planning-url: ${PLANNING_APP_URL:http://localhost:3000/}
   admin:
+    username: ${PORTAL_ADMIN_USERNAME}
     password: ${PORTAL_ADMIN_PASSWORD}
   jwt:
     secret: ${JWT_SECRET}
