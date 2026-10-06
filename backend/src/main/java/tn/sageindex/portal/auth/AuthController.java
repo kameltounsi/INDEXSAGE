@@ -36,7 +36,9 @@ public class AuthController {
         Authentication auth=authenticationManager.authenticate(
                 new UsernamePasswordAuthenticationToken(request.username(),request.password()));
         UserDetails user=users.loadUserByUsername(auth.getName());
-        return Map.of("accessToken",jwtService.create(user),"tokenType","Bearer","expiresIn",28800);
+        return Map.of("accessToken",jwtService.create(user),"tokenType","Bearer","expiresIn",28800,
+                "passwordChangeRequired", user.getAuthorities().stream()
+                        .anyMatch(role -> role.getAuthority().equals("ROLE_PASSWORD_CHANGE")));
     }
 
     @PostMapping("/logout")
@@ -52,14 +54,21 @@ public class AuthController {
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Le nouveau mot de passe doit être différent");
         UserAccount account=repository.findByUsername(authentication.getName())
                 .orElseThrow(()->new ResponseStatusException(HttpStatus.BAD_REQUEST,"Le compte administrateur se configure par l’environnement"));
+        if(Long.valueOf(-1L).equals(account.getEmployeeId()))
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Le compte administrateur se configure par l’environnement");
         if(!encoder.matches(request.currentPassword(),account.getPasswordHash()))
             throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Mot de passe actuel incorrect");
+        if(request.newPassword().equals(account.getMatricule()) || request.newPassword().equals(account.getUsername()))
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Le mot de passe ne doit pas être votre identifiant");
+        if(request.newPassword().getBytes(java.nio.charset.StandardCharsets.UTF_8).length > 72)
+            throw new ResponseStatusException(HttpStatus.BAD_REQUEST,"Le mot de passe doit contenir au plus 72 octets UTF-8");
         account.setPasswordHash(encoder.encode(request.newPassword()));
+        account.setAccountStatus(tn.sageindex.portal.account.AccountStatus.ACTIVE);
         repository.save(account);
         jwtService.revokeAll(authentication.getName());
     }
 
     public record LoginRequest(@NotBlank String username,@NotBlank String password){}
     public record ChangePasswordRequest(@NotBlank String currentPassword,
-                                        @NotBlank @Size(min=8,max=128) String newPassword){}
+                                        @NotBlank @Size(min=12,max=72) String newPassword){}
 }

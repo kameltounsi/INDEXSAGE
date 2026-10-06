@@ -338,6 +338,8 @@ export default function App() {
   const [creatingAccount, setCreatingAccount] = useState(false);
   const [sweetAlert, setSweetAlert] = useState<SweetAlertState>(null);
   const [token, setToken] = useState(() => sessionStorage.getItem('portal-token') ?? '');
+  const [passwordChangeRequired, setPasswordChangeRequired] = useState(() => sessionStorage.getItem('portal-password-change') === 'true');
+  const [temporaryPassword, setTemporaryPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
   const [currentPassword, setCurrentPassword] = useState('');
   const [newPassword, setNewPassword] = useState('');
@@ -384,13 +386,13 @@ export default function App() {
   }
 
   useEffect(() => {
-    if (!token || dashboard) return;
+    if (!token || dashboard || passwordChangeRequired) return;
     loadDashboard(token).catch(() => {
       sessionStorage.removeItem('portal-token');
       setToken('');
       setError('Votre session a expiré. Reconnectez-vous.');
     });
-  }, [token, dashboard]);
+  }, [token, dashboard, passwordChangeRequired]);
 
   useEffect(() => {
     if (!token || !dashboard) return;
@@ -427,7 +429,7 @@ export default function App() {
       window.clearInterval(interval);
       document.removeEventListener('visibilitychange', onVisibilityChange);
     };
-  }, [token, dashboard]);
+  }, [token, dashboard, passwordChangeRequired]);
 
   useEffect(() => {
     if (!dashboard || !token || dashboardView === 'ALL' || embeddedUrls[dashboardView]) return;
@@ -460,8 +462,14 @@ export default function App() {
       if (!response.ok) throw new Error();
       const session = await response.json();
       sessionStorage.setItem('portal-token', session.accessToken);
+      sessionStorage.setItem('portal-password-change', String(session.passwordChangeRequired));
+      setPasswordChangeRequired(session.passwordChangeRequired);
       setToken(session.accessToken);
-      await loadDashboard(session.accessToken);
+      if (session.passwordChangeRequired) {
+        setCurrentPassword(password);
+      } else {
+        await loadDashboard(session.accessToken);
+      }
       setPassword('');
     } catch {
       setError('Matricule ou mot de passe incorrect.');
@@ -474,6 +482,14 @@ export default function App() {
     if (token) await fetch('/api/auth/logout', { method: 'POST', headers: { Authorization: `Bearer ${token}` } }).catch(() => undefined);
     sessionStorage.removeItem('portal-token');
     setToken('');
+    sessionStorage.removeItem('portal-password-change');
+    setPasswordChangeRequired(false);
+    setCurrentPassword('');
+    setNewPassword('');
+    setConfirmPassword('');
+    setPasswordMessage('');
+    setShowPassword(false);
+    setTemporaryPassword('');
     setDashboard(null);
     setAccounts([]);
     setOperational(null);
@@ -576,10 +592,38 @@ export default function App() {
       const created: Account = await response.json();
       setAccounts((current) => [created, ...current]);
       setNewAccountMatricule('');
-      setAccountMessage('Le compte est créé avec succès. Le mot de passe initial est le matricule.');
+      setAccountMessage('Le compte est créé. Une activation par l’administrateur est requise.');
     } finally {
       setCreatingAccount(false);
     }
+  }
+
+  async function activateAccount(username: string) {
+    if (temporaryPassword) { setAccountMessage('Masquez le mot de passe temporaire précédent avant une autre activation.'); return; }
+    setAccountMessage('');
+    try {
+    const response = await fetch(`/api/accounts/${encodeURIComponent(username)}/activate`, {
+      method: 'POST', headers: { Authorization: `Bearer ${token}` },
+    });
+    if (!response.ok) { setAccountMessage("Impossible d'activer ce compte."); return; }
+    const result = await response.json();
+    setAccounts((current) => current.map((account) => account.username === username ? result.account : account));
+    setTemporaryPassword(result.temporaryPassword);
+    } catch { setAccountMessage("L'activation n'a pas pu être confirmée. Rechargez les comptes avant de réessayer."); }
+  }
+
+  if (passwordChangeRequired && token) {
+    return <main className="login-page"><section className="login-panel">
+      <Brand /><h2>Choisissez votre mot de passe personnel</h2>
+      <p>Cette étape est obligatoire avant l’accès au portail. Choisissez entre 12 et 72 caractères.</p>
+      <form onSubmit={changePassword}>
+        <label>Mot de passe temporaire</label><input type="password" autoComplete="current-password" value={currentPassword} onChange={(e) => setCurrentPassword(e.target.value)} required />
+        <label>Nouveau mot de passe</label><input type="password" autoComplete="new-password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} minLength={12} maxLength={72} required />
+        <label>Confirmation</label><input type="password" autoComplete="new-password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} minLength={12} maxLength={72} required />
+        {passwordMessage && <p role="status">{passwordMessage}</p>}
+        <button>Enregistrer</button><button type="button" onClick={logout}>Déconnexion</button>
+      </form>
+    </section></main>;
   }
 
   if (!dashboard) {
@@ -821,10 +865,11 @@ export default function App() {
           </section>}
           {isAdmin && (
             <section className="admin-panel">
-              <div className="admin-head"><div><p className="eyebrow">ADMINISTRATION · BAHA SAIIDI 3744</p><h2>Comptes utilisateurs</h2><p>Ajoutez un compte uniquement avec son matricule et consultez ses applications métier liées.</p></div><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Rechercher un employé…" /></div>
+              <div className="admin-head"><div><p className="eyebrow">ADMINISTRATION</p><h2>Comptes utilisateurs</h2><p>Ajoutez un compte uniquement avec son matricule et consultez ses applications métier liées.</p></div><input value={search} onChange={(e) => setSearch(e.target.value)} placeholder="Rechercher un employé…" /></div>
               <form className="account-create" onSubmit={createAccount}><label htmlFor="new-account-matricule">Nouveau matricule</label><input id="new-account-matricule" inputMode="numeric" pattern="[0-9]+" value={newAccountMatricule} onChange={(e) => { setNewAccountMatricule(e.target.value); setAccountMessage(''); }} placeholder="Ex. 3745" required /><button disabled={creatingAccount}>{creatingAccount ? 'Création…' : 'Ajouter le compte'}</button>{accountMessage && <p role="status">{accountMessage}</p>}</form>
+              {temporaryPassword && <div role="status"><p>Mot de passe temporaire (affiché une seule fois). Transmettez-le au titulaire par un canal privé après vérification de son identité.</p><code>{temporaryPassword}</code><button onClick={() => setTemporaryPassword('')}>Masquer</button></div>}
               <div className="table-wrap"><table><thead><tr><th>Employé</th><th>Matricule</th><th>Département</th><th>Applications liées</th><th>Statut</th></tr></thead><tbody>
-                {filteredAccounts.map((account) => <tr key={account.id}><td><b>{account.fullName}</b><small>{account.jobTitle}</small></td><td>{account.matricule}</td><td>{account.department}</td><td><div className="application-tags">{account.applications.length ? account.applications.map((app) => <span key={app}>{app === 'HR' ? 'RH' : app === 'PLANNING' ? 'Planning' : 'Traçabilité'}</span>) : <small>Aucune application</small>}</div></td><td><span className="account-status">{account.accountStatus === 'ACTIVE' ? 'Actif' : 'À activer'}</span></td></tr>)}
+                {filteredAccounts.map((account) => <tr key={account.id}><td><b>{account.fullName}</b><small>{account.jobTitle}</small></td><td>{account.matricule}</td><td>{account.department}</td><td><div className="application-tags">{account.applications.length ? account.applications.map((app) => <span key={app}>{app === 'HR' ? 'RH' : app === 'PLANNING' ? 'Planning' : 'Traçabilité'}</span>) : <small>Aucune application</small>}</div></td><td><span className="account-status">{account.accountStatus === 'ACTIVE' ? 'Actif' : account.accountStatus === 'PASSWORD_CHANGE_REQUIRED' ? 'Mot de passe à changer' : account.accountStatus === 'DISABLED' ? 'Désactivé' : 'À activer'}</span>{account.accountStatus === 'ACTIVATION_REQUIRED' && <button onClick={() => activateAccount(account.username)}>Activer</button>}</td></tr>)}
               </tbody></table></div>
             </section>
           )}
@@ -835,14 +880,14 @@ export default function App() {
           <button className="modal-close" onClick={() => setShowPassword(false)} aria-label="Fermer">×</button>
           <p className="eyebrow">SÉCURITÉ DU COMPTE</p>
           <h2 id="password-title">Changer le mot de passe</h2>
-          <p>Choisissez au moins 8 caractères. Toutes les sessions devront être reconnectées.</p>
+          <p>Choisissez entre 12 et 72 caractères. Toutes les sessions devront être reconnectées.</p>
           <form onSubmit={changePassword}>
             <label>Mot de passe actuel</label>
             <input type="password" value={currentPassword} onChange={(e) => setCurrentPassword(e.target.value)} required autoFocus />
             <label>Nouveau mot de passe</label>
-            <input type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} minLength={8} required />
+            <input type="password" value={newPassword} onChange={(e) => setNewPassword(e.target.value)} minLength={12} maxLength={72} required />
             <label>Confirmer le nouveau mot de passe</label>
-            <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} minLength={8} required />
+            <input type="password" value={confirmPassword} onChange={(e) => setConfirmPassword(e.target.value)} minLength={12} maxLength={72} required />
             {passwordMessage && <p className="password-message" role="status">{passwordMessage}</p>}
             <div className="modal-actions"><button type="button" onClick={() => setShowPassword(false)}>Annuler</button><button className="save-password">Enregistrer</button></div>
           </form>
